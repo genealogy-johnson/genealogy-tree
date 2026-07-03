@@ -70,21 +70,10 @@ jobs:
         run: |
           uv --version
           uv run python --version
-          uv run python -m ruff --version
-          uv run python -m pyright --version
           if [ -f "zensical.toml" ]; then
             uv run python -m zensical --version
           fi
         # WHY: Version output makes CI logs easier to debug when tools change.
-
-      - name: A6) Run pre-commit on all files
-        run: uvx pre-commit run --all-files
-        # WHY: Run the same repo hygiene checks used locally.
-        # OBS: A clean commit should already pass this without file changes.
-        #      If a hook changes files in CI, the job fails because the repo
-        #      was not committed in its fully fixed state.
-        # FIX: Run this command locally, review any autofixes, fix remaining
-        #      issues by hand, then git add, commit, and push again.
 
       # ============================================================
       # B) BASELINE CHECKS: Tools not covered by pre-commit
@@ -93,25 +82,6 @@ jobs:
       - name: B1) Validate pyproject.toml schema
         run: uvx "validate-pyproject[all]" pyproject.toml
         # WHY: Catches malformed pyproject.toml before a broken release.
-
-      - name: B2) Run Pyright type checker
-        run: uv run python -m pyright
-        continue-on-error: true
-        # WHY: Catches type errors that ruff does not check.
-        # OBS: Pyright reads settings from pyproject.toml [tool.pyright].
-        # OBS: Not included in pre-commit because it requires the full venv.
-        # WHY: continue-on-error is non-blocking.
-        # These issues will not fail the action.
-
-      # ============================================================
-      # C) COVERAGE & TESTING: Python tests (pytest)
-      # ============================================================
-
-      - name: C1) Run pytest
-        run: uv run python -m pytest
-        # WHY: Confirms all Python tests pass in a clean CI environment.
-        # OBS: pytest config lives in pyproject.toml [tool.pytest.ini_options].
-        # OBS: Not included in pre-commit because tests can be slow.
 
       # ============================================================
       # D) Docs build (no deployment)

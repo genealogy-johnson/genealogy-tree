@@ -41,6 +41,15 @@ Please cite a source for any correction (a document, a person's
 recollection with their name/date, etc.) so we can track provenance -
 genealogy accuracy depends on it.
 
+## Developer
+
+```shell
+uv self update
+uv python pin 3.14
+uv lock --upgrade
+uv sync --extra docs
+```
+
 ## Examples
 
 ![Figure 1](./docs/images/Figure_1.png)
