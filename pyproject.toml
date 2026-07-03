@@ -1,0 +1,24 @@
+# ============================================================
+# pyproject.toml (Python project configuration)
+# ============================================================
+# REQ.PYTHON: Python projects MUST include pyproject.toml as the single source of truth.
+# WHY: Centralizes project configuration.
+# CUSTOM: Update identity and build tool src folders.
+
+# ============================================================
+# SECTION 1: PROJECT IDENTITY (name, version, CUSTOM dependencies)
+# ============================================================
+
+[project]
+name = "genealogy-tree" # CUSTOM: Package distribution name (use lowercase and dashes).
+readme = "README.md"
+requires-python = ">=3.14"
+version = "0.1.0"
+
+
+[project.optional-dependencies]
+docs = [
+    # WHY: Only needed for building documentation, not required for running the package.
+    "mkdocstrings-python", # automatic API documentation from docstrings
+    "zensical", # fast and minimal static site generator for documentation
+]

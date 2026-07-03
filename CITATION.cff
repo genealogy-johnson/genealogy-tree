@@ -1,0 +1,40 @@
+# ============================================================
+# CITATION.cff (How to cite this project)
+# ============================================================
+
+# REQ.UNIVERSAL: Professional open projects SHOULD include this file.
+# WHY: Support correct citation and attribution.
+# ALT: Internal or private repositories may omit citation metadata.
+# CUSTOM: Update author, repository, license, and keyword fields as needed.
+# USAGE: See https://citation-file-format.github.io/ for details.
+
+cff-version: "1.2.0"
+type: software
+
+title: "genealogy-tree"
+version: "0.1.0"
+date-released: "2026-07-03"
+
+authors:
+  - family-names: Case
+    given-names: Denise M.
+    orcid: "https://orcid.org/0000-0001-6165-7389"
+    affiliation: "Northwest Missouri State University, School of Computer Science and Information Systems, Maryville, MO, USA"
+
+repository-code: "https://github.com/genealogy-clusiau/genealogy-tree"
+url: "https://github.com/genealogy-clusiau/genealogy-tree"
+license: MIT
+
+abstract: >
+  Genealogy tree with a GEDCOM viewer.
+
+keywords:
+  - genealogy
+  - historical-research
+  - git
+  - github
+  - open-source
+  - uv
+  - zensical
+
+message: "If using this work, please cite it as described in this file."

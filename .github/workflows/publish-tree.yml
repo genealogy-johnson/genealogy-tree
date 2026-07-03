@@ -1,0 +1,151 @@
+# ============================================================
+# .github/workflows/publish-tree.yml (ALL-GENEALOGY-REPOS)
+# ============================================================
+# Updated: 2026-07-03
+
+# Name shown in the repo Actions tab.
+name: Publish public tree
+
+# Reusable across any genealogy-<line> builder repo - nothing family- or
+# org-specific is hardcoded here. Configure per-repo via the two
+# repository variables and one secret listed below (Settings > Secrets
+# and variables > Actions):
+#
+#   Variable  PUBLIC_REPO      e.g. "genealogy-clusiau/genealogy-tree"
+#   Variable  MAX_LIVING_AGE   e.g. "105" (optional - defaults to 105 below)
+#   Secret    PUBLISH_TOKEN    a fine-grained PAT, scoped to just
+#                              PUBLIC_REPO, with contents: read/write.
+#                              The default GITHUB_TOKEN cannot push to a
+#                              different repo, which is why this is needed.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "ged/**"
+      - "docs/viewer/**"
+      - "src/dc_genealogy/**"
+  workflow_dispatch: {}
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    outputs:
+      people: ${{ steps.metrics.outputs.people }}
+      generations: ${{ steps.metrics.outputs.generations }}
+    steps:
+
+      # ============================================================
+      # A) ASSEMBLE: Checkout code and set up environment
+      # ============================================================
+
+      - name: A1) Checkout repository code
+        uses: actions/checkout@v7
+        # WHY: Required so all subsequent steps can access repo files.
+
+      - name: A2) Install uv (with caching)
+        uses: astral-sh/setup-uv@v7
+        with:
+          enable-cache: true
+          cache-dependency-glob: "uv.lock"
+          # WHY: Invalidate cache only when locked dependencies change.
+
+      - name: A3) Install Python 3.14
+        run: uv python install 3.14
+
+      - name: A4) Install all dependencies with frozen versions (in uv.lock)
+        run: uv sync --extra dev --extra docs --frozen
+        # WHY: Docs extras required for Zensical build; dev extras for consistency.
+        # OBS: Deployment validates the committed lock file; it must not upgrade dependencies.
+
+      - name: A5) Show tool versions
+        run: |
+          uv --version
+          uv run python --version
+          if [ -f "zensical.toml" ]; then
+            uv run python -m zensical --version
+          fi
+        # WHY: Version output makes deployment logs easier to debug when tools change.
+
+      # ============================================================
+      # C) COMPUTE: Compute metrics and prepare public tree
+      # ============================================================
+
+      - name: C1) Merge, redact, compute metrics
+        run: |
+          uv run gedcom-publish-prep ged build \
+            --max-age "${{ vars.MAX_LIVING_AGE || '105' }}"
+
+      - name: C2) Read metrics for job summary
+        id: metrics
+        run: |
+          people=$(python -c "import json;print(json.load(open('build/badges/people.json'))['message'])")
+          generations=$(python -c "import json;print(json.load(open('build/badges/generations.json'))['message'])")
+          echo "people=$people" >> "$GITHUB_OUTPUT"
+          echo "generations=$generations" >> "$GITHUB_OUTPUT"
+          echo "### Public tree build" >> "$GITHUB_STEP_SUMMARY"
+          echo "- People: $people" >> "$GITHUB_STEP_SUMMARY"
+          echo "- Generations: $generations" >> "$GITHUB_STEP_SUMMARY"
+
+      # ============================================================
+      # D) DEPLOY: Assemble and upload public tree artifact
+      # ============================================================
+
+      - name: D1) Assemble public site contents
+        run: |
+          mkdir -p build/docs
+          mkdir -p build/docs/ged
+
+          cp -r docs/viewer build/docs/viewer
+          cp docs/index.md build/docs/index.md
+          cp zensical.toml build/zensical.toml || true
+
+          cp build/ged/data.ged build/docs/ged/data.ged
+
+      - name: D2) Upload public tree build artifact
+        uses: actions/upload-artifact@v7
+        with:
+          name: public-tree-build
+          path: build/
+          retention-days: 7
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+
+      # ============================================================
+      # E) PUBLISH: Push generated tree to public repository
+      # ============================================================
+
+      - name: E1) Download public tree build artifact
+        uses: actions/download-artifact@v8
+        with:
+          name: public-tree-build
+          path: build/
+
+      - name: E2) Push to public repo
+        env:
+          PUBLISH_TOKEN: ${{ secrets.PUBLISH_TOKEN }}
+          PUBLIC_REPO: ${{ vars.PUBLIC_REPO }}
+        run: |
+          if [ -z "$PUBLIC_REPO" ]; then
+            echo "::error::Repository variable PUBLIC_REPO is not set (e.g. 'org/repo'). See workflow header."
+            exit 1
+          fi
+
+          git clone "https://x-access-token:${PUBLISH_TOKEN}@github.com/${PUBLIC_REPO}.git" public-repo
+          rsync -a --delete \
+            --exclude='.git' \
+            build/ public-repo/
+
+          cd public-repo
+          git config user.name "genealogy-publish-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes to publish."
+          else
+            git commit -m "Publish: ${{ needs.build.outputs.people }} people, ${{ needs.build.outputs.generations }} generations"
+            git push
+          fi
