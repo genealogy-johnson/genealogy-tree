@@ -32,9 +32,9 @@
         <input type="text" id="search" placeholder="Search a name...">
         <select id="root-select" title="Choose starting ancestor"></select>
         <button class="ghost" id="load-sample">Load sample</button>
-        <button id="load-file-btn">Open .ged file</button>
+        <button class="ghost" id="load-file-btn">Open .ged file</button>
         <input type="file" id="file-input" accept=".ged,.txt">
-        <button class="ghost" id="expand-all">Expand all</button>
+        <button id="expand-all">Expand all</button>
         <button class="ghost" id="collapse-all">Collapse all</button>
       </div>
     </header>
@@ -165,8 +165,12 @@
     // ---------- GEDCOM PARSER ----------
     function parseGedcom(text) {
       const lines = text.split(/\r?\n/).filter(l => l.trim().length);
-      const indis = {}, fams = {};
-      let cur = null, curType = null, curSubtag = null;
+      const indis = {};
+      const fams = {};
+      let curFamcLink = null;
+      let cur = null;
+      let curType = null;
+      let curSubtag = null;
 
       for (const raw of lines) {
         const m = raw.match(/^\s*(\d+)\s+(@\w+@)?\s*([A-Za-z0-9_]+)?\s*(.*)$/);
@@ -177,7 +181,7 @@
         let value = m[4] || '';
 
         if (level === 0 && xref && tag === 'INDI') {
-          cur = { id: xref, name: '', sex: 'U', birt: '', deat: '', famc: null, fams: [], note: '' };
+          cur = { id: xref, name: '', sex: 'U', birt: '', deat: '', famc: null, famcLinks: [], fams: [], note: '' };
           indis[xref] = cur; curType = 'INDI'; curSubtag = null; continue;
         }
         if (level === 0 && xref && tag === 'FAM') {
@@ -190,15 +194,36 @@
         if (curType === 'INDI') {
           if (level === 1) {
             curSubtag = tag;
-            if (tag === 'NAME') cur.name = value.replace(/\//g, '').trim();
-            else if (tag === 'SEX') cur.sex = value.trim();
-            else if (tag === 'FAMC') cur.famc = (xref || value).trim();
-            else if (tag === 'FAMS') cur.fams.push((xref || value).trim());
-            else if (tag === 'NOTE') cur.note = (cur.note ? cur.note + ' ' : '') + value.trim();
+            curFamcLink = null;
+
+            if (tag === 'NAME') {
+              cur.name = value.replace(/\//g, '').trim();
+            } else if (tag === 'SEX') {
+              cur.sex = value.trim();
+            } else if (tag === 'FAMC') {
+              const famId = (xref || value).trim();
+
+              // Backward-compatible primary family link.
+              if (!cur.famc) cur.famc = famId;
+
+              // Full family-child link list. This supports adopted, birth,
+              // foster, and multiple parent-family relationships.
+              curFamcLink = {
+                famId,
+                pedi: ''
+              };
+              cur.famcLinks.push(curFamcLink);
+            } else if (tag === 'FAMS') {
+              cur.fams.push((xref || value).trim());
+            } else if (tag === 'NOTE') {
+              cur.note = (cur.note ? cur.note + ' ' : '') + value.trim();
+            }
           } else if (level === 2) {
             if (tag === 'DATE') {
               if (curSubtag === 'BIRT') cur.birt = value.trim();
               else if (curSubtag === 'DEAT') cur.deat = value.trim();
+            } else if (tag === 'PEDI' && curFamcLink) {
+              curFamcLink.pedi = value.trim().toLowerCase();
             }
           }
         } else if (curType === 'FAM') {
