@@ -289,11 +289,12 @@
     }
 
     function findRootCandidates(indis) {
-      // people with no FAMC (no known parents) are natural tree roots
-      const withNoParents = Object.values(indis).filter(p => !p.famc);
+      const withNoParents = Object.values(indis).filter((p) => {
+        return !p.famcLinks || p.famcLinks.length === 0;
+      });
+
       return withNoParents.length ? withNoParents : Object.values(indis);
     }
-
     // ---------- D3 RENDER ----------
     let svg, gRoot, zoomBehavior, currentRootData, treeLayout;
     const width0 = 1200, height0 = 800;
@@ -405,19 +406,22 @@
 
     function loadFromText(text) {
       parsedData = parseGedcom(text);
-      const candidates = findRootCandidates(parsedData.indis);
+
+      const allPeople = Object.values(parsedData.indis);
+      const rootCandidates = findRootCandidates(parsedData.indis);
 
       const defaultRoot =
         parsedData.indis[DEFAULT_ROOT_ID] ||
-        candidates.find(p => p.name === "Guillaume Cluseau") ||
-        candidates[0];
+        allPeople.find((p) => p.name === "Guillaume Cluseau") ||
+        rootCandidates[0] ||
+        allPeople[0];
 
       const sel = document.getElementById('root-select');
       sel.innerHTML = '';
 
-      candidates
+      allPeople
         .sort((a, b) => a.name.localeCompare(b.name))
-        .forEach(p => {
+        .forEach((p) => {
           const opt = document.createElement('option');
           opt.value = p.id;
           opt.textContent = p.name || p.id;
