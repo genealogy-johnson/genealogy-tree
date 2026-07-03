@@ -76,6 +76,7 @@
 
   <script>
     const DEFAULT_GEDCOM_URL = "../ged/data.ged";
+    const DEFAULT_ROOT_ID = "@P01I1@";
     const SAMPLE_GEDCOM = `0 HEAD
 1 CHAR UTF-8
 0 @I1@ INDI
@@ -217,32 +218,48 @@
     // ---------- BUILD HIERARCHY ----------
     function buildHierarchy(indis, fams, rootId) {
       const seen = new Set();
+
       function nodeFor(id) {
         const p = indis[id];
         if (!p) return null;
+
         const spouseNames = [];
-        let famAsSpouse = null;
+        const childIds = [];
+
         for (const fid of p.fams) {
           const f = fams[fid];
           if (!f) continue;
+
           const spouseId = f.husb === id ? f.wife : f.husb;
           if (spouseId && indis[spouseId]) spouseNames.push(indis[spouseId].name);
-          famAsSpouse = f; // last one used for children
-        }
-        const node = {
-          id: p.id, name: p.name || '(unknown)', sex: p.sex, birt: p.birt, deat: p.deat,
-          note: p.note, spouse: spouseNames.join(', '), children: []
-        };
-        if (seen.has(id)) return node; // avoid infinite loops on odd data
-        seen.add(id);
-        if (famAsSpouse) {
-          for (const cid of famAsSpouse.chil) {
-            const c = nodeFor(cid);
-            if (c) node.children.push(c);
+
+          for (const cid of f.chil) {
+            if (!childIds.includes(cid)) childIds.push(cid);
           }
         }
+
+        const node = {
+          id: p.id,
+          name: p.name || '(unknown)',
+          sex: p.sex,
+          birt: p.birt,
+          deat: p.deat,
+          note: p.note,
+          spouse: spouseNames.join(', '),
+          children: []
+        };
+
+        if (seen.has(id)) return node;
+        seen.add(id);
+
+        for (const cid of childIds) {
+          const c = nodeFor(cid);
+          if (c) node.children.push(c);
+        }
+
         return node;
       }
+
       return nodeFor(rootId);
     }
 
@@ -364,17 +381,27 @@
     function loadFromText(text) {
       parsedData = parseGedcom(text);
       const candidates = findRootCandidates(parsedData.indis);
+
+      const defaultRoot =
+        parsedData.indis[DEFAULT_ROOT_ID] ||
+        candidates.find(p => p.name === "Guillaume Cluseau") ||
+        candidates[0];
+
       const sel = document.getElementById('root-select');
       sel.innerHTML = '';
+
       candidates
         .sort((a, b) => a.name.localeCompare(b.name))
         .forEach(p => {
           const opt = document.createElement('option');
-          opt.value = p.id; opt.textContent = p.name || p.id;
+          opt.value = p.id;
+          opt.textContent = p.name || p.id;
+          opt.selected = defaultRoot && p.id === defaultRoot.id;
           sel.appendChild(opt);
         });
-      if (candidates.length) {
-        const rootData = buildHierarchy(parsedData.indis, parsedData.fams, candidates[0].id);
+
+      if (defaultRoot) {
+        const rootData = buildHierarchy(parsedData.indis, parsedData.fams, defaultRoot.id);
         currentRootData = rootData;
         renderTree(rootData);
       }
