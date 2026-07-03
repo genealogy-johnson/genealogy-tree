@@ -63,7 +63,7 @@ jobs:
         # OBS: Does not modify the repo; uv manages the interpreter locally.
 
       - name: A4) Install all dependencies with frozen versions (in uv.lock)
-        run: uv sync --extra dev --extra docs --frozen
+        run: uv sync --extra docs --frozen
         # WHY: Install dev and docs extras so all check and build tools are available.
 
       - name: A5) Show tool versions
