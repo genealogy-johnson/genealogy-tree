@@ -1821,10 +1821,8 @@
 2 CONT person.
 
 0 @P04I25@ INDI
-1 NAME Bonnie /Gray/
+1 NAME Living /Gray/
 1 SEX F
-1 BIRT
-2 DATE 08 NOV 1917
 1 FAMS @P04F8@
 1 NOTE Source: images/p04.jpg, generation 9. Printed with an explicit
 2 CONT cross-reference "(see Arthur Francis Clusiau on page 3)" despite
@@ -2303,10 +2301,8 @@
 1 NOTE Source: images/p05.jpg, generation 9.
 
 0 @P05I21@ INDI
-1 NAME Eleanor /Kokkinen/
+1 NAME Living /Kokkinen/
 1 SEX F
-1 BIRT
-2 DATE 23 NOV 1916
 1 FAMS @P05F7@
 1 NOTE Source: images/p05.jpg, generation 9 (spouse of Arlie Cluseau).
 
@@ -2624,22 +2620,16 @@
 2 CONT No children printed under this union.
 
 0 @P06I9@ INDI
-1 NAME Lorraine /Cluseau/
+1 NAME Living /Cluseau/
 1 SEX F
-1 BIRT
-2 DATE 21 OCT 1916
-1 BURI
-2 DATE 1973
 1 FAMC @P05F4@
 1 FAMS @P06F4@
 1 NOTE Source: images/p06.jpg, generation 9. Only a burial year is given,
 2 CONT no death date — recorded as printed.
 
 0 @P06I10@ INDI
-1 NAME Eino /Leino/
+1 NAME Living /Leino/
 1 SEX M
-1 BIRT
-2 DATE 03 MAR 1913
 1 FAMS @P06F4@
 1 NOTE Source: images/p06.jpg, generation 9 (spouse of Lorraine Cluseau).
 2 CONT No children printed under this union.
@@ -2700,10 +2690,8 @@
 2 CONT earlier in this tree.
 
 0 @P06I16@ INDI
-1 NAME Merle /Mason/
+1 NAME Living /Mason/
 1 SEX M
-1 BIRT
-2 DATE 10 AUG 1920
 1 FAMS @P06F7@
 1 NOTE Source: images/p06.jpg, generation 9 (spouse of Shirley Cluseau
 2 CONT b.1923). No children printed under this union.
@@ -3797,28 +3785,16 @@
 1 NOTE Source: images/p09.jpg, generation 8 (spouse of Jeanne Clusiau).
 
 0 @P09I6@ INDI
-1 NAME Marie /Dumais/
+1 NAME Living /Dumais/
 1 SEX F
-1 BIRT
-2 DATE 23 OCT 1920
-2 PLAC Ottawa, Carleton, Ontario, Canada
-1 CHR
-2 DATE 24 OCT 1920
-2 PLAC Ottawa, Carleton, Ontario, Canada
 1 FAMC @P09F1@
 1 NOTE Source: images/p09.jpg, generation 9. Printed before her older
 2 CONT brother Léo (@P09I7@, b.1914) in the source — an ordering quirk,
 2 CONT not an error; her own birth date is unambiguous.
 
 0 @P09I7@ INDI
-1 NAME Léo /Dumais/
+1 NAME Living /Dumais/
 1 SEX M
-1 BIRT
-2 DATE 11 APR 1914
-2 PLAC Ottawa, Carleton, Ontario, Canada
-1 CHR
-2 DATE 12 APR 1914
-2 PLAC Ottawa, Carleton, Ontario, Canada
 1 FAMC @P09F1@
 1 NOTE Source: images/p09.jpg, generation 9.
 
@@ -6259,10 +6235,8 @@
 2 CONT person.
 
 0 @P04I25@ INDI
-1 NAME Bonnie /Gray/
+1 NAME Living /Gray/
 1 SEX F
-1 BIRT
-2 DATE 08 NOV 1917
 1 FAMS @P04F8@
 1 NOTE Source: images/p04.jpg, generation 9. Printed with an explicit
 2 CONT cross-reference "(see Arthur Francis Clusiau on page 3)" despite
@@ -6741,10 +6715,8 @@
 1 NOTE Source: images/p05.jpg, generation 9.
 
 0 @P05I21@ INDI
-1 NAME Eleanor /Kokkinen/
+1 NAME Living /Kokkinen/
 1 SEX F
-1 BIRT
-2 DATE 23 NOV 1916
 1 FAMS @P05F7@
 1 NOTE Source: images/p05.jpg, generation 9 (spouse of Arlie Cluseau).
 
@@ -7062,22 +7034,16 @@
 2 CONT No children printed under this union.
 
 0 @P06I9@ INDI
-1 NAME Lorraine /Cluseau/
+1 NAME Living /Cluseau/
 1 SEX F
-1 BIRT
-2 DATE 21 OCT 1916
-1 BURI
-2 DATE 1973
 1 FAMC @P05F4@
 1 FAMS @P06F4@
 1 NOTE Source: images/p06.jpg, generation 9. Only a burial year is given,
 2 CONT no death date — recorded as printed.
 
 0 @P06I10@ INDI
-1 NAME Eino /Leino/
+1 NAME Living /Leino/
 1 SEX M
-1 BIRT
-2 DATE 03 MAR 1913
 1 FAMS @P06F4@
 1 NOTE Source: images/p06.jpg, generation 9 (spouse of Lorraine Cluseau).
 2 CONT No children printed under this union.
@@ -7138,10 +7104,8 @@
 2 CONT earlier in this tree.
 
 0 @P06I16@ INDI
-1 NAME Merle /Mason/
+1 NAME Living /Mason/
 1 SEX M
-1 BIRT
-2 DATE 10 AUG 1920
 1 FAMS @P06F7@
 1 NOTE Source: images/p06.jpg, generation 9 (spouse of Shirley Cluseau
 2 CONT b.1923). No children printed under this union.
@@ -8235,28 +8199,16 @@
 1 NOTE Source: images/p09.jpg, generation 8 (spouse of Jeanne Clusiau).
 
 0 @P09I6@ INDI
-1 NAME Marie /Dumais/
+1 NAME Living /Dumais/
 1 SEX F
-1 BIRT
-2 DATE 23 OCT 1920
-2 PLAC Ottawa, Carleton, Ontario, Canada
-1 CHR
-2 DATE 24 OCT 1920
-2 PLAC Ottawa, Carleton, Ontario, Canada
 1 FAMC @P09F1@
 1 NOTE Source: images/p09.jpg, generation 9. Printed before her older
 2 CONT brother Léo (@P09I7@, b.1914) in the source — an ordering quirk,
 2 CONT not an error; her own birth date is unambiguous.
 
 0 @P09I7@ INDI
-1 NAME Léo /Dumais/
+1 NAME Living /Dumais/
 1 SEX M
-1 BIRT
-2 DATE 11 APR 1914
-2 PLAC Ottawa, Carleton, Ontario, Canada
-1 CHR
-2 DATE 12 APR 1914
-2 PLAC Ottawa, Carleton, Ontario, Canada
 1 FAMC @P09F1@
 1 NOTE Source: images/p09.jpg, generation 9.
 
