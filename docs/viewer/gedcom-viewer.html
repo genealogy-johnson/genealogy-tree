@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Family Tree Viewer</title>
+  <meta name="description"
+    content="Interactive GEDCOM family tree viewer with search, expandable branches, and public redacted genealogy data.">
+  <meta name="author" content="Denise Case">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+
+  <link rel="stylesheet" href="styles.css">
+
+  <link rel="shortcut icon" href="../images/favicon_io/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon_io/favicon-16x16.png">
+
+  <link rel="manifest" href="../images/favicon_io/site.webmanifest">
+</head>
+
+<body>
+  <div id="app">
+    <header>
+      <div>
+        <img src="favicon.ico" alt="Family Tree Icon" style="height:40px;vertical-align:middle;margin-right:10px;">
+        <h1>Family Tree<span class="sub">GEDCOM viewer &mdash; scroll, click to expand, search a name</span></h1>
+      </div>
+      <div class="controls">
+        <input type="text" id="search" placeholder="Search a name...">
+        <select id="root-select" title="Choose starting ancestor"></select>
+        <button class="ghost" id="load-sample">Load sample</button>
+        <button id="load-file-btn">Open .ged file</button>
+        <input type="file" id="file-input" accept=".ged,.txt">
+        <button class="ghost" id="expand-all">Expand all</button>
+        <button class="ghost" id="collapse-all">Collapse all</button>
+      </div>
+    </header>
+    <div id="main">
+      <svg id="tree-svg"></svg>
+      <div id="panel">
+        <button class="close" id="panel-close">&times;</button>
+        <h2 id="panel-name"></h2>
+        <div class="row" id="panel-birth"></div>
+        <div class="row" id="panel-death"></div>
+        <div class="row" id="panel-spouse"></div>
+        <div class="row" id="panel-note"></div>
+      </div>
+      <div id="empty-state">
+        <h1 style="font-size:22px;">No tree loaded yet</h1>
+        <p>Loading the public redacted tree from <code>ged/data.ged</code>.
+          You can also open a local <code>.ged</code> file, or load the small sample.
+          This viewer never uploads your file anywhere &mdash; files are parsed entirely in your browser.</p>
+        <div class="controls" style="justify-content:center;">
+          <button id="empty-load-file">Open .ged file</button>
+          <button class="ghost" id="empty-load-sample">Load sample</button>
+        </div>
+      </div>
+    </div>
+    <div class="hint">Scroll or pinch to zoom &middot; drag to pan &middot; click a node to expand/collapse and see
+      details</div>
+    <footer class="site-footer">
+      <span>Clusiau Genealogy</span>
+      <span>&middot;</span>
+      <a href="https://github.com/genealogy-clusiau" target="_blank" rel="noopener noreferrer">
+        GitHub Organization
+      </a>
+      <span>&middot;</span>
+      <a href="https://github.com/genealogy-clusiau/genealogy-tree" target="_blank" rel="noopener noreferrer">
+        Public Viewer Repository
+      </a>
+    </footer>
+  </div>
+
+  <script>
+    const DEFAULT_GEDCOM_URL = "../ged/data.ged";
+    const SAMPLE_GEDCOM = `0 HEAD
+1 CHAR UTF-8
+0 @I1@ INDI
+1 NAME John /Smith/
+1 SEX M
+1 BIRT
+2 DATE 04 JUL 1889
+1 DEAT
+2 DATE 12 MAR 1965
+1 FAMS @F1@
+0 @I2@ INDI
+1 NAME Mary /Jones/
+1 SEX F
+1 BIRT
+2 DATE 1892
+1 FAMS @F1@
+0 @I3@ INDI
+1 NAME Robert /Smith/
+1 SEX M
+1 BIRT
+2 DATE 1915
+1 DEAT
+2 DATE 1988
+1 FAMC @F1@
+1 FAMS @F2@
+0 @I4@ INDI
+1 NAME Helen /Ray/
+1 SEX F
+1 BIRT
+2 DATE 1918
+1 FAMS @F2@
+0 @I5@ INDI
+1 NAME Dorothy /Smith/
+1 SEX F
+1 BIRT
+2 DATE 1917
+1 FAMC @F1@
+0 @I6@ INDI
+1 NAME Walter /Smith/
+1 SEX M
+1 BIRT
+2 DATE 1940
+1 FAMC @F2@
+1 FAMS @F3@
+0 @I7@ INDI
+1 NAME Susan /Miller/
+1 SEX F
+1 BIRT
+2 DATE 1942
+1 FAMS @F3@
+0 @I8@ INDI
+1 NAME Karen /Smith/
+1 SEX F
+1 BIRT
+2 DATE 1965
+1 FAMC @F3@
+0 @I9@ INDI
+1 NAME David /Smith/
+1 SEX M
+1 BIRT
+2 DATE 1968
+1 FAMC @F3@
+0 @F1@ FAM
+1 HUSB @I1@
+1 WIFE @I2@
+1 CHIL @I3@
+1 CHIL @I5@
+1 MARR
+2 DATE 20 JUN 1913
+0 @F2@ FAM
+1 HUSB @I3@
+1 WIFE @I4@
+1 CHIL @I6@
+1 MARR
+2 DATE 1939
+0 @F3@ FAM
+1 HUSB @I6@
+1 WIFE @I7@
+1 CHIL @I8@
+1 CHIL @I9@
+1 MARR
+2 DATE 1963
+0 TRLR
+`;
+
+    // ---------- GEDCOM PARSER ----------
+    function parseGedcom(text) {
+      const lines = text.split(/\r?\n/).filter(l => l.trim().length);
+      const indis = {}, fams = {};
+      let cur = null, curType = null, curSubtag = null;
+
+      for (const raw of lines) {
+        const m = raw.match(/^\s*(\d+)\s+(@\w+@)?\s*([A-Za-z0-9_]+)?\s*(.*)$/);
+        if (!m) continue;
+        const level = parseInt(m[1], 10);
+        const xref = m[2];
+        let tag = m[3] || '';
+        let value = m[4] || '';
+
+        if (level === 0 && xref && tag === 'INDI') {
+          cur = { id: xref, name: '', sex: 'U', birt: '', deat: '', famc: null, fams: [], note: '' };
+          indis[xref] = cur; curType = 'INDI'; curSubtag = null; continue;
+        }
+        if (level === 0 && xref && tag === 'FAM') {
+          cur = { id: xref, husb: null, wife: null, chil: [], marr: '' };
+          fams[xref] = cur; curType = 'FAM'; curSubtag = null; continue;
+        }
+        if (level === 0) { cur = null; curType = null; continue; }
+        if (!cur) continue;
+
+        if (curType === 'INDI') {
+          if (level === 1) {
+            curSubtag = tag;
+            if (tag === 'NAME') cur.name = value.replace(/\//g, '').trim();
+            else if (tag === 'SEX') cur.sex = value.trim();
+            else if (tag === 'FAMC') cur.famc = (xref || value).trim();
+            else if (tag === 'FAMS') cur.fams.push((xref || value).trim());
+            else if (tag === 'NOTE') cur.note = (cur.note ? cur.note + ' ' : '') + value.trim();
+          } else if (level === 2) {
+            if (tag === 'DATE') {
+              if (curSubtag === 'BIRT') cur.birt = value.trim();
+              else if (curSubtag === 'DEAT') cur.deat = value.trim();
+            }
+          }
+        } else if (curType === 'FAM') {
+          if (level === 1) {
+            curSubtag = tag;
+            if (tag === 'HUSB') cur.husb = (xref || value).trim();
+            else if (tag === 'WIFE') cur.wife = (xref || value).trim();
+            else if (tag === 'CHIL') cur.chil.push((xref || value).trim());
+          } else if (level === 2) {
+            if (tag === 'DATE' && curSubtag === 'MARR') cur.marr = value.trim();
+          }
+        }
+      }
+      return { indis, fams };
+    }
+
+    // ---------- BUILD HIERARCHY ----------
+    function buildHierarchy(indis, fams, rootId) {
+      const seen = new Set();
+      function nodeFor(id) {
+        const p = indis[id];
+        if (!p) return null;
+        const spouseNames = [];
+        let famAsSpouse = null;
+        for (const fid of p.fams) {
+          const f = fams[fid];
+          if (!f) continue;
+          const spouseId = f.husb === id ? f.wife : f.husb;
+          if (spouseId && indis[spouseId]) spouseNames.push(indis[spouseId].name);
+          famAsSpouse = f; // last one used for children
+        }
+        const node = {
+          id: p.id, name: p.name || '(unknown)', sex: p.sex, birt: p.birt, deat: p.deat,
+          note: p.note, spouse: spouseNames.join(', '), children: []
+        };
+        if (seen.has(id)) return node; // avoid infinite loops on odd data
+        seen.add(id);
+        if (famAsSpouse) {
+          for (const cid of famAsSpouse.chil) {
+            const c = nodeFor(cid);
+            if (c) node.children.push(c);
+          }
+        }
+        return node;
+      }
+      return nodeFor(rootId);
+    }
+
+    function findRootCandidates(indis) {
+      // people with no FAMC (no known parents) are natural tree roots
+      const withNoParents = Object.values(indis).filter(p => !p.famc);
+      return withNoParents.length ? withNoParents : Object.values(indis);
+    }
+
+    // ---------- D3 RENDER ----------
+    let svg, gRoot, zoomBehavior, currentRootData, treeLayout;
+    const width0 = 1200, height0 = 800;
+
+    function initSvg() {
+      d3.select('#tree-svg').selectAll('*').remove();
+      svg = d3.select('#tree-svg');
+      gRoot = svg.append('g');
+      zoomBehavior = d3.zoom().scaleExtent([0.15, 3]).on('zoom', (ev) => {
+        gRoot.attr('transform', ev.transform);
+      });
+      svg.call(zoomBehavior);
+    }
+
+    function renderTree(rootData) {
+      document.getElementById('empty-state').classList.add('hidden');
+      initSvg();
+      const root = d3.hierarchy(rootData);
+      root.x0 = height0 / 2; root.y0 = 0;
+      root.descendants().forEach(d => { d._children = null; });
+
+      treeLayout = d3.tree().nodeSize([54, 220]);
+
+      function collapse(d) {
+        if (d.children) { d._children = d.children; d._children.forEach(collapse); d.children = null; }
+      }
+      // start with first two generations expanded
+      root.children && root.children.forEach(c => { if (c.children) { c._children = c.children; c.children.forEach(collapse); } });
+
+      update(root, root);
+
+      function update(source, rootNode) {
+        treeLayout(rootNode);
+        const nodes = rootNode.descendants();
+        const links = rootNode.links();
+
+        const link = gRoot.selectAll('path.link').data(links, d => d.target.data.id);
+        link.exit().remove();
+        link.enter().append('path').attr('class', 'link')
+          .merge(link)
+          .attr('d', d3.linkHorizontal().x(d => d.y).y(d => d.x));
+
+        const node = gRoot.selectAll('g.node').data(nodes, d => d.data.id);
+        const nodeEnter = node.enter().append('g')
+          .attr('class', d => 'node ' + (d.data.sex === 'M' ? 'male' : d.data.sex === 'F' ? 'female' : 'unknown') + (d === rootNode ? ' root' : ''))
+          .attr('transform', d => `translate(${source.y0 || 0},${source.x0 || 0})`)
+          .on('click', (ev, d) => nodeClicked(d, rootNode));
+
+        nodeEnter.append('circle').attr('r', 7);
+        nodeEnter.append('text').attr('class', 'name').attr('dy', '-0.9em').attr('x', 12).text(d => d.data.name);
+        nodeEnter.append('text').attr('class', 'dates').attr('dy', '0.9em').attr('x', 12)
+          .text(d => [d.data.birt, d.data.deat].filter(Boolean).map((v, i) => i === 0 ? `b. ${v}` : `d. ${v}`).join('  '));
+
+        const nodeUpdate = nodeEnter.merge(node);
+        nodeUpdate.transition().duration(300).attr('transform', d => `translate(${d.y},${d.x})`);
+        nodeUpdate.select('circle').attr('r', d => d._children ? 8 : 6.5)
+          .attr('stroke-dasharray', d => d._children ? '2,1' : null);
+
+        node.exit().transition().duration(200)
+          .attr('transform', d => `translate(${source.y},${source.x})`).remove();
+
+        nodes.forEach(d => { d.x0 = d.x; d.y0 = d.y; });
+        window.__currentUpdate = () => update(rootNode, rootNode);
+        window.__currentRootNode = rootNode;
+      }
+
+      function nodeClicked(d, rootNode) {
+        if (d.children) { d._children = d.children; d.children = null; }
+        else if (d._children) { d.children = d._children; d._children = null; }
+        update(d, rootNode);
+        showPanel(d.data);
+      }
+
+      window.__setAll = (expand) => {
+        function walk(d) {
+          if (expand) { if (d._children) { d.children = d._children; d._children = null; } }
+          else { if (d.children) { d._children = d.children; d.children = null; } }
+          (d.children || d._children || []).forEach(walk);
+        }
+        walk(root);
+        update(root, root);
+      };
+
+      window.__searchName = (q) => {
+        q = q.trim().toLowerCase();
+        gRoot.selectAll('g.node').classed('dim', false).classed('match', false);
+        if (!q) return;
+        gRoot.selectAll('g.node')
+          .classed('dim', d => !d.data.name.toLowerCase().includes(q))
+          .classed('match', d => d.data.name.toLowerCase().includes(q));
+      };
+
+      // center on root
+      const initialTransform = d3.zoomIdentity.translate(140, height0 / 2).scale(0.85);
+      svg.call(zoomBehavior.transform, initialTransform);
+    }
+
+    function showPanel(d) {
+      document.getElementById('panel').classList.add('open');
+      document.getElementById('panel-name').textContent = d.name;
+      document.getElementById('panel-birth').innerHTML = d.birt ? `<b>Born</b> ${d.birt}` : '';
+      document.getElementById('panel-death').innerHTML = d.deat ? `<b>Died</b> ${d.deat}` : '';
+      document.getElementById('panel-spouse').innerHTML = d.spouse ? `<b>Spouse</b> ${d.spouse}` : '';
+      document.getElementById('panel-note').innerHTML = d.note ? `<b>Note</b> ${d.note}` : '';
+    }
+
+    // ---------- WIRING ----------
+    let parsedData = null;
+
+    function loadFromText(text) {
+      parsedData = parseGedcom(text);
+      const candidates = findRootCandidates(parsedData.indis);
+      const sel = document.getElementById('root-select');
+      sel.innerHTML = '';
+      candidates
+        .sort((a, b) => a.name.localeCompare(b.name))
+        .forEach(p => {
+          const opt = document.createElement('option');
+          opt.value = p.id; opt.textContent = p.name || p.id;
+          sel.appendChild(opt);
+        });
+      if (candidates.length) {
+        const rootData = buildHierarchy(parsedData.indis, parsedData.fams, candidates[0].id);
+        currentRootData = rootData;
+        renderTree(rootData);
+      }
+    }
+
+    async function loadDefaultGedcom() {
+      const emptyState = document.getElementById('empty-state');
+
+      try {
+        const response = await fetch(DEFAULT_GEDCOM_URL, { cache: "no-cache" });
+
+        if (!response.ok) {
+          throw new Error(`${response.status} ${response.statusText}`);
+        }
+
+        const text = await response.text();
+
+        if (!text.includes("0 HEAD") || !text.includes("0 TRLR")) {
+          throw new Error("Default GEDCOM file does not look like a valid GEDCOM file.");
+        }
+
+        loadFromText(text);
+      } catch (err) {
+        console.warn(`Could not auto-load ${DEFAULT_GEDCOM_URL}:`, err);
+
+        emptyState.classList.remove('hidden');
+        emptyState.querySelector('p').innerHTML = `
+      The default public tree file <code>${DEFAULT_GEDCOM_URL}</code> could not be loaded.
+      You can still open a local <code>.ged</code> file, or load the small sample.
+      This viewer never uploads your file anywhere &mdash; files are parsed entirely in your browser.
+    `;
+      }
+    }
+
+    document.getElementById('root-select').addEventListener('change', (e) => {
+      const rootData = buildHierarchy(parsedData.indis, parsedData.fams, e.target.value);
+      currentRootData = rootData;
+      renderTree(rootData);
+      document.getElementById('panel').classList.remove('open');
+    });
+
+    document.getElementById('search').addEventListener('input', (e) => {
+      if (window.__searchName) window.__searchName(e.target.value);
+    });
+
+    document.getElementById('expand-all').addEventListener('click', () => window.__setAll && window.__setAll(true));
+    document.getElementById('collapse-all').addEventListener('click', () => window.__setAll && window.__setAll(false));
+    document.getElementById('panel-close').addEventListener('click', () => document.getElementById('panel').classList.remove('open'));
+
+    function wireFileLoad(btnId) {
+      document.getElementById(btnId).addEventListener('click', () => document.getElementById('file-input').click());
+    }
+    wireFileLoad('load-file-btn');
+    wireFileLoad('empty-load-file');
+
+    document.getElementById('file-input').addEventListener('change', (e) => {
+      const file = e.target.files[0];
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = (ev) => loadFromText(ev.target.result);
+      reader.readAsText(file);
+    });
+
+    function wireSample(btnId) {
+      document.getElementById(btnId).addEventListener('click', () => loadFromText(SAMPLE_GEDCOM));
+    }
+    wireSample('load-sample');
+    wireSample('empty-load-sample');
+
+    loadDefaultGedcom();
+
+  </script>
+</body>
+
+</html>
