@@ -26,14 +26,14 @@
         <img src="favicon.ico" alt="Family Tree Icon" width="40" height="40" class="header-icon">
         <h1>
           Family Tree
-          <span class="sub">GEDCOM viewer - scroll, click to expand, highlight names</span>
+          <span class="sub">GEDCOM viewer:scroll, click to expand, highlight names</span>
         </h1>
       </div>
       <div class="controls">
         <select id="root-select" title="Choose starting ancestor"></select>
 
-        <button id="expand-all" title="Expand all" aria-label="Expand all">Expand</button>
-        <button class="ghost" id="collapse-all" title="Collapse all" aria-label="Collapse all">Collapse</button>
+        <button id="expand-all" title="Expand all" aria-label="Expand all">>> All</button>
+        <button class="ghost" id="collapse-all" title="Collapse all" aria-label="Collapse all"><< All</button>
         <button class="ghost" id="load-file-btn" title="Open .ged file" aria-label="Open .ged file">📂</button>
         <input type="text" id="search" title="Highlight names" placeholder="Highlight names...">
 
@@ -62,21 +62,23 @@
     </div>
     <div class="hint">Scroll/pinch to zoom | drag to pan | click node to expand/collapse</div>
     <footer class="site-footer">
-      <span>372 people | 8 generations</span>
+      <span>352 people | 123 families | 13 generations</span>
       <span>|</span>
-      <a href="https://github.com/genealogy-johnson" target="_blank" rel="noopener noreferrer">Org</a>
+      <a href="https://github.com/genealogy-clusiau" target="_blank" rel="noopener noreferrer">Org</a>
       <span>|</span>
-      <a href="https://github.com/genealogy-johnson/genealogy-tree" target="_blank" rel="noopener noreferrer">Repo</a>
+      <a href="https://github.com/genealogy-clusiau/genealogy-tree" target="_blank" rel="noopener noreferrer">Repo</a>
     </footer>
   </div>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
 
   <script>
     const DEFAULT_GEDCOM_URL = "../ged/data.ged";
-    const DEFAULT_ROOT_ID = "@P01I1@";
+    //const DEFAULT_ROOT_ID = "@P01I1@";
+    const DEFAULT_ROOT_ID = "@I18@";
 
     // ---------- GEDCOM PARSER ----------
+
     function parseGedcom(text) {
       const lines = text.split(/\r?\n/).filter(l => l.trim().length);
       const indis = {};
@@ -155,6 +157,7 @@
     }
 
     // ---------- BUILD HIERARCHY ----------
+
     function buildHierarchy(indis, fams, rootId) {
       const seen = new Set();
 
@@ -209,21 +212,28 @@
 
       return withNoParents.length ? withNoParents : Object.values(indis);
     }
+
     // ---------- D3 RENDER ----------
+
     let svg, gRoot, zoomBehavior, currentRootData, treeLayout;
+    let currentTransform = d3.zoomIdentity;
     const width0 = 1200, height0 = 800;
 
     function initSvg() {
       d3.select('#tree-svg').selectAll('*').remove();
       svg = d3.select('#tree-svg');
       gRoot = svg.append('g');
+      currentTransform = d3.zoomIdentity;
+
       zoomBehavior = d3.zoom().scaleExtent([0.15, 3]).on('zoom', (ev) => {
+        currentTransform = ev.transform;
         gRoot.attr('transform', ev.transform);
       });
+
       svg.call(zoomBehavior);
     }
 
-    function centerTree() {
+    function fitVisibleTree(options = {}) {
       if (!svg || !gRoot) return;
 
       const svgNode = svg.node();
@@ -236,25 +246,21 @@
 
       if (!svgBox.width || !svgBox.height || !treeBox.width || !treeBox.height) return;
 
-      const scale = Math.min(
-        1,
-        Math.max(
-          0.55,
-          Math.min(
-            svgBox.width / (treeBox.width + 80),
-            svgBox.height / (treeBox.height + 80)
-          )
-        )
+      const rootXFraction = options.rootXFraction ?? 0.10;
+      const minScale = options.minScale ?? 0.45;
+      const maxScale = options.maxScale ?? 1;
+
+      const fitScale = Math.min(
+        svgBox.width / (treeBox.width + 80),
+        svgBox.height / (treeBox.height + 80)
       );
 
-      // Put the opening/root node left-of-center.
-      // 0.10 = what fraction from left
-      const rootScreenX = svgBox.width * 0.10;
+      const scale = Math.min(maxScale, Math.max(minScale, fitScale));
 
-      // Root node is at local x/y around 0 after D3 horizontal layout.
-      const x = rootScreenX;
+      // Keep the root/opening dot near the left, not centered.
+      const x = svgBox.width * rootXFraction;
 
-      // Center the rendered tree vertically in the available SVG space.
+      // Center the visible tree vertically.
       const y = (svgBox.height - treeBox.height * scale) / 2 - treeBox.y * scale;
 
       svg
@@ -264,7 +270,98 @@
           zoomBehavior.transform,
           d3.zoomIdentity.translate(x, y).scale(scale)
         );
-    } function renderTree(rootData) {
+    }
+
+
+    function fitExpandedTree() {
+      if (!svg || !gRoot) return;
+
+      const svgNode = svg.node();
+      const gNode = gRoot.node();
+
+      if (!svgNode || !gNode) return;
+
+      const svgBox = svgNode.getBoundingClientRect();
+      const treeBox = gNode.getBBox();
+
+      if (!svgBox.width || !svgBox.height || !treeBox.width || !treeBox.height) return;
+
+      const fitScale = Math.min(
+        svgBox.width / (treeBox.width + 80),
+        svgBox.height / (treeBox.height + 80)
+      );
+
+      // Expanded-all should zoom out some, but not become microscopic.
+      const scale = Math.min(0.75, Math.max(0.32, fitScale));
+
+      // Keep the root/opening dot near the left.
+      const x = svgBox.width * 0.08;
+
+      // For a very tall expanded tree, do NOT center the whole tree vertically.
+      // Put the root/opening dot in the upper readable area.
+      const y = svgBox.height * 0.22;
+
+      svg
+        .transition()
+        .duration(250)
+        .call(
+          zoomBehavior.transform,
+          d3.zoomIdentity.translate(x, y).scale(scale)
+        );
+    }
+
+
+    function keepNodeInView(d) {
+      if (!svg || !d) return;
+
+      const svgNode = svg.node();
+      if (!svgNode) return;
+
+      const svgBox = svgNode.getBoundingClientRect();
+      if (!svgBox.width || !svgBox.height) return;
+
+      const padding = 80;
+      const k = currentTransform.k || 1;
+
+      const screenX = currentTransform.applyX(d.y);
+      const screenY = currentTransform.applyY(d.x);
+
+      let dx = 0;
+      let dy = 0;
+
+      if (screenX < padding) {
+        dx = padding - screenX;
+      } else if (screenX > svgBox.width - padding) {
+        dx = svgBox.width - padding - screenX;
+      }
+
+      if (screenY < padding) {
+        dy = padding - screenY;
+      } else if (screenY > svgBox.height - padding) {
+        dy = svgBox.height - padding - screenY;
+      }
+
+      if (dx === 0 && dy === 0) return;
+
+      svg
+        .transition()
+        .duration(250)
+        .call(
+          zoomBehavior.transform,
+          d3.zoomIdentity
+            .translate(currentTransform.x + dx, currentTransform.y + dy)
+            .scale(k)
+        );
+    }
+
+    function afterTreeUpdate(callback) {
+      window.setTimeout(() => {
+        requestAnimationFrame(callback);
+      }, window.__initialRenderDone ? 350 : 0);
+    }
+
+
+    function renderTree(rootData) {
       document.getElementById('empty-state').classList.add('hidden');
       initSvg();
       const root = d3.hierarchy(rootData);
@@ -284,7 +381,11 @@
       update(root, root);
 
       requestAnimationFrame(() => {
-        centerTree();
+        fitVisibleTree({
+          minScale: 0.55,
+          maxScale: 1,
+          rootXFraction: 0.10
+        });
         window.__initialRenderDone = true;
       });
 
@@ -329,18 +430,47 @@
       function nodeClicked(d, rootNode) {
         if (d.children) { d._children = d.children; d.children = null; }
         else if (d._children) { d.children = d._children; d._children = null; }
+
         update(d, rootNode);
+
+        afterTreeUpdate(() => {
+          keepNodeInView(d);
+        });
+
         showPanel(d.data);
       }
 
       window.__setAll = (expand) => {
         function walk(d) {
-          if (expand) { if (d._children) { d.children = d._children; d._children = null; } }
-          else { if (d.children) { d._children = d.children; d.children = null; } }
+          if (expand) {
+            if (d._children) {
+              d.children = d._children;
+              d._children = null;
+            }
+          } else {
+            if (d.children) {
+              d._children = d.children;
+              d.children = null;
+            }
+          }
+
           (d.children || d._children || []).forEach(walk);
         }
+
         walk(root);
         update(root, root);
+
+        afterTreeUpdate(() => {
+          if (expand) {
+            fitExpandedTree();
+          } else {
+            fitVisibleTree({
+              minScale: 0.70,
+              maxScale: 1,
+              rootXFraction: 0.10
+            });
+          }
+        });
       };
 
       window.__searchName = (q) => {
