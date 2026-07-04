@@ -26,23 +26,24 @@
         <img src="favicon.ico" alt="Family Tree Icon" width="40" height="40" class="header-icon">
         <h1>
           Family Tree
-          <span class="sub">GEDCOM viewer - scroll, click to expand, search a name</span>
+          <span class="sub">GEDCOM viewer - scroll, click to expand, highlight names</span>
         </h1>
       </div>
       <div class="controls">
-        <input type="text" id="search" placeholder="Search a name...">
         <select id="root-select" title="Choose starting ancestor"></select>
-        <button class="ghost" id="load-sample">Load sample</button>
-        <button class="ghost" id="load-file-btn">Open .ged file</button>
+
+        <button id="expand-all" title="Expand all" aria-label="Expand all">Expand</button>
+        <button class="ghost" id="collapse-all" title="Collapse all" aria-label="Collapse all">Collapse</button>
+        <button class="ghost" id="load-file-btn" title="Open .ged file" aria-label="Open .ged file">📂</button>
+        <input type="text" id="search" title="Highlight names" placeholder="Highlight names...">
+
         <input type="file" id="file-input" accept=".ged,.txt">
-        <button id="expand-all">Expand all</button>
-        <button class="ghost" id="collapse-all">Collapse all</button>
       </div>
     </header>
     <div id="main">
       <svg id="tree-svg"></svg>
       <div id="panel">
-        <button class="close" id="panel-close">&times;</button>
+        <button class="close" id="panel-close" aria-label="Close panel">&times;</button>
         <h2 id="panel-name"></h2>
         <div class="row" id="panel-birth"></div>
         <div class="row" id="panel-death"></div>
@@ -52,22 +53,20 @@
       <div id="empty-state">
         <h1 style="font-size:22px;">No tree loaded yet</h1>
         <p>Loading the public redacted tree from <code>ged/data.ged</code>.
-          You can also open a local <code>.ged</code> file, or load the small sample.
-          This viewer never uploads your file anywhere &mdash; files are parsed entirely in your browser.</p>
+          You can also open a local <code>.ged</code> file.
+          This viewer never uploads your file anywhere - files are parsed entirely in your browser.</p>
         <div class="controls" style="justify-content:center;">
-          <button id="empty-load-file">Open .ged file</button>
-          <button class="ghost" id="empty-load-sample">Load sample</button>
+          <button id="empty-load-file" title="Open .ged file" aria-label="Open .ged file">📂</button>
         </div>
       </div>
     </div>
-    <div class="hint">Scroll or pinch to zoom | drag to pan | click a node to expand/collapse and see
-      details</div>
+    <div class="hint">Scroll/pinch to zoom | drag to pan | click node to expand/collapse</div>
     <footer class="site-footer">
       <span>352 people | 123 families | 13 generations</span>
       <span>|</span>
-      <a href="https://github.com/genealogy-clusiau" target="_blank" rel="noopener noreferrer">Org</a>
+      <a href="https://github.com/genealogy-johnson" target="_blank" rel="noopener noreferrer">Org</a>
       <span>|</span>
-      <a href="https://github.com/genealogy-clusiau/genealogy-tree" target="_blank" rel="noopener noreferrer">Repo</a>
+      <a href="https://github.com/genealogy-johnson/genealogy-tree" target="_blank" rel="noopener noreferrer">Repo</a>
     </footer>
   </div>
 
@@ -76,90 +75,6 @@
   <script>
     const DEFAULT_GEDCOM_URL = "../ged/data.ged";
     const DEFAULT_ROOT_ID = "@P01I1@";
-    const SAMPLE_GEDCOM = `0 HEAD
-1 CHAR UTF-8
-0 @I1@ INDI
-1 NAME John /Smith/
-1 SEX M
-1 BIRT
-2 DATE 04 JUL 1889
-1 DEAT
-2 DATE 12 MAR 1965
-1 FAMS @F1@
-0 @I2@ INDI
-1 NAME Mary /Jones/
-1 SEX F
-1 BIRT
-2 DATE 1892
-1 FAMS @F1@
-0 @I3@ INDI
-1 NAME Robert /Smith/
-1 SEX M
-1 BIRT
-2 DATE 1915
-1 DEAT
-2 DATE 1988
-1 FAMC @F1@
-1 FAMS @F2@
-0 @I4@ INDI
-1 NAME Helen /Ray/
-1 SEX F
-1 BIRT
-2 DATE 1918
-1 FAMS @F2@
-0 @I5@ INDI
-1 NAME Dorothy /Smith/
-1 SEX F
-1 BIRT
-2 DATE 1917
-1 FAMC @F1@
-0 @I6@ INDI
-1 NAME Walter /Smith/
-1 SEX M
-1 BIRT
-2 DATE 1940
-1 FAMC @F2@
-1 FAMS @F3@
-0 @I7@ INDI
-1 NAME Susan /Miller/
-1 SEX F
-1 BIRT
-2 DATE 1942
-1 FAMS @F3@
-0 @I8@ INDI
-1 NAME Karen /Smith/
-1 SEX F
-1 BIRT
-2 DATE 1965
-1 FAMC @F3@
-0 @I9@ INDI
-1 NAME David /Smith/
-1 SEX M
-1 BIRT
-2 DATE 1968
-1 FAMC @F3@
-0 @F1@ FAM
-1 HUSB @I1@
-1 WIFE @I2@
-1 CHIL @I3@
-1 CHIL @I5@
-1 MARR
-2 DATE 20 JUN 1913
-0 @F2@ FAM
-1 HUSB @I3@
-1 WIFE @I4@
-1 CHIL @I6@
-1 MARR
-2 DATE 1939
-0 @F3@ FAM
-1 HUSB @I6@
-1 WIFE @I7@
-1 CHIL @I8@
-1 CHIL @I9@
-1 MARR
-2 DATE 1963
-0 TRLR
-`;
 
     // ---------- GEDCOM PARSER ----------
     function parseGedcom(text) {
@@ -308,7 +223,48 @@
       svg.call(zoomBehavior);
     }
 
-    function renderTree(rootData) {
+    function centerTree() {
+      if (!svg || !gRoot) return;
+
+      const svgNode = svg.node();
+      const gNode = gRoot.node();
+
+      if (!svgNode || !gNode) return;
+
+      const svgBox = svgNode.getBoundingClientRect();
+      const treeBox = gNode.getBBox();
+
+      if (!svgBox.width || !svgBox.height || !treeBox.width || !treeBox.height) return;
+
+      const scale = Math.min(
+        1,
+        Math.max(
+          0.55,
+          Math.min(
+            svgBox.width / (treeBox.width + 80),
+            svgBox.height / (treeBox.height + 80)
+          )
+        )
+      );
+
+      // Put the opening/root node left-of-center.
+      // 0.10 = what fraction from left
+      const rootScreenX = svgBox.width * 0.10;
+
+      // Root node is at local x/y around 0 after D3 horizontal layout.
+      const x = rootScreenX;
+
+      // Center the rendered tree vertically in the available SVG space.
+      const y = (svgBox.height - treeBox.height * scale) / 2 - treeBox.y * scale;
+
+      svg
+        .transition()
+        .duration(250)
+        .call(
+          zoomBehavior.transform,
+          d3.zoomIdentity.translate(x, y).scale(scale)
+        );
+    } function renderTree(rootData) {
       document.getElementById('empty-state').classList.add('hidden');
       initSvg();
       const root = d3.hierarchy(rootData);
@@ -323,7 +279,14 @@
       // start with first two generations expanded
       root.children && root.children.forEach(c => { if (c.children) { c._children = c.children; c.children.forEach(collapse); } });
 
+      window.__initialRenderDone = false;
+
       update(root, root);
+
+      requestAnimationFrame(() => {
+        centerTree();
+        window.__initialRenderDone = true;
+      });
 
       function update(source, rootNode) {
         treeLayout(rootNode);
@@ -388,11 +351,6 @@
           .classed('dim', d => !d.data.name.toLowerCase().includes(q))
           .classed('match', d => d.data.name.toLowerCase().includes(q));
       };
-
-      // center on root
-      const initialTransform = d3.zoomIdentity.translate(140, height0 / 2).scale(0.85);
-      svg.call(zoomBehavior.transform, initialTransform);
-      window.__initialRenderDone = true;
     }
 
     function showPanel(d) {
@@ -468,6 +426,10 @@
       }
     }
 
+    document.getElementById("load-file-btn").addEventListener("click", () => {
+      document.getElementById("file-input").click();
+    });
+
     document.getElementById('root-select').addEventListener('change', (e) => {
       const rootData = buildHierarchy(parsedData.indis, parsedData.fams, e.target.value);
       currentRootData = rootData;
@@ -496,12 +458,6 @@
       reader.onload = (ev) => loadFromText(ev.target.result);
       reader.readAsText(file);
     });
-
-    function wireSample(btnId) {
-      document.getElementById(btnId).addEventListener('click', () => loadFromText(SAMPLE_GEDCOM));
-    }
-    wireSample('load-sample');
-    wireSample('empty-load-sample');
 
     window.addEventListener("load", () => {
       window.setTimeout(loadDefaultGedcom, 100);

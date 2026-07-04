@@ -40,7 +40,7 @@ header {
   padding: 16px 24px 12px;
   border-bottom: 2px solid var(--mist-green);
   display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 10px 24px;
@@ -71,23 +71,23 @@ h1 .sub {
   min-width: 0;
 }
 
-.header-icon {
-  width: 40px;
-  height: 40px;
-  flex: 0 0 auto;
-}
-
 .brand h1 {
   margin: 0;
+  color: #111827;
+  font-size: 1.45rem;
+  font-weight: 800;
   line-height: 1.1;
+  letter-spacing: -0.01em;
 }
 
 .brand .sub {
   display: block;
-  font-size: 0.8rem;
-  font-weight: 400;
-  opacity: 0.8;
   margin-top: 0.2rem;
+  color: #374151;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: normal;
+  opacity: 1;
 }
 
 .header-icon {
@@ -99,10 +99,34 @@ h1 .sub {
 }
 
 .controls {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto auto auto minmax(12rem, 1fr);
+  gap: 0.45rem;
   align-items: center;
-  gap: 10px;
-  flex-wrap: wrap;
+  min-width: min(560px, 100%);
+}
+
+#root-select {
+  grid-column: 1 / -1;
+}
+
+#expand-all,
+#collapse-all,
+#load-file-btn {
+  white-space: nowrap;
+}
+
+#load-file-btn {
+  min-width: 2.75rem;
+}
+
+#search {
+  min-width: 0;
+  width: 100%;
+}
+
+#file-input {
+  display: none;
 }
 
 .controls input[type="text"],
@@ -145,6 +169,25 @@ button.ghost:hover {
   background: var(--mist-green);
   color: var(--ink);
   border-color: var(--green);
+}
+.controls input[type="text"],
+.controls select,
+.controls button {
+  height: 36px;
+  min-height: 36px;
+  line-height: 1;
+  box-sizing: border-box;
+}
+
+.controls input[type="text"],
+.controls select {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.controls button {
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 #main {
@@ -288,9 +331,6 @@ button.ghost:hover {
   font-size: 14px;
   line-height: 1.6;
 }
-#file-input {
-  display: none;
-}
 
 .hint {
   font-family: "IBM Plex Mono", monospace;
@@ -298,12 +338,6 @@ button.ghost:hover {
   color: var(--ink-soft);
   padding: 6px 24px 10px;
   border-top: 1px solid var(--mist-green);
-}
-
-.brand {
-  display: flex;
-  align-items: center;
-  gap: 0.9rem;
 }
 
 .site-logo {
@@ -367,22 +401,37 @@ button.ghost:hover {
 
   .controls {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 0.5rem;
+    grid-template-columns: auto auto auto minmax(0, 1fr);
+    gap: 0.4rem;
     width: 100%;
+    min-width: 0;
   }
 
-  .controls input,
-  .controls select,
-  .controls button {
-    width: 100%;
-    min-height: 42px;
-    font-size: 0.9rem;
-  }
-
-  #search,
   #root-select {
     grid-column: 1 / -1;
+  }
+
+  #search {
+    grid-column: auto;
+    min-width: 0;
+    width: 100%;
+  }
+
+  #expand-all,
+  #collapse-all,
+  #load-file-btn {
+    width: auto;
+    min-height: 42px;
+    font-size: 0.85rem;
+    white-space: nowrap;
+  }
+
+  .controls input[type="text"],
+  .controls select,
+  .controls button {
+    height: 42px;
+    min-height: 42px;
+    box-sizing: border-box;
   }
 
   #main {

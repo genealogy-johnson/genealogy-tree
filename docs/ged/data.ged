@@ -1,4441 +1,4109 @@
 0 HEAD
-1 SOUR FamilyGenealogyProject
+1 SOUR genealogy-builder
+2 NAME Genealogy Builder
+2 VERS 0.1.0
+1 FILE data.ged
 1 GEDC
 2 VERS 5.5.1
 2 FORM LINEAGE-LINKED
 1 CHAR UTF-8
-1 DATE 03 JUL 2026
-1 NOTE Transcribed directly from the photo images/p01.jpg ("Descendants of
-2 CONT Guillaume Cluseau", Page 1), cross-checked against ocr-raw/section-01.txt
-2 CONT only for character-level confirmation (accents, place-name spelling).
-2 CONT The photo shows clear indentation and generation numbers, so this
-2 CONT transcription is high-confidence except where noted below.
-2 CONT IDs are prefixed P01 so this section can be merged into the master
-2 CONT data.ged without colliding with other sections' IDs.
-
-
-0 @P01I1@ INDI
-1 NAME Guillaume /Cluseau/
-1 SEX M
-1 BIRT
-2 DATE Abt 1645
-2 PLAC Nontron, Périgueux, Périgord, France
-1 FAMS @P01F1@
-1 NOTE Source: images/p01.jpg, generation 1.
-
-0 @P01I2@ INDI
-1 NAME Jeanne /Moreau/
-1 SEX F
-1 BIRT
-2 DATE Abt 1647
-2 PLAC Nontron, Périgueux, Périgord, France
-1 FAMS @P01F1@
-1 NOTE Source: images/p01.jpg, generation 1 (spouse of Guillaume Cluseau).
-
-0 @P01I3@ INDI
-1 NAME Jean /Cluseau/
-1 SEX M
-1 BIRT
-2 DATE Abt 1663
-2 PLAC Nontron, Périgueux, Périgord, France
-1 CHR
-2 DATE Abt 1663
-2 PLAC Nontron, Périgueux, Périgord, France
-1 DEAT
-2 DATE 07 NOV 1733
-2 PLAC Québec, Québec, Québec, Canada
-1 BURI
-2 DATE 08 NOV 1733
-2 PLAC Québec, Québec, Québec, Canada
-1 FAMC @P01F1@
-1 FAMS @P01F2@
-1 NOTE Source: images/p01.jpg, generation 2.
-
-0 @P01I4@ INDI
-1 NAME Anne /Jamin/
-1 SEX F
-1 BIRT
-2 DATE 19 MAY 1675
-2 PLAC Québec, Québec, Québec, Canada
-1 CHR
-2 DATE 20 MAY 1675
-2 PLAC Québec, Québec, Québec, Canada
-1 DEAT
-2 DATE 30 OCT 1750
-2 PLAC Québec, Québec, Québec, Canada
-1 BURI
-2 DATE 31 OCT 1750
-2 PLAC Québec, Québec, Québec, Canada
-1 FAMS @P01F2@
-1 NOTE Source: images/p01.jpg, generation 2 (spouse of Jean Cluseau b.1663).
-
-0 @P01I5@ INDI
-1 NAME Jean /Cluseau/
-1 SEX M
-1 BIRT
-2 DATE 28 DEC 1694
-2 PLAC Québec, Québec, Québec, Canada
-1 CHR
-2 DATE 29 DEC 1694
-2 PLAC Québec, Québec, Québec, Canada
-1 DEAT
-2 DATE 24 APR 1754
-2 PLAC Québec, Québec, Québec, Canada
-1 BURI
-2 DATE 25 APR 1754
-2 PLAC Québec, Québec, Québec, Canada
-1 FAMC @P01F2@
-1 FAMS @P01F3@
-1 NOTE Source: images/p01.jpg, generation 3.
-
-0 @P01I6@ INDI
-1 NAME Catherine /Magnan/
-1 SEX F
-1 BIRT
-2 DATE 09 OCT 1720
-2 PLAC Neuville, Portneuf, Québec, Canada
-1 DEAT
-2 DATE 08 FEB 1758
-2 PLAC Québec, Québec, Québec, Canada
-1 FAMS @P01F3@
-1 NOTE Source: images/p01.jpg, generation 3 (spouse of Jean Cluseau b.1694).
-
-0 @P01I7@ INDI
-1 NAME François /Cluseau/
-1 SEX M
-1 BIRT
-2 DATE 04 SEP 1696
-2 PLAC Québec, Québec, Québec, Canada
-1 CHR
-2 DATE 05 SEP 1696
-2 PLAC Québec, Québec, Québec, Canada
-1 FAMC @P01F2@
-1 FAMS @P01F4@
-1 NOTE Source: images/p01.jpg, generation 3.
-
-0 @P01I8@ INDI
-1 NAME Françoise /Boisselle/
-1 SEX F
-1 BIRT
-2 DATE 10 DEC 1697
-2 PLAC Cap St-Ignace, Québec, Canada
-1 FAMS @P01F4@
-1 NOTE Source: images/p01.jpg, generation 3 (spouse of François Cluseau).
-
-0 @P01I9@ INDI
-1 NAME Pierre /Cluseau/
-1 SEX M
-1 BIRT
-2 DATE 07 DEC 1698
-2 PLAC Québec, Québec, Québec, Canada
-1 CHR
-2 DATE 07 DEC 1698
-2 PLAC Québec, Québec, Québec, Canada
-1 DEAT
-2 DATE 01 FEB 1761
-2 PLAC Montréal, Montréal, Québec, Canada
-1 FAMC @P01F2@
-1 FAMS @P01F5@
-1 FAMS @P01F6@
-1 NOTE Source: images/p01.jpg, generation 3. Two spouses listed, consistent
-2 CONT with first wife's death (1731) preceding the second marriage.
-
-0 @P01I10@ INDI
-1 NAME Marie-Josephe /Boisselle/
-1 SEX F
-1 BIRT
-2 DATE 01 SEP 1700
-1 DEAT
-2 DATE 29 JAN 1731
-1 FAMS @P01F5@
-1 NOTE Source: images/p01.jpg, generation 3 (first wife of Pierre Cluseau b.1698).
-
-0 @P01I11@ INDI
-1 NAME Marie /Pelletier/
-1 SEX F
-1 BIRT
-2 DATE 1706
-1 DEAT
-2 DATE 14 NOV 1755
-2 PLAC Berthierville, Berthier, Québec, Canada
-1 FAMS @P01F6@
-1 NOTE Source: images/p01.jpg, generation 3 (second wife of Pierre Cluseau b.1698).
-
-0 @P01I12@ INDI
-1 NAME Marie-Anne /Cluseau/
-1 SEX F
-1 BIRT
-2 DATE 10 JAN 1701
-2 PLAC Québec, Québec, Québec, Canada
-1 CHR
-2 DATE 11 JAN 1701
-2 PLAC Québec, Québec, Québec, Canada
-1 DEAT
-2 DATE 17 JUL 1701
-2 PLAC Québec, Québec, Québec, Canada
-1 BURI
-2 DATE 22 JUL 1701
-2 PLAC Québec, Québec, Québec, Canada
-1 FAMC @P01F2@
-1 NOTE Source: images/p01.jpg, generation 3. Died in infancy, no spouse.
-
-0 @P01I13@ INDI
-1 NAME Simon /Cluseau/
-1 SEX M
-1 BIRT
-2 DATE 07 JUN 1702
-2 PLAC Québec, Québec, Québec, Canada
-1 CHR
-2 DATE 09 JUN 1702
-2 PLAC Québec, Québec, Québec, Canada
-1 FAMC @P01F2@
-1 FAMS @P01F7@
-1 NOTE Source: images/p01.jpg, generation 3.
-
-0 @P01I14@ INDI
-1 NAME Madeleine /Vergeat/
-1 SEX F
-1 BIRT
-2 DATE 06 MAR 1706
-1 FAMS @P01F7@
-1 NOTE Source: images/p01.jpg, generation 3 (spouse of Simon Cluseau).
-2 CONT Confirmed by photo indentation directly under Simon's line - the
-2 CONT earlier OCR-only pass had this ambiguous, now resolved.
-
-0 @P01I15@ INDI
-1 NAME Jean-Etienne /Cluseau/
-1 SEX M
-1 BIRT
-2 DATE 01 SEP 1704
-2 PLAC Québec, Québec, Québec, Canada
-1 CHR
-2 DATE 02 SEP 1704
-2 PLAC Québec, Québec, Québec, Canada
-1 DEAT
-2 DATE 09 OCT 1774
-2 PLAC Montréal, Montréal, Québec, Canada
-1 BURI
-2 DATE 10 OCT 1774
-2 PLAC Montréal, Montréal, Québec, Canada
-1 FAMC @P01F2@
-1 FAMS @P01F8@
-1 NOTE Source: images/p01.jpg, generation 3.
-
-0 @P01I16@ INDI
-1 NAME Jeanne /Guertin/
-1 SEX F
-1 BIRT
-2 DATE 1717
-1 DEAT
-2 DATE 19 JUN 1792
-2 PLAC Montréal, Montréal, Québec, Canada
-1 FAMS @P01F8@
-1 NOTE Source: images/p01.jpg, generation 3 (spouse of Jean-Etienne Cluseau).
-
-0 @P01I17@ INDI
-1 NAME Louis /Cluseau/
-1 SEX M
-1 BIRT
-2 DATE 05 JUN 1706
-2 PLAC Québec, Québec, Québec, Canada
-1 CHR
-2 DATE 06 JUN 1706
-2 PLAC Québec, Québec, Québec, Canada
-1 FAMC @P01F2@
-1 FAMS @P01F9@
-1 NOTE Source: images/p01.jpg, generation 3.
-
-0 @P01I18@ INDI
-1 NAME Françoise /Bourgouin/
-1 SEX F
-1 BIRT
-2 DATE 29 APR 1709
-2 PLAC St-Nicolas, Lévis, Québec, Canada
-1 FAMS @P01F9@
-1 NOTE Source: images/p01.jpg, generation 3 (spouse of Louis Cluseau).
-
-0 @P01I19@ INDI
-1 NAME Charles /Cluseau/
-1 SEX M
-1 BIRT
-2 DATE 11 SEP 1708
-2 PLAC Québec, Québec, Québec, Canada
-1 CHR
-2 DATE 14 SEP 1708
-2 PLAC Québec, Québec, Québec, Canada
-1 DEAT
-2 DATE Abt 1757
-1 FAMC @P01F2@
-1 FAMS @P01F10@
-1 NOTE Source: images/p01.jpg, generation 3.
-
-0 @P01I20@ INDI
-1 NAME Thérèse /Magnan/
-1 SEX F
-1 BIRT
-2 DATE 09 JUN 1717
-2 PLAC Neuville, Portneuf, Québec, Canada
-1 CHR
-2 DATE 10 JUN 1717
-2 PLAC Neuville, Portneuf, Québec, Canada
-1 DEAT
-2 DATE 26 SEP 1777
-2 PLAC Québec, Québec, Québec, Canada
-1 BURI
-2 DATE 27 SEP 1777
-2 PLAC Québec, Québec, Québec, Canada
-1 FAMS @P01F10@
-1 NOTE Source: images/p01.jpg, generation 3 (spouse of Charles Cluseau b.1708).
-
-0 @P01I21@ INDI
-1 NAME Augustin /Cluseau/
-1 SEX M
-1 BIRT
-2 DATE 27 AUG 1738
-2 PLAC Québec, Québec, Québec, Canada
-1 CHR
-2 DATE 28 AUG 1738
-2 PLAC Québec, Québec, Québec, Canada
-1 FAMC @P01F10@
-1 FAMS @P01F11@
-1 NOTE Source: images/p01.jpg, generation 4.
-
-0 @P01I22@ INDI
-1 NAME Marguerite /Lucas/
-1 SEX F
-1 BIRT
-2 DATE Abt 1747
-2 PLAC Pisiguit, Hants, Nouvelle-Ecosse, Canada
-1 DEAT
-2 DATE 20 MAY 1787
-2 PLAC Lauzon, Lévis, Québec, Canada
-1 BURI
-2 DATE 21 MAY 1787
-2 PLAC Lauzon, Lévis, Québec, Canada
-1 FAMS @P01F11@
-1 NOTE Source: images/p01.jpg, generation 4 (spouse of Augustin Cluseau b.1738).
-
-0 @P01I23@ INDI
-1 NAME Marguerite /Cluseau/
-1 SEX F
-1 BIRT
-2 DATE 13 JUN 1765
-2 PLAC Québec, Québec, Québec, Canada
-1 CHR
-2 DATE 13 JUN 1765
-2 PLAC Québec, Québec, Québec, Canada
-1 FAMC @P01F11@
-1 NOTE Source: images/p01.jpg, generation 5.
-
-0 @P01I24@ INDI
-1 NAME Augustin /Cluseau/
-1 SEX M
-1 BIRT
-2 DATE 05 JUL 1767
-2 PLAC Québec, Québec, Québec, Canada
-1 CHR
-2 DATE 05 JUL 1767
-2 PLAC Québec, Québec, Québec, Canada
-1 DEAT
-2 DATE 30 MAY 1769
-2 PLAC Québec, Québec, Québec, Canada
-1 BURI
-2 DATE 31 MAY 1769
-2 PLAC Québec, Québec, Québec, Canada
-1 FAMC @P01F11@
-1 FAMS @P01F12@
-1 NOTE Source: images/p01.jpg, generation 5. Died in infancy (age ~2).
-2 CONT LIKELY SOURCE-DOCUMENT ERROR, not a transcription issue: the photo
-2 CONT prints "+Louise Bérard" directly under this entry, i.e. as this
-2 CONT infant's spouse, which is not biologically possible. A second son
-2 CONT also named Augustin Cluseau appears five lines later (b. 9 Feb 1772,
-2 CONT @P01I26@) with no spouse line of his own - Louise Bérard more likely
-2 CONT belongs to him, and this looks like a duplicate-name mixup in
-2 CONT whatever software or clerk produced this report. Recorded here exactly
-2 CONT as printed rather than silently reassigned. Resolving this requires
-2 CONT an actual marriage record, not better transcription - flagging for
-2 CONT your research rather than guessing further.
-
-0 @P01I25@ INDI
-1 NAME Living /Bérard/
-1 SEX F
-1 FAMS @P01F12@
-1 NOTE Source: images/p01.jpg, generation 5. See note on @P01I24@ - this
-2 CONT pairing is almost certainly a source-document error, not confirmed
-2 CONT here as fact. No birth/death date given in the source for her.
-
-0 @P01I26@ INDI
-1 NAME Augustin /Cluseau/
-1 SEX M
-1 BIRT
-2 DATE 09 FEB 1772
-2 PLAC St-Charles, Bellechasse, Québec, Canada
-1 CHR
-2 DATE 09 FEB 1772
-2 PLAC St-Charles, Bellechasse, Québec, Canada
-1 FAMC @P01F11@
-1 NOTE Source: images/p01.jpg, generation 5. Second child named Augustin in
-2 CONT this family (first died in infancy 1769, @P01I24@) - common period
-2 CONT practice of reusing a name after an earlier child's death. No spouse
-2 CONT line printed under this entry in the source; see note on @P01I24@
-2 CONT regarding Louise Bérard.
-
-0 @P01I27@ INDI
-1 NAME Marie /Cluseau/
-1 SEX F
-1 BIRT
-2 DATE 09 FEB 1772
-2 PLAC St-Charles, Bellechasse, Québec, Canada
-1 CHR
-2 DATE 09 FEB 1772
-2 PLAC St-Charles, Bellechasse, Québec, Canada
-1 FAMC @P01F11@
-1 NOTE Source: images/p01.jpg, generation 5. Same birth date and place as
-2 CONT Augustin Cluseau b.1772 (@P01I26@) - likely twins, though the source
-2 CONT does not use the word "twin" explicitly.
-
-0 @P01I28@ INDI
-1 NAME Pierre /Cluseau/
-1 SEX M
-1 BIRT
-2 DATE 03 APR 1776
-2 PLAC Lauzon, Lévis, Québec, Canada
-1 CHR
-2 DATE 03 APR 1776
-2 PLAC Lauzon, Lévis, Québec, Canada
-1 DEAT
-2 DATE Abt 1820
-1 FAMC @P01F11@
-1 FAMS @P01F13@
-1 NOTE Source: images/p01.jpg, generation 5. No burial date given for him
-2 CONT in the source - confirmed by photo that "bur. 11 Mar 1841" belongs
-2 CONT to his wife Charlotte Huot (@P01I29@), not to him.
-
-0 @P01I29@ INDI
-1 NAME Charlotte /Huot/
-1 SEX F
-1 BIRT
-2 DATE 30 APR 1785
-2 PLAC Québec, Québec, Québec, Canada
-1 CHR
-2 DATE 30 APR 1785
-2 PLAC Québec, Québec, Québec, Canada
-1 DEAT
-2 DATE 08 MAR 1841
-2 PLAC Québec, Québec, Québec, Canada
-1 BURI
-2 DATE 11 MAR 1841
-2 PLAC Québec, Québec, Québec, Canada
-1 FAMS @P01F13@
-1 NOTE Source: images/p01.jpg, generation 6 (spouse of Pierre Cluseau b.1776).
-2 CONT Confirmed by photo.
-
-0 @P01I30@ INDI
-1 NAME Pierre /Cluseau/
-1 SEX M
-1 BIRT
-2 DATE 05 SEP 1803
-2 PLAC Québec, Québec, Québec, Canada
-1 CHR
-2 DATE 05 SEP 1803
-2 PLAC Québec, Québec, Québec, Canada
-1 DEAT
-2 DATE 02 MAR 1806
-2 PLAC Québec, Québec, Québec, Canada
-1 BURI
-2 DATE 03 MAR 1806
-2 PLAC Québec, Québec, Québec, Canada
-1 FAMC @P01F13@
-1 NOTE Source: images/p01.jpg, generation 6. Died in infancy, no spouse.
-
-0 @P01I31@ INDI
-1 NAME Charles /Cluseau/
-1 SEX M
-1 BIRT
-2 DATE 06 NOV 1804
-2 PLAC Québec, Québec, Québec, Canada
-1 CHR
-2 DATE 06 NOV 1804
-2 PLAC Québec, Québec, Québec, Canada
-1 DEAT
-2 DATE 12 SEP 1879
-2 PLAC Masham, Gatineau, Québec, Canada
-1 BURI
-2 DATE 14 SEP 1879
-2 PLAC Masham, Gatineau, Québec, Canada
-1 FAMC @P01F13@
-1 FAMS @P01F14@
-1 NOTE Source: images/p01.jpg, generation 6.
-
-0 @P01I32@ INDI
-1 NAME Hortense /Dazé/
-1 SEX F
-1 BIRT
-2 DATE 08 OCT 1823
-2 PLAC Laval, Montréal, Québec, Canada
-1 CHR
-2 DATE 08 OCT 1823
-2 PLAC Laval, Montréal, Québec, Canada
-1 DEAT
-2 DATE 13 NOV 1902
-2 PLAC Bonfield, Nipissing, Ontario, Canada
-1 BURI
-2 DATE 15 NOV 1902
-2 PLAC Bonfield, Nipissing, Ontario, Canada
-1 FAMS @P01F14@
-1 NOTE Source: images/p01.jpg, generation 6 (spouse of Charles Cluseau b.1804).
-2 CONT Both OCR passes cut off or garbled her burial date; the photo gives it
-2 CONT in full.
-
-0 @P01I33@ INDI
-1 NAME Marie Louise /Cluseau/
-1 SEX F
-1 BIRT
-2 DATE 08 OCT 1844
-2 PLAC Ottawa, Carleton, Ontario, Canada
-1 CHR
-2 DATE 09 OCT 1844
-2 PLAC Ottawa, Carleton, Ontario, Canada
-1 FAMC @P01F14@
-1 NOTE Source: images/p01.jpg, generation 7. Confirmed as a child (printed
-2 CONT "7-", not "+") - the second OCR pass had misread this as a spouse
-2 CONT prefix; the photo resolves it.
-
-0 @P01I34@ INDI
-1 NAME Eloise /Cluseau/
-1 SEX F
-1 BIRT
-2 DATE Abt 1845
-1 DEAT
-2 DATE 02 AUG 1916
-2 PLAC Masham, Gatineau, Québec, Canada
-1 BURI
-2 DATE 04 AUG 1916
-2 PLAC Masham, Gatineau, Québec, Canada
-1 FAMC @P01F14@
-1 FAMS @P02F1@
-1 NOTE Source: images/p01.jpg and images/p02.jpg, generation 7. Only her
-2 CONT name was visible in p01.jpg (cropped at the page bottom); full data
-2 CONT confirmed from p02.jpg, which repeats this entry at the top of the
-2 CONT next photographed section. Spouse and continuing descendants are in
-2 CONT p02.ged (prefixed P02).
-
-0 @P01F1@ FAM
-1 HUSB @P01I1@
-1 WIFE @P01I2@
-1 CHIL @P01I3@
-
-0 @P01F2@ FAM
-1 HUSB @P01I3@
-1 WIFE @P01I4@
-1 CHIL @P01I5@
-1 CHIL @P01I7@
-1 CHIL @P01I9@
-1 CHIL @P01I12@
-1 CHIL @P01I13@
-1 CHIL @P01I15@
-1 CHIL @P01I17@
-1 CHIL @P01I19@
-
-0 @P01F3@ FAM
-1 HUSB @P01I5@
-1 WIFE @P01I6@
-
-0 @P01F4@ FAM
-1 HUSB @P01I7@
-1 WIFE @P01I8@
-
-0 @P01F5@ FAM
-1 HUSB @P01I9@
-1 WIFE @P01I10@
-
-0 @P01F6@ FAM
-1 HUSB @P01I9@
-1 WIFE @P01I11@
-
-0 @P01F7@ FAM
-1 HUSB @P01I13@
-1 WIFE @P01I14@
-
-0 @P01F8@ FAM
-1 HUSB @P01I15@
-1 WIFE @P01I16@
-
-0 @P01F9@ FAM
-1 HUSB @P01I17@
-1 WIFE @P01I18@
-
-0 @P01F10@ FAM
-1 HUSB @P01I19@
-1 WIFE @P01I20@
-1 CHIL @P01I21@
-1 CHIL @P10I23@
-1 CHIL @P10I24@
-1 NOTE @P10I23@ (Jeanne) and @P10I24@ (Josephe) defined in p10.ged.
-2 CONT Three children total.
-
-0 @P01F11@ FAM
-1 HUSB @P01I21@
-1 WIFE @P01I22@
-1 CHIL @P01I23@
-1 CHIL @P01I24@
-1 CHIL @P01I26@
-1 CHIL @P01I27@
-1 CHIL @P01I28@
-1 CHIL @P10I19@
-1 CHIL @P10I20@
-1 CHIL @P10I21@
-1 CHIL @P10I22@
-1 NOTE @P10I19@ (Etienne), @P10I20@ (Laurent), @P10I21@ (a second
-2 CONT Marguerite - the first, @P01I23@, is not stated as deceased, just
-2 CONT a reused name), and @P10I22@ (Charles) defined in p10.ged. Nine
-2 CONT children total.
-
-0 @P01F12@ FAM
-1 HUSB @P01I24@
-1 WIFE @P01I25@
-1 NOTE LIKELY SOURCE-DOCUMENT ERROR - see note on @P01I24@. Recorded as
-2 CONT printed, not confirmed as accurate.
-
-0 @P01F13@ FAM
-1 HUSB @P01I28@
-1 WIFE @P01I29@
-1 CHIL @P01I30@
-1 CHIL @P01I31@
-1 CHIL @P10I13@
-1 CHIL @P10I14@
-1 CHIL @P10I15@
-1 CHIL @P10I16@
-1 CHIL @P10I18@
-1 NOTE @P10I13@ through @P10I18@ (a second Pierre - the first died in
-2 CONT infancy - plus Charlotte, Marie Ursule, François-Xavier, and
-2 CONT Scolastique Cluseau) defined in p10.ged. Seven children total.
-
-0 @P01F14@ FAM
-1 HUSB @P01I31@
-1 WIFE @P01I32@
-1 CHIL @P01I33@
-1 CHIL @P01I34@
-1 CHIL @P02I2@
-1 CHIL @P09I21@
-1 CHIL @P09I23@
-1 CHIL @P10I2@
-1 CHIL @P10I3@
-1 CHIL @P10I5@
-1 CHIL @P10I6@
-1 CHIL @P10I7@
-1 CHIL @P10I8@
-1 CHIL @P10I9@
-1 CHIL @P10I11@
-1 NOTE @P02I2@ (Charles Clusiau, b.1847) defined in p02.ged. This CHIL
-2 CONT link was missed when p02.ged was first built and added
-2 CONT retroactively - same class of gap as the one caught on @P02F5@.
-2 CONT @P09I21@ (Anne) and @P09I23@ (Joseph) Cluseau defined in p09.ged.
-2 CONT @P10I2@ (Alexis), @P10I3@ (Héli), @P10I5@ (Hortense), @P10I6@
-2 CONT (Rosalie), @P10I7@ (Léa), @P10I8@ (Elisa), @P10I9@ (Marie), and
-2 CONT @P10I11@ (Olivine) Cluseau defined in p10.ged - thirteen children
-2 CONT total, discovered only after Charles Clusiau's entire descendant
-2 CONT subtree (everything in p02.ged through p09.ged) finally finished
-2 CONT and the report worked back up through his own siblings.
-
-0 @P02I1@ INDI
-1 NAME Edouard /Philippe/
-1 SEX M
-1 BIRT
-2 DATE 01 JAN 1842
-2 PLAC Kettle Island, Québec, Canada
-1 CHR
-2 DATE 01 FEB 1842
-2 PLAC Aylmer, Gatineau, Québec, Canada
-1 DEAT
-2 DATE 17 JAN 1922
-2 PLAC Masham, Gatineau, Québec, Canada
-1 BURI
-2 DATE 19 JAN 1922
-2 PLAC Masham, Gatineau, Québec, Canada
-1 FAMS @P02F1@
-1 NOTE Source: images/p02.jpg, generation 7 (spouse of Eloise Cluseau, @P01I34@).
-
-0 @P02I2@ INDI
-1 NAME Charles /Clusiau/
-1 SEX M
-1 BIRT
-2 DATE 17 MAY 1847
-2 PLAC Masham, Gatineau, Québec, Canada
-1 CHR
-2 DATE 22 JUN 1847
-2 PLAC Pointe-Gatineau, Gatineau, Québec, Canada
-1 DEAT
-2 DATE 11 NOV 1909
-2 PLAC Masham, Gatineau, Québec, Canada
-1 BURI
-2 DATE 15 NOV 1909
-2 PLAC Masham, Gatineau, Québec, Canada
-1 FAMC @P01F14@
-1 FAMS @P02F2@
-1 NOTE Source: images/p02.jpg, generation 7 (sibling of Marie Louise and
-2 CONT Eloise Cluseau). Surname printed as "Clusiau" here, not "Cluseau" -
-2 CONT preserved exactly as printed. This is the first individual on this
-2 CONT branch with the "Clusiau" spelling.
-
-0 @P02I3@ INDI
-1 NAME Julie /Philippe/
-1 SEX F
-1 BIRT
-2 DATE 13 DEC 1858
-2 PLAC Masham, Gatineau, Québec, Canada
-1 CHR
-2 DATE 25 DEC 1858
-2 PLAC Masham, Gatineau, Québec, Canada
-1 DEAT
-2 DATE 04 FEB 1930
-2 PLAC Ottawa, Carleton, Ontario, Canada
-1 BURI
-2 DATE 07 FEB 1930
-2 PLAC Masham, Gatineau, Québec, Canada
-1 FAMS @P02F2@
-1 NOTE Source: images/p02.jpg, generation 7 (spouse of Charles Clusiau b.1847).
-
-0 @P02I4@ INDI
-1 NAME Mélina /Clusiau/
-1 SEX F
-1 BIRT
-2 DATE 06 AUG 1875
-2 PLAC Masham, Gatineau, Québec, Canada
-1 CHR
-2 DATE 08 AUG 1875
-2 PLAC Masham, Gatineau, Québec, Canada
-1 DEAT
-2 DATE 08 NOV 1944
-2 PLAC Ottawa, Carleton, Ontario, Canada
-1 FAMC @P02F2@
-1 FAMS @P02F3@
-1 FAMS @P02F4@
-1 NOTE Source: images/p02.jpg, generation 8. Two spouses listed.
-
-0 @P02I5@ INDI
-1 NAME Alfred /Langevin/
-1 SEX M
-1 BIRT
-2 DATE 14 JAN 1876
-2 PLAC Grenville, Québec, Canada
-1 CHR
-2 DATE 02 FEB 1876
-2 PLAC Grenville, Québec, Canada
-1 DEAT
-2 DATE 20 JUL 1919
-2 PLAC Ottawa, Carleton, Ontario, Canada
-1 BURI
-2 DATE 23 JUL 1919
-2 PLAC Ottawa, Carleton, Ontario, Canada
-1 FAMS @P02F3@
-1 NOTE Source: images/p02.jpg, generation 8 (first husband of Mélina Clusiau).
-
-0 @P02I6@ INDI
-1 NAME Edmond /Genest/
-1 SEX M
-1 BIRT
-2 DATE 1872
-1 DEAT
-2 DATE 1944
-2 PLAC Ottawa, Carleton, Ontario, Canada
-1 FAMS @P02F4@
-1 NOTE Source: images/p02.jpg, generation 8 (second husband of Mélina Clusiau).
-
-0 @P02I7@ INDI
-1 NAME Marie /Cluseau/
-1 SEX F
-1 BIRT
-2 DATE 01 OCT 1916
-2 PLAC Bonfield, Nipissing, Ontario, Canada
-1 CHR
-2 DATE 08 OCT 1916
-2 PLAC Bonfield, Nipissing, Ontario, Canada
-1 DEAT
-2 DATE 2010
-2 PLAC Ottawa, Carleton, Ontario, Canada
-1 BURI
-2 DATE 2010
-2 PLAC Ottawa, Carleton, Ontario, Canada
-1 FAMC @P05F3@
-1 NOTE Source: images/p02.jpg, generation 9. Surname printed as "Cluseau"
-2 CONT here, reverting from her father's line's "Clusiau" spelling -
-2 CONT preserved exactly as printed, not normalized.
-2 CONT CORRECTED (via p05.jpg): originally attached here as a child of
-2 CONT Mélina Clusiau and her second husband Edmond Genest (@P02F4@), per
-2 CONT p02.jpg's own placement, with a flagged date tension (her birth
-2 CONT predated Mélina's first husband's death). p05.jpg shows this exact
-2 CONT individual - identical birth/death dates and places, not a
-2 CONT different person - as a child of Théophile Eméry Clusiau and
-2 CONT Mathilde Lapointe instead (@P05F3@ in p05.ged), whose death (23 Jun
-2 CONT 1918) fits cleanly after this birth with no conflict. Moved rather
-2 CONT than duplicated. The original @P02F4@ note about this date tension
-2 CONT is now resolved, not still open.
-
-0 @P02I8@ INDI
-1 NAME Hercule /Clusiau/
-1 SEX M
-1 BIRT
-2 DATE MAY 1876
-1 FAMC @P02F2@
-1 NOTE Source: images/p02.jpg, generation 8. No other data printed for him.
-
-0 @P02I9@ INDI
-1 NAME Charles Arthur /Clusiau/
-1 SEX M
-1 BIRT
-2 DATE 24 APR 1877
-2 PLAC Masham, Gatineau, Québec, Canada
-1 CHR
-2 DATE 24 APR 1877
-2 PLAC Masham, Gatineau, Québec, Canada
-1 DEAT
-2 DATE 04 MAR 1971
-2 PLAC Grand Rapids, Itasca, Minnesota, U.S.A.
-1 FAMC @P02F2@
-1 FAMS @P02F5@
-1 NOTE Source: images/p02.jpg, generation 8. First of this line to emigrate
-2 CONT to the U.S. (Minnesota).
-
-0 @P02I10@ INDI
-1 NAME Ellen /Gannon/
-1 SEX F
-1 BIRT
-2 DATE 07 JUL 1888
-2 PLAC Virginia, Minnesota, U.S.A.
-1 DEAT
-2 DATE 15 APR 1970
-2 PLAC Grand Rapids, Itasca, Minnesota, U.S.A.
-1 FAMS @P02F5@
-1 NOTE Source: images/p02.jpg, generation 8 (spouse of Charles Arthur Clusiau).
-
-0 @P02I11@ INDI
-1 NAME Iris Genevieve /Clusiau/
-1 SEX F
-1 BIRT
-2 DATE 01 AUG 1908
-2 PLAC Cohasset, Minnesota, U.S.A.
-1 DEAT
-2 DATE 10 MAY 1987
-2 PLAC Hibbing, Itasca, Minnesota, U.S.A.
-1 FAMC @P02F5@
-1 FAMS @P02F6@
-1 NOTE Source: images/p02.jpg, generation 9.
-
-0 @P02I12@ INDI
-1 NAME Thomas Anthony /Mehelich/
-1 SEX M
-1 BIRT
-2 DATE 04 AUG 1906
-2 PLAC Hibbing, Itasca, Minnesota, U.S.A.
-1 DEAT
-2 DATE 20 MAY 1972
-2 PLAC Minnesota, U.S.A.
-1 FAMS @P02F6@
-1 NOTE Source: images/p02.jpg, generation 9 (spouse of Iris Genevieve
-2 CONT Clusiau). Source prints his death place as blank city/county fields
-2 CONT before "Minnesota, U.S.A." (literally ",,, Minnesota, U.S.A." in the
-2 CONT OCR) - recorded here as just "Minnesota, U.S.A." since the specific
-2 CONT city/county wasn't filled in on the original report.
-
-0 @P02I13@ INDI
-1 NAME Living /Mehelich/
-1 SEX M
-1 FAMC @P02F6@
-1 FAMS @P02F7@
-1 NOTE Source: images/p02.jpg, generation 10.
-
-0 @P02I14@ INDI
-1 NAME Living /Vukelich/
-1 SEX F
-1 FAMS @P02F7@
-1 NOTE Source: images/p02.jpg, generation 10 (spouse of Tom Mehelich). No
-2 CONT birth/death date printed.
-
-0 @P02I15@ INDI
-1 NAME Michael /Mehelich/
-1 SEX M
-1 BIRT
-2 DATE 1962
-1 DEAT
-2 DATE 1996
-1 FAMC @P02F7@
-1 NOTE Source: images/p02.jpg, generation 11.
-
-0 @P02I16@ INDI
-1 NAME Living /Mehelich/
-1 SEX F
-1 FAMC @P02F7@
-1 FAMS @P02F8@
-1 NOTE Source: images/p02.jpg, generation 11.
-
-0 @P02I17@ INDI
-1 NAME Living /Carroll/
-1 SEX M
-1 FAMS @P02F8@
-1 NOTE Source: images/p02.jpg, generation 11 (spouse of Mary Jo Mehelich).
-
-0 @P02I18@ INDI
-1 NAME Living /Carroll/
-1 SEX F
-1 FAMC @P02F8@
-1 NOTE Source: images/p02.jpg, generation 12. Likely a living person - see
-2 CONT privacy note in file header.
-
-0 @P02I19@ INDI
-1 NAME Living /Carroll/
-1 SEX F
-1 FAMC @P02F8@
-1 NOTE Source: images/p02.jpg, generation 12. Likely a living person - see
-2 CONT privacy note in file header.
-
-0 @P02I20@ INDI
-1 NAME Living /Mehelich/
-1 SEX F
-1 FAMC @P02F6@
-1 FAMS @P02F9@
-1 NOTE Source: images/p02.jpg, generation 10.
-
-0 @P02I21@ INDI
-1 NAME Living /Wolff/
-1 SEX M
-1 FAMS @P02F9@
-1 NOTE Source: images/p02.jpg, generation 10 (spouse of Jody Mehelich). No
-2 CONT children printed under this union.
-
-0 @P02I22@ INDI
-1 NAME Bill /Mehelich/
-1 SEX M
-1 BIRT
-2 DATE 16 SEP 1943
-1 DEAT
-2 DATE 1999
-1 FAMC @P02F6@
-1 FAMS @P02F10@
-1 NOTE Source: images/p02.jpg, generation 10.
-
-0 @P02I23@ INDI
-1 NAME Living /Stunick/
-1 SEX F
-1 FAMS @P02F10@
-1 NOTE Source: images/p02.jpg, generation 10 (spouse of Bill Mehelich). No
-2 CONT birth/death date printed.
-
-0 @P02I24@ INDI
-1 NAME Living /Mehelich/
-1 SEX F
-1 FAMC @P02F10@
-1 FAMS @P02F11@
-1 NOTE Source: images/p02.jpg, generation 11. Likely a living person - see
-2 CONT privacy note in file header.
-
-0 @P02I25@ INDI
-1 NAME Living /Munger/
-1 SEX M
-1 FAMS @P02F11@
-1 NOTE Source: images/p02.jpg, generation 11 (spouse of Kelly Jean Mehelich).
-2 CONT No birth/death date printed. Likely a living person.
-
-0 @P02I26@ INDI
-1 NAME Living /Munger/
-1 SEX M
-1 FAMC @P02F11@
-1 NOTE Source: images/p02.jpg, generation 12. No birth/death date printed.
-2 CONT Likely a living person - see privacy note in file header.
-
-0 @P02I27@ INDI
-1 NAME Living /Munger/
-1 SEX F
-1 FAMC @P02F11@
-1 NOTE Source: images/p02.jpg, generation 12. No birth/death date printed.
-2 CONT Likely a living person - see privacy note in file header.
-
-0 @P02I28@ INDI
-1 NAME Living /Mehelich/
-1 SEX F
-1 FAMC @P02F10@
-1 NOTE Source: images/p02.jpg, generation 11. No spouse/children printed.
-2 CONT Likely a living person - see privacy note in file header.
-
-0 @P02I29@ INDI
-1 NAME Living /Mehelich/
-1 SEX M
-1 FAMC @P02F10@
-1 FAMS @P02F12@
-1 NOTE Source: images/p02.jpg, generation 11. Likely a living person - see
-2 CONT privacy note in file header.
-
-0 @P02I30@ INDI
-1 NAME Living //
-1 SEX F
-1 FAMS @P02F12@
-1 NOTE Source: images/p02.jpg, generation 11 (spouse of David Mehelich). No
-2 CONT surname, birth, or death date printed - recorded exactly as sparse as
-2 CONT the source has it. Likely a living person.
-
-0 @P02I31@ INDI
-1 NAME Living /Mehelich/
-1 SEX M
-1 FAMC @P02F12@
-1 NOTE Source: images/p02.jpg, generation 12. Likely a living person - see
-2 CONT privacy note in file header.
-
-0 @P02I32@ INDI
-1 NAME Living /Mehelich/
-1 SEX F
-1 FAMC @P02F6@
-1 FAMS @P02F13@
-1 NOTE Source: images/p02.jpg, generation 10.
-
-0 @P02I33@ INDI
-1 NAME Living /Specht/
-1 SEX M
-1 FAMS @P02F13@
-1 NOTE Source: images/p02.jpg, generation 10 (spouse of Jeannie Mehelich).
-
-0 @P02I34@ INDI
-1 NAME Living /Specht/
-1 SEX M
-1 FAMC @P02F13@
-1 FAMS @P02F14@
-1 NOTE Source: images/p02.jpg, generation 11. Likely a living person - see
-2 CONT privacy note in file header.
-
-0 @P02I35@ INDI
-1 NAME Living /Bautista/
-1 SEX F
-1 FAMS @P02F14@
-1 NOTE Source: images/p02.jpg, generation 11 (spouse of Jason Thomas
-2 CONT Specht). Likely a living person.
-
-0 @P02I36@ INDI
-1 NAME Living /Specht/
-1 SEX M
-1 FAMC @P02F14@
-1 NOTE Source: images/p03.jpg, generation 12. Completed from p03.jpg - only
-2 CONT the name was visible when p02.jpg was cropped at the page bottom.
-2 CONT Likely a living person - see privacy note in file header.
-
-0 @P02F1@ FAM
-1 HUSB @P02I1@
-1 WIFE @P01I34@
-1 NOTE No children printed under this union in the source.
-
-0 @P02F2@ FAM
-1 HUSB @P02I2@
-1 WIFE @P02I3@
-1 CHIL @P02I4@
-1 CHIL @P02I8@
-1 CHIL @P02I9@
-1 CHIL @P05I12@
-1 CHIL @P05I14@
-1 CHIL @P06I23@
-1 CHIL @P08I22@
-1 CHIL @P08I26@
-1 CHIL @P09I1@
-1 CHIL @P09I2@
-1 CHIL @P09I3@
-1 CHIL @P09I4@
-1 CHIL @P09I8@
-1 NOTE @P05I12@ (Théophile Eméry Clusiau) and @P05I14@ (Alexis Clusiau)
-2 CONT defined in p05.ged; @P06I23@ (Alexina Clusiau) defined in p06.ged;
-2 CONT @P08I22@ (Adélia Clusiau) and @P08I26@ (Aurélie Clusiau) defined in
-2 CONT p08.ged; @P09I1@ (Oscar), @P09I2@ (Joseph), @P09I3@ (Marie-Rose),
-2 CONT @P09I4@ (Jeanne), and @P09I8@ (Rose Alma) Clusiau defined in
-2 CONT p09.ged - thirteen children total, all discovered the same way:
-2 CONT the page break falls mid-descendant-tree of an earlier-listed
-2 CONT sibling.
-
-0 @P02F3@ FAM
-1 HUSB @P02I5@
-1 WIFE @P02I4@
-1 NOTE First marriage of Mélina Clusiau. No children printed directly under
-2 CONT this union - see note on @P02F4@.
-
-0 @P02F4@ FAM
-1 HUSB @P02I6@
-1 WIFE @P02I4@
-1 NOTE Second marriage of Mélina Clusiau. Originally recorded with a child
-2 CONT (Marie Cluseau) that has since been corrected to @P05F3@ - see the
-2 CONT note on @P02I7@. No children confirmed under this union as of this
-2 CONT correction.
-
-0 @P02I37@ INDI
-1 NAME Margaret Peg /Clusiau/
-1 SEX F
-1 BIRT
-2 DATE 04 APR 1912
-2 PLAC Cohasset, Minnesota, U.S.A.
-1 DEAT
-2 DATE 1992
-2 PLAC Arizona, U.S.A.
-1 FAMC @P02F5@
-1 FAMS @P04F10@
-1 NOTE Source: images/p04.jpg, generation 9 (sibling of Iris Genevieve
-2 CONT Clusiau, @P02I11@, and Arthur Francis Clusiau, @P03I4@ - all three
-2 CONT children of Charles Arthur Clusiau and Ellen Gannon, @P02F5@). Not
-2 CONT captured earlier for the same reason Arthur Francis wasn't: the page
-2 CONT break fell mid-descendant-tree. Death place printed with blank
-2 CONT city/county fields before "Arizona, U.S.A." in the source - recorded
-2 CONT as just "Arizona, U.S.A.", same convention as Thomas Anthony
-2 CONT Mehelich's death place in p02.ged.
-2 CONT Shares the nickname "Peg" with her niece, @P03I29@ (Peg Clusiau,
-2 CONT b.1935, generation 10, daughter of Arthur Francis Clusiau) - two
-2 CONT different people, disambiguated by generation and birth year, not
-2 CONT an error.
-
-0 @P02F5@ FAM
-1 HUSB @P02I9@
-1 WIFE @P02I10@
-1 CHIL @P02I11@
-1 CHIL @P03I4@
-1 CHIL @P02I37@
-1 NOTE @P03I4@ (Arthur Francis Clusiau) is defined in p03.ged, and @P02I37@
-2 CONT (Margaret Peg Clusiau) in this file but discovered via p04.jpg -
-2 CONT both his individual record and hers point FAMC back to this family.
-2 CONT This CHIL link for @P03I4@ was missed when p03.ged was first built
-2 CONT and added retroactively here - a reminder to check both directions
-2 CONT of a FAMC/CHIL link whenever a later page extends an earlier family.
-
-0 @P02F6@ FAM
-1 HUSB @P02I12@
-1 WIFE @P02I11@
-1 CHIL @P02I13@
-1 CHIL @P02I20@
-1 CHIL @P02I22@
-1 CHIL @P02I32@
-
-0 @P02F7@ FAM
-1 HUSB @P02I13@
-1 WIFE @P02I14@
-1 CHIL @P02I15@
-1 CHIL @P02I16@
-
-0 @P02F8@ FAM
-1 HUSB @P02I17@
-1 WIFE @P02I16@
-1 CHIL @P02I18@
-1 CHIL @P02I19@
-
-0 @P02F9@ FAM
-1 HUSB @P02I21@
-1 WIFE @P02I20@
-
-0 @P02F10@ FAM
-1 HUSB @P02I22@
-1 WIFE @P02I23@
-1 CHIL @P02I24@
-1 CHIL @P02I28@
-1 CHIL @P02I29@
-
-0 @P02F11@ FAM
-1 HUSB @P02I25@
-1 WIFE @P02I24@
-1 CHIL @P02I26@
-1 CHIL @P02I27@
-
-0 @P02F12@ FAM
-1 HUSB @P02I29@
-1 WIFE @P02I30@
-1 CHIL @P02I31@
-
-0 @P02F13@ FAM
-1 HUSB @P02I33@
-1 WIFE @P02I32@
-1 CHIL @P02I34@
-1 CHIL @P03I1@
-1 NOTE @P03I1@ (Matthew Gene Specht) defined in p03.ged. This CHIL link
-2 CONT was missed when p03.ged was first built and added retroactively.
-
-0 @P02F14@ FAM
-1 HUSB @P02I34@
-1 WIFE @P02I35@
-1 CHIL @P02I36@
-
-0 @P03I1@ INDI
-1 NAME Living /Specht/
-1 SEX M
-1 FAMC @P02F13@
-1 FAMS @P03F1@
-1 NOTE Source: images/p03.jpg, generation 11 (sibling of Jason Thomas
-2 CONT Specht, @P02I34@). Likely a living person.
-
-0 @P03I2@ INDI
-1 NAME Living /Francis/
-1 SEX F
-1 FAMS @P03F1@
-1 NOTE Source: images/p03.jpg, generation 11 (spouse of Matthew Gene
-2 CONT Specht). No birth/death date printed. Likely a living person.
-
-0 @P03I3@ INDI
-1 NAME Living /Specht/
-1 SEX M
-1 FAMC @P03F1@
-1 NOTE Source: images/p03.jpg, generation 12. Likely a living person.
-
-0 @P03I4@ INDI
-1 NAME Arthur Francis /Clusiau/
-1 SEX M
-1 BIRT
-2 DATE 01 APR 1910
-1 DEAT
-2 DATE 26 APR 1986
-1 FAMC @P02F5@
-1 FAMS @P03F2@
-1 FAMS @P04F8@
-1 NOTE Source: images/p03.jpg, generation 9 (previously-uncaptured sibling
-2 CONT of Iris Genevieve Clusiau, @P02I11@ - both children of Charles
-2 CONT Arthur Clusiau and Ellen Gannon, @P02F5@ in p02.ged). Not visible in
-2 CONT p02.jpg because the page break fell in the middle of Iris Genevieve's
-2 CONT own descendant tree, which runs for several generations before the
-2 CONT report returns to her siblings. Second marriage (to Bonnie Gray,
-2 CONT @P04I25@) recorded via an explicit cross-reference note printed on
-2 CONT p04.jpg itself ("see Arthur Francis Clusiau on page 3") rather than
-2 CONT inferred from indentation - high confidence, unlike the Louise
-2 CONT Bérard and Marie Cluseau placement questions elsewhere in this tree.
-
-0 @P03I5@ INDI
-1 NAME Lucille Jeanette /Hursh/
-1 SEX F
-1 BIRT
-2 DATE 27 NOV 1910
-1 DEAT
-2 DATE 24 JAN 1990
-1 FAMS @P03F2@
-1 NOTE Source: images/p03.jpg, generation 9 (spouse of Arthur Francis Clusiau).
-
-0 @P03I6@ INDI
-1 NAME Patrick H. Bartholomew /Clusiau/
-1 SEX M
-1 BIRT
-2 DATE 13 JUN 1930
-1 DEAT
-2 DATE 18 JUL 1995
-1 FAMC @P03F2@
-1 FAMS @P03F3@
-1 FAMS @P03F4@
-1 NOTE Source: images/p03.jpg, generation 10. Two spouses listed - see
-2 CONT structural note in file header regarding child birth-year ordering.
-
-0 @P03I7@ INDI
-1 NAME Living //
-1 SEX F
-1 FAMS @P03F3@
-1 NOTE Source: images/p03.jpg, generation 10. Printed literally as
-2 CONT "+Unknown" - name not recorded in the source. First spouse of
-2 CONT Patrick H. Bartholomew Clusiau. Recorded as a placeholder individual
-2 CONT so the children's parentage link is preserved.
-
-0 @P03I8@ INDI
-1 NAME Living /Cluseau/
-1 SEX F
-1 FAMC @P03F3@
-1 NOTE Source: images/p03.jpg, generation 11. Surname printed "Cluseau"
-2 CONT here, not "Clusiau" - preserved as printed. Likely a living person.
-
-0 @P03I9@ INDI
-1 NAME Living /Cluseau/
-1 SEX F
-1 FAMC @P03F3@
-1 NOTE Source: images/p03.jpg, generation 11. Likely a living person.
-
-0 @P03I10@ INDI
-1 NAME Living //
-1 SEX F
-1 FAMS @P03F4@
-1 NOTE Source: images/p03.jpg, generation 10. Only a given name printed, no
-2 CONT surname. Second spouse of Patrick H. Bartholomew Clusiau.
-
-0 @P03I11@ INDI
-1 NAME Living /Cluseau/
-1 SEX F
-1 FAMC @P03F4@
-1 NOTE Source: images/p03.jpg, generation 11. See structural note in file
-2 CONT header - born before her half-siblings under the first-listed spouse.
-2 CONT Likely a living person.
-
-0 @P03I12@ INDI
-1 NAME Kari /Cluseau/
-1 SEX F
-1 BIRT
-2 DATE 1958
-1 DEAT
-2 DATE 1958
-1 FAMC @P03F4@
-1 NOTE Source: images/p03.jpg, generation 11. Died in infancy.
-
-0 @P03I13@ INDI
-1 NAME Living /Clusiau/
-1 SEX M
-1 FAMC @P03F2@
-1 FAMS @P03F5@
-1 FAMS @P03F6@
-1 NOTE Source: images/p03.jpg, generation 10. Two spouses listed.
-
-0 @P03I14@ INDI
-1 NAME Living //
-1 SEX F
-1 FAMS @P03F5@
-1 NOTE Source: images/p03.jpg, generation 10. Printed literally as
-2 CONT "+Unknown" - name not recorded in the source. First spouse of David
-2 CONT Clusiau.
-
-0 @P03I15@ INDI
-1 NAME Living /Clusiau/
-1 SEX M
-1 FAMC @P03F5@
-1 FAMS @P03F7@
-1 NOTE Source: images/p03.jpg, generation 11. Likely a living person.
-
-0 @P03I16@ INDI
-1 NAME Living //
-1 SEX F
-1 FAMS @P03F7@
-1 NOTE Source: images/p03.jpg, generation 11 (spouse of Dave Jr Clusiau).
-2 CONT No surname printed. Likely a living person.
-
-0 @P03I17@ INDI
-1 NAME Living /Clusiau/
-1 SEX F
-1 FAMC @P03F7@
-1 FAMS @P03F8@
-1 NOTE Source: images/p03.jpg, generation 12. Likely a living person.
-
-0 @P03I18@ INDI
-1 NAME Living /Wohlers/
-1 SEX M
-1 FAMS @P03F8@
-1 NOTE Source: images/p03.jpg, generation 12 (spouse of Kelli Ann Clusiau).
-2 CONT No birth/death date printed. Likely a living person.
-
-0 @P03I19@ INDI
-1 NAME Living /Wohlers/
-1 SEX M
-1 FAMC @P03F8@
-1 NOTE Source: images/p03.jpg, generation 13. Likely a living person.
-
-0 @P03I20@ INDI
-1 NAME Living /Clusiau/
-1 SEX M
-1 FAMC @P03F5@
-1 FAMS @P03F9@
-1 NOTE Source: images/p03.jpg, generation 11. Likely a living person.
-
-0 @P03I21@ INDI
-1 NAME Living //
-1 SEX F
-1 FAMS @P03F9@
-1 NOTE Source: images/p03.jpg, generation 11 (spouse of Thomas Alan
-2 CONT Clusiau). No surname printed. Likely a living person.
-
-0 @P03I22@ INDI
-1 NAME Living /Clusiau/
-1 SEX F
-1 FAMC @P03F9@
-1 NOTE Source: images/p03.jpg, generation 12. Likely a living person.
-
-0 @P03I23@ INDI
-1 NAME Living /Clusiau/
-1 SEX M
-1 FAMC @P03F9@
-1 NOTE Source: images/p03.jpg, generation 12. Likely a living person.
-
-0 @P03I24@ INDI
-1 NAME Living /Clusiau/
-1 SEX M
-1 FAMC @P03F5@
-1 FAMS @P03F10@
-1 NOTE Source: images/p03.jpg, generation 11. Likely a living person.
-
-0 @P03I25@ INDI
-1 NAME Living /Adamson/
-1 SEX F
-1 FAMS @P03F10@
-1 NOTE Source: images/p03.jpg, generation 11 (spouse of Michael Perry
-2 CONT Clusiau). Likely a living person.
-
-0 @P03I26@ INDI
-1 NAME Living /Clusiau/
-1 SEX M
-1 FAMC @P03F10@
-1 NOTE Source: images/p03.jpg, generation 12. Likely a living person.
-
-0 @P03I27@ INDI
-1 NAME Living /Clusiau/
-1 SEX F
-1 FAMC @P03F10@
-1 NOTE Source: images/p03.jpg, generation 12. Likely a living person.
-
-0 @P03I28@ INDI
-1 NAME Living /Corcoran/
-1 SEX F
-1 FAMS @P03F6@
-1 NOTE Source: images/p03.jpg, generation 10 (second spouse of David
-2 CONT Clusiau). No children printed under this union.
-
-0 @P03I29@ INDI
-1 NAME Living /Clusiau/
-1 SEX F
-1 FAMC @P03F2@
-1 FAMS @P03F11@
-1 NOTE Source: images/p03.jpg, generation 10.
-
-0 @P03I30@ INDI
-1 NAME Living /McCabe/
-1 SEX M
-1 FAMS @P03F11@
-1 NOTE Source: images/p03.jpg, generation 10 (spouse of Peg Clusiau).
-
-0 @P03I31@ INDI
-1 NAME Living /McCabe/
-1 SEX M
-1 FAMC @P03F11@
-1 FAMS @P03F12@
-1 FAMS @P03F13@
-1 NOTE Source: images/p03.jpg, generation 11. Two spouses listed. Likely a
-2 CONT living person.
-
-0 @P03I32@ INDI
-1 NAME Living //
-1 SEX F
-1 FAMS @P03F12@
-1 NOTE Source: images/p03.jpg, generation 11. Printed literally as
-2 CONT "+Unknown" - name not recorded in the source. First spouse of Kevin
-2 CONT John McCabe.
-
-0 @P03I33@ INDI
-1 NAME Living /McCabe/
-1 SEX M
-1 FAMC @P03F12@
-1 FAMS @P03F14@
-1 NOTE Source: images/p03.jpg, generation 12. Likely a living person.
-
-0 @P03I34@ INDI
-1 NAME Living //
-1 SEX F
-1 FAMS @P03F14@
-1 NOTE Source: images/p03.jpg, generation 12. Printed literally as
-2 CONT "+Unknown" - name not recorded in the source. Spouse of Michael
-2 CONT James McCabe.
-
-0 @P03I35@ INDI
-1 NAME Living /McCabe/
-1 SEX F
-1 FAMC @P03F14@
-1 NOTE Source: images/p03.jpg, generation 13. Likely a living person.
-
-0 @P03I36@ INDI
-1 NAME Living /McCabe/
-1 SEX M
-1 FAMC @P03F12@
-1 FAMS @P03F15@
-1 NOTE Source: images/p03.jpg, generation 12. Likely a living person.
-
-0 @P03I37@ INDI
-1 NAME Living /Soreono/
-1 SEX F
-1 FAMS @P03F15@
-1 NOTE Source: images/p03.jpg, generation 12 (spouse of Kyle Brian McCabe).
-2 CONT No children printed under this union. Likely a living person.
-
-0 @P03I38@ INDI
-1 NAME Living /McCabe/
-1 SEX M
-1 FAMC @P03F12@
-1 NOTE Source: images/p03.jpg, generation 12. No spouse printed. Likely a
-2 CONT living person.
-
-0 @P03I39@ INDI
-1 NAME Living /Smith/
-1 SEX F
-1 FAMS @P03F13@
-1 NOTE Source: images/p03.jpg, generation 11 (second spouse of Kevin John
-2 CONT McCabe). No children printed under this union. Likely a living person.
-
-0 @P03I40@ INDI
-1 NAME Living /McCabe/
-1 SEX F
-1 FAMC @P03F11@
-1 FAMS @P03F16@
-1 NOTE Source: images/p03.jpg, generation 11. Likely a living person.
-
-0 @P03I41@ INDI
-1 NAME Living /Briski/
-1 SEX M
-1 FAMS @P03F16@
-1 NOTE Source: images/p03.jpg, generation 11 (spouse of Shaun Elizabeth
-2 CONT McCabe). Likely a living person.
-
-0 @P03I42@ INDI
-1 NAME Living /Briski/
-1 SEX F
-1 FAMC @P03F16@
-1 NOTE Source: images/p03.jpg, generation 12. OCR was illegible on this
-2 CONT date; taken from the clean transcription provided rather than
-2 CONT independently confirmed against the photo pixel-by-pixel. Likely a
-2 CONT living person.
-
-0 @P03I43@ INDI
-1 NAME Living /Briski/
-1 SEX F
-1 FAMC @P03F16@
-1 NOTE Source: images/p03.jpg, generation 12. Likely a living person.
-
-0 @P03I44@ INDI
-1 NAME Living /Briski/
-1 SEX M
-1 FAMC @P03F16@
-1 NOTE Source: images/p03.jpg, generation 12. Likely a living person.
-
-0 @P03I45@ INDI
-1 NAME Living /McCabe/
-1 SEX M
-1 FAMC @P03F11@
-1 FAMS @P03F17@
-1 NOTE Source: images/p03.jpg, generation 11. Likely a living person.
-
-0 @P03I46@ INDI
-1 NAME Living /Rowland/
-1 SEX F
-1 FAMS @P03F17@
-1 NOTE Source: images/p03.jpg, generation 11 (spouse of Michael Joseph
-2 CONT McCabe). Likely a living person.
-
-0 @P03I47@ INDI
-1 NAME Living /McCabe/
-1 SEX M
-1 FAMC @P03F17@
-1 NOTE Source: images/p03.jpg, generation 12. Likely a living person.
-
-0 @P03I48@ INDI
-1 NAME Living /McCabe/
-1 SEX F
-1 FAMC @P03F17@
-1 NOTE Source: images/p03.jpg, generation 12. Likely a living person.
-
-0 @P03I49@ INDI
-1 NAME Living /McCabe/
-1 SEX M
-1 FAMC @P03F11@
-1 FAMS @P03F18@
-1 NOTE Source: images/p03.jpg, generation 11. Likely a living person.
-
-0 @P03I50@ INDI
-1 NAME Living //
-1 SEX F
-1 FAMS @P03F18@
-1 NOTE Source: images/p03.jpg, generation 11. Printed literally as
-2 CONT "+Unknown" - name not recorded in the source. Spouse of Brian
-2 CONT Patrick McCabe.
-
-0 @P03I51@ INDI
-1 NAME Living /McCabe/
-1 SEX M
-1 FAMC @P03F18@
-1 NOTE Source: images/p03.jpg, generation 12. Likely a living person.
-
-0 @P03I52@ INDI
-1 NAME Living /McCabe/
-1 SEX M
-1 FAMC @P03F18@
-1 NOTE Source: images/p03.jpg, generation 12. OCR (section-03.txt) was
-2 CONT completely illegible for this date ("h 9 Nep 1000"-type garbling) -
-2 CONT taken from the clean transcription block provided, not independently
-2 CONT cross-checked pixel-by-pixel against the photo. Verify this one
-2 CONT specifically if precision matters. Likely a living person. This is
-2 CONT the last entry visible on this page (bottom edge, marked "P.4" in
-2 CONT the source) - later generations of this branch, if any, would
-2 CONT continue on a further photo.
-
-0 @P03F1@ FAM
-1 HUSB @P03I1@
-1 WIFE @P03I2@
-1 CHIL @P03I3@
-
-0 @P03F2@ FAM
-1 HUSB @P03I4@
-1 WIFE @P03I5@
-1 CHIL @P03I6@
-1 CHIL @P03I13@
-1 CHIL @P03I29@
-1 CHIL @P04I9@
-1 NOTE @P04I9@ (Charles Thomas Clusiau) defined in p04.ged.
-
-0 @P03F3@ FAM
-1 HUSB @P03I6@
-1 WIFE @P03I7@
-1 CHIL @P03I8@
-1 CHIL @P03I9@
-
-0 @P03F4@ FAM
-1 HUSB @P03I6@
-1 WIFE @P03I10@
-1 CHIL @P03I11@
-1 CHIL @P03I12@
-1 NOTE See structural note in file header re: child birth-year ordering.
-
-0 @P03F5@ FAM
-1 HUSB @P03I13@
-1 WIFE @P03I14@
-1 CHIL @P03I15@
-1 CHIL @P03I20@
-1 CHIL @P03I24@
-
-0 @P03F6@ FAM
-1 HUSB @P03I13@
-1 WIFE @P03I28@
-
-0 @P03F7@ FAM
-1 HUSB @P03I15@
-1 WIFE @P03I16@
-1 CHIL @P03I17@
-
-0 @P03F8@ FAM
-1 HUSB @P03I18@
-1 WIFE @P03I17@
-1 CHIL @P03I19@
-
-0 @P03F9@ FAM
-1 HUSB @P03I20@
-1 WIFE @P03I21@
-1 CHIL @P03I22@
-1 CHIL @P03I23@
-
-0 @P03F10@ FAM
-1 HUSB @P03I24@
-1 WIFE @P03I25@
-1 CHIL @P03I26@
-1 CHIL @P03I27@
-
-0 @P03F11@ FAM
-1 HUSB @P03I30@
-1 WIFE @P03I29@
-1 CHIL @P03I31@
-1 CHIL @P03I40@
-1 CHIL @P03I45@
-1 CHIL @P03I49@
-1 CHIL @P04I1@
-1 CHIL @P04I6@
-1 NOTE @P04I1@ (Katie McCabe) and @P04I6@ (Erin Lucille McCabe) defined in
-2 CONT p04.ged.
-
-0 @P03F12@ FAM
-1 HUSB @P03I31@
-1 WIFE @P03I32@
-1 CHIL @P03I33@
-1 CHIL @P03I36@
-1 CHIL @P03I38@
-
-0 @P03F13@ FAM
-1 HUSB @P03I31@
-1 WIFE @P03I39@
-
-0 @P03F14@ FAM
-1 HUSB @P03I33@
-1 WIFE @P03I34@
-1 CHIL @P03I35@
-
-0 @P03F15@ FAM
-1 HUSB @P03I36@
-1 WIFE @P03I37@
-
-0 @P03F16@ FAM
-1 HUSB @P03I41@
-1 WIFE @P03I40@
-1 CHIL @P03I42@
-1 CHIL @P03I43@
-1 CHIL @P03I44@
-
-0 @P03F17@ FAM
-1 HUSB @P03I45@
-1 WIFE @P03I46@
-1 CHIL @P03I47@
-1 CHIL @P03I48@
-
-0 @P03F18@ FAM
-1 HUSB @P03I49@
-1 WIFE @P03I50@
-1 CHIL @P03I51@
-1 CHIL @P03I52@
-
-0 @P04I1@ INDI
-1 NAME Living /McCabe/
-1 SEX F
-1 FAMC @P03F11@
-1 FAMS @P04F1@
-1 NOTE Source: images/p04.jpg, generation 11. Likely a living person.
-
-0 @P04I2@ INDI
-1 NAME Living /Sondergaard/
-1 SEX M
-1 FAMS @P04F1@
-1 NOTE Source: images/p04.jpg, generation 11 (spouse of Katie McCabe).
-2 CONT Likely a living person.
-
-0 @P04I3@ INDI
-1 NAME Living /Sondergaard/
-1 SEX F
-1 FAMC @P04F1@
-1 NOTE Source: images/p04.jpg, generation 12. Likely a living person.
-
-0 @P04I4@ INDI
-1 NAME Living /Sondergaard/
-1 SEX F
-1 FAMC @P04F1@
-1 NOTE Source: images/p04.jpg, generation 12. Likely a living person.
-
-0 @P04I5@ INDI
-1 NAME Living /Sondergaard/
-1 SEX M
-1 FAMC @P04F1@
-1 NOTE Source: images/p04.jpg, generation 12. Likely a living person.
-
-0 @P04I6@ INDI
-1 NAME Living /McCabe/
-1 SEX F
-1 FAMC @P03F11@
-1 FAMS @P04F2@
-1 NOTE Source: images/p04.jpg, generation 11. Likely a living person.
-
-0 @P04I7@ INDI
-1 NAME Living /Ningen/
-1 SEX M
-1 FAMS @P04F2@
-1 NOTE Source: images/p04.jpg, generation 11 (spouse of Erin Lucille
-2 CONT McCabe). Likely a living person.
-
-0 @P04I8@ INDI
-1 NAME Living /Ningen/
-1 SEX M
-1 FAMC @P04F2@
-1 NOTE Source: images/p04.jpg, generation 12. Likely a living person.
-
-0 @P04I9@ INDI
-1 NAME Living /Clusiau/
-1 SEX M
-1 FAMC @P03F2@
-1 FAMS @P04F3@
-1 NOTE Source: images/p04.jpg, generation 10 (previously-uncaptured sibling
-2 CONT of Patrick H. Bartholomew, David, and Peg Clusiau - all children of
-2 CONT Arthur Francis Clusiau and Lucille Jeanette Hursh, @P03F2@).
-
-0 @P04I10@ INDI
-1 NAME Living /Del Grande/
-1 SEX F
-1 FAMS @P04F3@
-1 NOTE Source: images/p04.jpg, generation 10 (spouse of Charles Thomas
-2 CONT Clusiau).
-
-0 @P04I11@ INDI
-1 NAME Living /Clusiau/
-1 SEX F
-1 FAMC @P04F3@
-1 FAMS @P04F4@
-1 NOTE Source: images/p04.jpg, generation 11. Likely a living person.
-
-0 @P04I12@ INDI
-1 NAME Living /Fraboni/
-1 SEX M
-1 FAMS @P04F4@
-1 NOTE Source: images/p04.jpg, generation 11 (spouse of Michelle Ann
-2 CONT Clusiau). Likely a living person.
-
-0 @P04I13@ INDI
-1 NAME Living /Fraboni/
-1 SEX M
-1 FAMC @P04F4@
-1 NOTE Source: images/p04.jpg, generation 12. Likely a living person.
-
-0 @P04I14@ INDI
-1 NAME Living /Fraboni/
-1 SEX F
-1 FAMC @P04F4@
-1 NOTE Source: images/p04.jpg, generation 12. Likely a living person.
-
-0 @P04I15@ INDI
-1 NAME Living /Clusiau/
-1 SEX M
-1 FAMC @P04F3@
-1 FAMS @P04F5@
-1 NOTE Source: images/p04.jpg, generation 11. Likely a living person.
-
-0 @P04I16@ INDI
-1 NAME Living //
-1 SEX F
-1 FAMS @P04F5@
-1 NOTE Source: images/p04.jpg, generation 11 (spouse of Jeffrey Charles
-2 CONT Clusiau). No surname printed. Likely a living person.
-
-0 @P04I17@ INDI
-1 NAME Living /Clusiau/
-1 SEX M
-1 FAMC @P04F5@
-1 NOTE Source: images/p04.jpg, generation 12. Likely a living person.
-
-0 @P04I18@ INDI
-1 NAME Living /Clusiau/
-1 SEX M
-1 FAMC @P04F5@
-1 NOTE Source: images/p04.jpg, generation 12. Likely a living person.
-
-0 @P04I19@ INDI
-1 NAME Living /Clusiau/
-1 SEX F
-1 FAMC @P04F3@
-1 FAMS @P04F6@
-1 NOTE Source: images/p04.jpg, generation 11. Likely a living person.
-
-0 @P04I20@ INDI
-1 NAME Living /Baron/
-1 SEX M
-1 FAMS @P04F6@
-1 NOTE Source: images/p04.jpg, generation 11 (spouse of Margaret Mary
-2 CONT Clusiau). Likely a living person.
-
-0 @P04I21@ INDI
-1 NAME Living /Baron/
-1 SEX F
-1 FAMC @P04F6@
-1 NOTE Source: images/p04.jpg, generation 12. Likely a living person.
-
-0 @P04I22@ INDI
-1 NAME Living /Baron/
-1 SEX M
-1 FAMC @P04F6@
-1 NOTE Source: images/p04.jpg, generation 12. Likely a living person.
-
-0 @P04I23@ INDI
-1 NAME Living /Clusiau/
-1 SEX F
-1 FAMC @P04F3@
-1 FAMS @P04F7@
-1 NOTE Source: images/p04.jpg, generation 11. Likely a living person.
-
-0 @P04I24@ INDI
-1 NAME Living /Aune/
-1 SEX M
-1 FAMS @P04F7@
-1 NOTE Source: images/p04.jpg, generation 11 (spouse of Monique Angela
-2 CONT Clusiau). No children printed under this union. Likely a living
-2 CONT person.
-
-0 @P04I25@ INDI
-1 NAME Living /Gray/
-1 SEX F
-1 FAMS @P04F8@
-1 NOTE Source: images/p04.jpg, generation 9. Printed with an explicit
-2 CONT cross-reference "(see Arthur Francis Clusiau on page 3)" despite
-2 CONT sitting at Charles Thomas Clusiau's generation-10 indentation level
-2 CONT in the raw text - the source itself is telling the reader this is
-2 CONT Arthur Francis Clusiau's second wife (@P03I4@), not a spouse at the
-2 CONT indentation level it visually occupies. Followed as instructed. No
-2 CONT children printed under this union.
-
-0 @P04I26@ INDI
-1 NAME Living /Holman/
-1 SEX M
-1 FAMC @P04F10@
-1 FAMS @P04F11@
-1 NOTE Source: images/p04.jpg, generation 10.
-
-0 @P04I27@ INDI
-1 NAME Living /Quesnel/
-1 SEX F
-1 FAMS @P04F11@
-1 NOTE Source: images/p04.jpg, generation 10 (spouse of Richard Holman).
-
-0 @P04I28@ INDI
-1 NAME Verlyn /Holman/
-1 SEX M
-1 BIRT
-2 DATE 09 SEP 1913
-1 DEAT
-2 DATE MAY 1966
-1 FAMS @P04F10@
-1 NOTE Source: images/p04.jpg, generation 9 (spouse of Margaret Peg
-2 CONT Clusiau, @P02I37@ in p02.ged).
-
-0 @P04I29@ INDI
-1 NAME Living /Holman/
-1 SEX F
-1 FAMC @P04F11@
-1 NOTE Source: images/p04.jpg, generation 11. No spouse printed. Likely a
-2 CONT living person.
-
-0 @P04I30@ INDI
-1 NAME Living /Holman/
-1 SEX F
-1 FAMC @P04F11@
-1 FAMS @P04F12@
-1 NOTE Source: images/p04.jpg, generation 11. Likely a living person.
-
-0 @P04I31@ INDI
-1 NAME Living //
-1 SEX M
-1 FAMS @P04F12@
-1 NOTE Source: images/p04.jpg, generation 11 (spouse of Michele Marie
-2 CONT Holman). Printed with a surname only, no given name and no
-2 CONT birth/death date - recorded as sparse as the source has it. Likely
-2 CONT a living person.
-
-0 @P04I32@ INDI
-1 NAME Living /Shea/
-1 SEX F
-1 FAMC @P04F12@
-1 FAMS @P04F13@
-1 NOTE Source: images/p04.jpg, generation 12. Likely a living person.
-
-0 @P04I33@ INDI
-1 NAME Living //
-1 SEX M
-1 FAMS @P04F13@
-1 NOTE Source: images/p04.jpg, generation 12 (spouse of Elizabeth Patricia
-2 CONT Shea). Surname only, no given name or dates printed. Likely a
-2 CONT living person.
-
-0 @P04I34@ INDI
-1 NAME Living /Wade/
-1 SEX M
-1 FAMC @P04F13@
-1 NOTE Source: images/p04.jpg, generation 13. Likely a living person.
-
-0 @P04I35@ INDI
-1 NAME Living /Shea/
-1 SEX M
-1 FAMC @P04F12@
-1 NOTE Source: images/p04.jpg, generation 12. Likely a living person.
-
-0 @P04I36@ INDI
-1 NAME Living /Shea/
-1 SEX M
-1 FAMC @P04F12@
-1 NOTE Source: images/p04.jpg, generation 12. Likely a living person.
-
-0 @P04I37@ INDI
-1 NAME Living /Holman/
-1 SEX M
-1 FAMC @P04F11@
-1 FAMS @P04F14@
-1 NOTE Source: images/p04.jpg, generation 11. Likely a living person.
-
-0 @P04I38@ INDI
-1 NAME Living /Lindeke/
-1 SEX F
-1 FAMS @P04F14@
-1 NOTE Source: images/p04.jpg, generation 11 (spouse of Richard Arthur Jr
-2 CONT Holman). No children printed under this union. Likely a living
-2 CONT person.
-
-0 @P04I39@ INDI
-1 NAME Living /Holman/
-1 SEX F
-1 FAMC @P04F10@
-1 FAMS @P04F15@
-1 NOTE Source: images/p04.jpg, generation 10.
-
-0 @P04I40@ INDI
-1 NAME Living /Barry/
-1 SEX M
-1 FAMS @P04F15@
-1 NOTE Source: images/p04.jpg, generation 10 (spouse of Nancy Holman).
-2 CONT NAME field includes the printed suffix "III" - kept as part of the
-2 CONT name string as printed rather than split into a separate suffix tag.
-
-0 @P04I41@ INDI
-1 NAME Living /Barry/
-1 SEX F
-1 FAMC @P04F15@
-1 FAMS @P04F16@
-1 NOTE Source: images/p04.jpg, generation 11. Likely a living person.
-
-0 @P04I42@ INDI
-1 NAME Living /Chamberlain/
-1 SEX M
-1 FAMS @P04F16@
-1 NOTE Source: images/p04.jpg, generation 11 (spouse of Kathleen Jo
-2 CONT Barry). No birth/death date printed. Likely a living person.
-
-0 @P04I43@ INDI
-1 NAME Living /Chamberlain/
-1 SEX F
-1 FAMC @P04F16@
-1 NOTE Source: images/p04.jpg, generation 12. Likely a living person.
-
-0 @P04I44@ INDI
-1 NAME Living /Chamberlain/
-1 SEX F
-1 FAMC @P04F16@
-1 NOTE Source: images/p04.jpg, generation 12. Likely a living person.
-
-0 @P04I45@ INDI
-1 NAME Living /Chamberlain/
-1 SEX M
-1 FAMC @P04F16@
-1 NOTE Source: images/p04.jpg, generation 12. Likely a living person.
-
-0 @P04I46@ INDI
-1 NAME Living /Barry/
-1 SEX M
-1 FAMC @P04F15@
-1 FAMS @P04F17@
-1 NOTE Source: images/p04.jpg, generation 11. Likely a living person. This
-2 CONT is the last entry visible on this page (bottom edge, marked "P.4"
-2 CONT in the source) - his spouse is cut off, needs p05 to complete.
-
-0 @P04I47@ INDI
-1 NAME Living //
-1 SEX F
-1 FAMS @P04F17@
-1 NOTE Source: images/p04.jpg, generation 11. Printed literally as
-2 CONT "+Unknown" and cut off at the very bottom of the page - the source
-2 CONT may have more detail on this person or their children on p05.
-
-0 @P04F1@ FAM
-1 HUSB @P04I2@
-1 WIFE @P04I1@
-1 CHIL @P04I3@
-1 CHIL @P04I4@
-1 CHIL @P04I5@
-
-0 @P04F2@ FAM
-1 HUSB @P04I7@
-1 WIFE @P04I6@
-1 CHIL @P04I8@
-
-0 @P04F3@ FAM
-1 HUSB @P04I9@
-1 WIFE @P04I10@
-1 CHIL @P04I11@
-1 CHIL @P04I15@
-1 CHIL @P04I19@
-1 CHIL @P04I23@
-
-0 @P04F4@ FAM
-1 HUSB @P04I12@
-1 WIFE @P04I11@
-1 CHIL @P04I13@
-1 CHIL @P04I14@
-
-0 @P04F5@ FAM
-1 HUSB @P04I15@
-1 WIFE @P04I16@
-1 CHIL @P04I17@
-1 CHIL @P04I18@
-
-0 @P04F6@ FAM
-1 HUSB @P04I20@
-1 WIFE @P04I19@
-1 CHIL @P04I21@
-1 CHIL @P04I22@
-
-0 @P04F7@ FAM
-1 HUSB @P04I24@
-1 WIFE @P04I23@
-
-0 @P04F8@ FAM
-1 HUSB @P03I4@
-1 WIFE @P04I25@
-1 NOTE Second marriage of Arthur Francis Clusiau - see note on @P04I25@
-2 CONT regarding the source's own cross-reference. No children printed
-2 CONT under this union.
-
-0 @P04F10@ FAM
-1 HUSB @P04I28@
-1 WIFE @P02I37@
-1 CHIL @P04I26@
-1 CHIL @P04I39@
-1 CHIL @P05I3@
-1 NOTE Wife is @P02I37@ (Margaret Peg Clusiau), defined in p02.ged.
-2 CONT @P05I3@ (Daniel Holman) defined in p05.ged.
-
-0 @P04F11@ FAM
-1 HUSB @P04I26@
-1 WIFE @P04I27@
-1 CHIL @P04I29@
-1 CHIL @P04I30@
-1 CHIL @P04I37@
-
-0 @P04F12@ FAM
-1 HUSB @P04I31@
-1 WIFE @P04I30@
-1 CHIL @P04I32@
-1 CHIL @P04I35@
-1 CHIL @P04I36@
-
-0 @P04F13@ FAM
-1 HUSB @P04I33@
-1 WIFE @P04I32@
-1 CHIL @P04I34@
-
-0 @P04F14@ FAM
-1 HUSB @P04I37@
-1 WIFE @P04I38@
-
-0 @P04F15@ FAM
-1 HUSB @P04I40@
-1 WIFE @P04I39@
-1 CHIL @P04I41@
-1 CHIL @P04I46@
-1 CHIL @P05I2@
-1 NOTE @P05I2@ (Daniel John Barry) defined in p05.ged.
-
-0 @P04F16@ FAM
-1 HUSB @P04I42@
-1 WIFE @P04I41@
-1 CHIL @P04I43@
-1 CHIL @P04I44@
-1 CHIL @P04I45@
-
-0 @P04F17@ FAM
-1 HUSB @P04I46@
-1 WIFE @P04I47@
-1 CHIL @P05I1@
-1 NOTE @P05I1@ (Talita Nancy Barry) defined in p05.ged, resolving the
-2 CONT incomplete flag this family had in p04.ged.
-
-0 @P05I1@ INDI
-1 NAME Living /Barry/
-1 SEX F
-1 FAMC @P04F17@
-1 NOTE Source: images/p05.jpg, generation 12. Resolves the incomplete flag
-2 CONT on @P04F17@ from p04.ged. Likely a living person.
-
-0 @P05I2@ INDI
-1 NAME Living /Barry/
-1 SEX M
-1 FAMC @P04F15@
-1 NOTE Source: images/p05.jpg, generation 11 (previously-uncaptured
-2 CONT sibling of Kathleen Jo Barry and Glen Richard Barry). No
-2 CONT spouse/children printed. Likely a living person.
-
-0 @P05I3@ INDI
-1 NAME Living /Holman/
-1 SEX M
-1 FAMC @P04F10@
-1 FAMS @P05F1@
-1 NOTE Source: images/p05.jpg, generation 10 (previously-uncaptured
-2 CONT sibling of Richard Holman and Nancy Holman).
-
-0 @P05I4@ INDI
-1 NAME Living /Hartjes/
-1 SEX F
-1 FAMS @P05F1@
-1 NOTE Source: images/p05.jpg, generation 10 (spouse of Daniel Holman).
-2 CONT VALIDATION FLAG, CONFIRMED AGAINST SOURCE: as printed, this makes
-2 CONT her about 11 years old at her daughter Holly Holman's birth
-2 CONT (@P05I5@, b. 24 Feb 1965) - biologically implausible. Checked
-2 CONT directly against the original photo/scroll: it does say "b. 1953,"
-2 CONT not a transcription or OCR error. This is a source-document error,
-2 CONT same category as the Louise Bérard and Françoise Lanthier issues
-2 CONT elsewhere in this tree - recorded exactly as printed rather than
-2 CONT silently corrected, since the true birth year isn't recoverable
-2 CONT from this document alone.
-
-0 @P05I5@ INDI
-1 NAME Living /Holman/
-1 SEX F
-1 FAMC @P05F1@
-1 FAMS @P05F2@
-1 NOTE Source: images/p05.jpg, generation 11. Likely a living person.
-
-0 @P05I6@ INDI
-1 NAME Living /Jenkins/
-1 SEX M
-1 FAMS @P05F2@
-1 NOTE Source: images/p05.jpg, generation 11 (spouse of Holly Holman). No
-2 CONT birth/death date printed. Likely a living person.
-
-0 @P05I7@ INDI
-1 NAME Living /Jenkins/
-1 SEX M
-1 FAMC @P05F2@
-1 NOTE Source: images/p05.jpg, generation 12. Likely a living person.
-
-0 @P05I8@ INDI
-1 NAME Living /Jenkins/
-1 SEX M
-1 FAMC @P05F2@
-1 NOTE Source: images/p05.jpg, generation 12. Likely a living person.
-
-0 @P05I9@ INDI
-1 NAME Living /Jenkins/
-1 SEX M
-1 FAMC @P05F2@
-1 NOTE Source: images/p05.jpg, generation 12. Likely a living person.
-
-0 @P05I10@ INDI
-1 NAME Living /Holman/
-1 SEX F
-1 FAMC @P05F1@
-1 NOTE Source: images/p05.jpg, generation 11. No birth/death date, spouse,
-2 CONT or children printed. Likely a living person.
-
-0 @P05I11@ INDI
-1 NAME Living /Holman/
-1 SEX F
-1 FAMC @P05F1@
-1 NOTE Source: images/p05.jpg, generation 11. No birth/death date, spouse,
-2 CONT or children printed. Likely a living person.
-
-0 @P05I12@ INDI
-1 NAME Théophile Eméry /Clusiau/
-1 SEX M
-1 BIRT
-2 DATE 26 JUL 1879
-2 PLAC Masham, Gatineau, Québec, Canada
-1 CHR
-2 DATE 27 JUL 1879
-2 PLAC Masham, Gatineau, Québec, Canada
-1 DEAT
-2 DATE Abt 1920
-1 FAMC @P02F2@
-1 FAMS @P05F3@
-1 NOTE Source: images/p05.jpg, generation 8 (previously-uncaptured sibling
-2 CONT of Mélina, Hercule, and Charles Arthur Clusiau - all children of
-2 CONT Charles Clusiau and Julie Philippe, @P02F2@ in p02.ged).
-
-0 @P05I13@ INDI
-1 NAME Mathilde /Lapointe/
-1 SEX F
-1 BIRT
-2 PLAC Sarsfield, Russell, Ontario, Canada
-1 CHR
-2 PLAC Sarsfield, Russell, Ontario, Canada
-1 DEAT
-2 DATE 23 JUN 1918
-2 PLAC Bonfield, Nipissing, Ontario, Canada
-1 BURI
-2 DATE 25 JUN 1918
-2 PLAC Bonfield, Nipissing, Ontario, Canada
-1 FAMS @P05F3@
-1 NOTE Source: images/p05.jpg, generation 8 (spouse of Théophile Eméry
-2 CONT Clusiau). No birth date printed, only birthplace. Her death, five
-2 CONT months after Marie Cluseau's birth, is what resolves the parentage
-2 CONT correction on @P02I7@ - see that note in p02.ged.
-
-0 @P05I14@ INDI
-1 NAME Alexis /Clusiau/
-1 SEX M
-1 BIRT
-2 DATE 23 MAY 1882
-2 PLAC Masham, Gatineau, Québec, Canada
-1 CHR
-2 DATE 26 MAY 1882
-2 PLAC Masham, Gatineau, Québec, Canada
-1 DEAT
-2 DATE 27 OCT 1966
-2 PLAC Hibbing, Itasca, Minnesota, U.S.A.
-1 FAMC @P02F2@
-1 FAMS @P05F4@
-1 NOTE Source: images/p05.jpg, generation 8 (previously-uncaptured sibling
-2 CONT of Mélina, Hercule, Charles Arthur, and Théophile Eméry Clusiau).
-2 CONT Second of this line (after Charles Arthur) to appear in the U.S.
-2 CONT Minnesota community.
-
-0 @P05I15@ INDI
-1 NAME Katerine /Kersting/
-1 SEX F
-1 BIRT
-2 DATE 10 SEP 1886
-1 DEAT
-2 DATE 06 DEC 1966
-1 FAMS @P05F4@
-1 NOTE FamilySearch: https://www.familysearch.org/en/tree/person/details/LX9Q-JKK, Source: images/p05.jpg, generation 8 (spouse of Alexis Clusiau).
-
-0 @P05I16@ INDI
-1 NAME Arnim /Cluseau/
-1 SEX M
-1 BIRT
-2 DATE 25 JUL 1906
-1 DEAT
-2 DATE 15 APR 1995
-1 FAMC @P05F4@
-1 FAMS @P05F5@
-1 NOTE Source: images/p05.jpg, generation 9. Surname printed "Cluseau"
-2 CONT here, reverting from his father Alexis's "Clusiau" spelling -
-2 CONT preserved as printed, same pattern seen elsewhere in this branch.
-
-0 @P05I17@ INDI
-1 NAME Ann L. /Moore/
-1 SEX F
-1 BIRT
-2 DATE 10 OCT 1899
-1 DEAT
-2 DATE 22 MAY 1995
-1 FAMS @P05F5@
-1 NOTE Source: images/p05.jpg, generation 9 (spouse of Arnim Cluseau). No
-2 CONT children printed under this union.
-
-0 @P05I18@ INDI
-1 NAME Verna Mary /Cluseau/
-1 SEX F
-1 BIRT
-2 DATE 22 NOV 1908
-1 DEAT
-2 DATE 26 AUG 1990
-1 FAMC @P05F4@
-1 FAMS @P05F6@
-1 NOTE FamilySearch: https://www.familysearch.org/en/tree/person/details/LX9Q-FYQ, Source: images/p05.jpg, generation 9.
-
-0 @P05I19@ INDI
-1 NAME Ebner S. /Butner/
-1 SEX M
-1 BIRT
-2 DATE 15 APR 1894
-1 DEAT
-2 DATE 13 JUN 1977
-1 FAMS @P05F6@
-1 NOTE Source: images/p05.jpg, generation 9 (spouse of Verna Mary
-2 CONT Cluseau). No children printed under this union.
-
-0 @P05I20@ INDI
-1 NAME Arlie /Clusiau/
-1 SEX M
-1 BIRT
-2 DATE 06 DEC 1910
-1 DEAT
-2 DATE JUN 1969
-1 FAMC @P05F4@
-1 FAMS @P05F7@
-1 NOTE FamilySearch: https://www.familysearch.org/en/tree/person/details/LRT9-WBP, Source: images/p05.jpg, generation 9.
-
-0 @P05I21@ INDI
-1 NAME Eleanor /Kokkinen/
-1 SEX F
-1 BIRT
-2 DATE 23 NOV 1916
-1 DEAT
-2 DATE 21 MAY 2008
-1 FAMS @P05F7@
-1 NOTE FamilySearch: https://www.familysearch.org/en/tree/person/details/LRT9-W1C, Source: images/p05.jpg, generation 9 (spouse of Arlie Clusiau).
-
-0 @P05I22@ INDI
-1 NAME Marilyn /Clusiau/
-1 SEX F
-1 BIRT
-2 DATE 13 JUL 1936
-1 DEAT
-2 DATE 2 MAR 2019
-1 FAMC @P05F7@
-1 FAMS @P05F8@
-1 NOTE FamilySearch: https://www.familysearch.org/en/tree/person/details/GS9F-SQT, Source: images/p05.jpg, generation 10.
-
-0 @P05I23@ INDI
+1 SUBM @SUB1@
+0 @SUB1@ SUBM
+1 NAME Bruce & Marilyn
+0 @I1@ INDI
 1 NAME Living /Johnson/
+2 GIVN Bruce Harvey
+2 SURN Johnson
+2 NICK None
+2 SOUR @S01@
 1 SEX M
-1 FAMS @P05F8@
-1 NOTE Source: images/p05.jpg, generation 10 (spouse of Marilyn Clusiau).
-
-0 @P05I24@ INDI
+1 _LIVING Y
+1 NOTE Death Residence Localities
+2 CONT ZIP Code: 55807
+2 CONT Duluth, Saint Louis, Minnesota
+2 CONT West Duluth, Saint Louis, Minnesota
+1 NOTE The zip code listed in the death locality field
+2 CONT is the last place of residence.
+1 NOTE The state listed in the birth locality field
+2 CONT is where the Social Security Number was issued.
+1 NOTE Social Security Number: 468-18-6791
+1 FAMC @F22@
+1 FAMS @F1@
+0 @I2@ INDI
+1 NAME Marilyn Kay /Clusiau Johnson/
+2 GIVN Marilyn Kay
+2 SURN Clusiau Johnson
+1 SEX F
+1 BIRT
+2 DATE 13 Jul 1936
+2 PLAC Cohasset, MN
+1 DEAT
+2 DATE 2 Mar 2019
+1 FAMC @F26@
+1 FAMS @F1@
+0 @I3@ INDI
 1 NAME Living /Johnson/
+2 GIVN Mark Alan
+2 SURN Johnson
 1 SEX M
-1 FAMC @P05F8@
-1 FAMS @P05F9@
-1 FAMS @P05F10@
-1 NOTE Source: images/p05.jpg, generation 11. Two spouses listed. Likely a
-2 CONT living person.
-
-0 @P05I25@ INDI
-1 NAME Living /Martin/
+1 _LIVING Y
+1 FAMC @F1@
+1 FAMS @F35@
+1 FAMS @F102@
+0 @I4@ INDI
+1 NAME Living /Johnson Case/
+2 GIVN Denise Marie
+2 SURN Johnson Case
 1 SEX F
-1 FAMS @P05F9@
-1 NOTE Source: images/p05.jpg, generation 11 (first spouse of Mark Alan
-2 CONT Johnson). Likely a living person.
-
-0 @P05I26@ INDI
-1 NAME Living /Martin/
-1 SEX M
-1 FAMC @P05F9@
-1 NOTE Source: images/p05.jpg, generation 12. Likely a living person.
-
-0 @P05I27@ INDI
+1 _LIVING Y
+1 FAMC @F1@
+1 FAMS @F99@
+0 @I5@ INDI
 1 NAME Living /Johnson/
+2 GIVN Jeffrey Charles
+2 SURN Johnson
+2 NICK Jeff
 1 SEX M
-1 FAMC @P05F9@
-1 NOTE Source: images/p05.jpg, generation 12. Likely a living person.
-
-0 @P05I28@ INDI
-1 NAME Living /Youngblood/
-1 SEX F
-1 FAMS @P05F10@
-1 NOTE Source: images/p05.jpg, generation 11 (second spouse of Mark Alan
-2 CONT Johnson). No children printed under this union. Likely a living
-2 CONT person.
-
-0 @P05I29@ INDI
-1 NAME Living /Johnson/
-1 SEX F
-1 FAMC @P05F8@
-1 FAMS @P05F11@
-1 NOTE Source: images/p05.jpg, generation 11. Likely a living person.
-
-0 @P05I30@ INDI
-1 NAME Living /Case/
-1 SEX M
-1 FAMS @P05F11@
-1 NOTE Source: images/p05.jpg, generation 11 (spouse of Denise Marie
-2 CONT Johnson). No birth/death date printed. Likely a living person.
-
-0 @P05I31@ INDI
-1 NAME Living /Case/
-1 SEX M
-1 FAMC @P05F11@
-1 NOTE Source: images/p05.jpg, generation 12. Same birth date as Christine
-2 CONT Ann Case (@P05I32@) likely twins, though the source does not
-2 CONT state this explicitly, same pattern as Marie/Augustin Cluseau on
-2 CONT p01.jpg. Likely a living person.
-
-0 @P05I32@ INDI
-1 NAME Living /Case/
-1 SEX F
-1 FAMC @P05F11@
-1 NOTE Source: images/p05.jpg, generation 12. Same birth date as Travis
-2 CONT Case (@P05I31@) likely twins, though the source does not
-2 CONT state this explicitly, same pattern as Marie/Augustin Cluseau on
-2 CONT p01.jpg. Likely a living person.
-
-0 @P05I33@ INDI
-1 NAME Living /Johnson/
-1 SEX M
-1 FAMC @P05F8@
-1 FAMS @P05F12@
-1 NOTE Source: images/p05.jpg, generation 11. Likely a living person.
-
-0 @P05I34@ INDI
-1 NAME Living /Nanninga/
-1 SEX F
-1 FAMS @P05F12@
-1 NOTE Source: images/p05.jpg, generation 11 (spouse of Jeffrey Charles
-2 CONT Johnson). No birth/death date printed. Likely a living person.
-
-0 @P05I35@ INDI
-1 NAME Living /Johnson/
-1 SEX M
-1 FAMC @P05F12@
-1 NOTE Source: images/p05.jpg, generation 12. Likely a living person.
-
-0 @P05I36@ INDI
-1 NAME Living /Johnson/
-1 SEX M
-1 FAMC @P05F12@
-1 NOTE Source: images/p05.jpg, generation 12. Likely a living person.
-
-0 @P05I37@ INDI
-1 NAME Living /Johnson/
-1 SEX M
-1 FAMC @P05F12@
-1 NOTE Source: images/p05.jpg, generation 12. Likely a living person.
-
-0 @P05I38@ INDI
-1 NAME Living /Cluseau/
-1 SEX F
-1 FAMC @P05F7@
-1 FAMS @P05F13@
-1 NOTE Source: images/p05.jpg, generation 10.
-
-0 @P05I39@ INDI
-1 NAME Living /Kapsch/
-1 SEX M
-1 FAMS @P05F13@
-1 NOTE Source: images/p05.jpg, generation 10 (spouse of Shirley Clusiau).
-
-0 @P05I40@ INDI
-1 NAME Living /Kapsch/
-1 SEX M
-1 FAMC @P05F13@
-1 FAMS @P05F14@
-1 NOTE Source: images/p05.jpg, generation 11. Likely a living person. This
-2 CONT is the last entry visible on this page (bottom edge, marked "P.6"
-2 CONT in the source) - needs p06 to complete.
-
-0 @P05I41@ INDI
-1 NAME Living /Solberg/
-1 SEX F
-1 FAMS @P05F14@
-1 NOTE Source: images/p05.jpg, generation 11 (spouse of John Arlie
-2 CONT Kapsch). Cut off at the very bottom of the page - needs p06 to
-2 CONT confirm whether there is more (children, etc). Likely a living
-2 CONT person.
-
-0 @P05F1@ FAM
-1 HUSB @P05I3@
-1 WIFE @P05I4@
-1 CHIL @P05I5@
-1 CHIL @P05I10@
-1 CHIL @P05I11@
-
-0 @P05F2@ FAM
-1 HUSB @P05I6@
-1 WIFE @P05I5@
-1 CHIL @P05I7@
-1 CHIL @P05I8@
-1 CHIL @P05I9@
-
-0 @P05F3@ FAM
-1 HUSB @P05I12@
-1 WIFE @P05I13@
-1 CHIL @P02I7@
-1 NOTE Child is @P02I7@ (Marie Cluseau), defined in p02.ged - see the
-2 CONT correction note on her record there.
-
-0 @P05F4@ FAM
-1 HUSB @P05I14@
-1 WIFE @P05I15@
-1 CHIL @P05I16@
-1 CHIL @P05I18@
-1 CHIL @P05I20@
-1 CHIL @P06I7@
-1 CHIL @P06I9@
-1 CHIL @P06I11@
-1 CHIL @P06I13@
-1 CHIL @P06I15@
-1 CHIL @P06I17@
-1 CHIL @P06I19@
-1 CHIL @P06I21@
-1 NOTE Eight more children (@P06I7@ through @P06I21@, defined in p06.ged)
-2 CONT discovered the same way as elsewhere in this tree - the page break
-2 CONT fell mid-descendant-tree of an earlier-listed sibling (Arlie
-2 CONT Cluseau's own line runs for several generations before the report
-2 CONT returns to his siblings).
-
-0 @P05F5@ FAM
-1 HUSB @P05I16@
-1 WIFE @P05I17@
-
-0 @P05F6@ FAM
-1 HUSB @P05I19@
-1 WIFE @P05I18@
-
-0 @P05F7@ FAM
-1 HUSB @P05I20@
-1 WIFE @P05I21@
-1 CHIL @P05I22@
-1 CHIL @P05I38@
-
-0 @P05F8@ FAM
-1 HUSB @P05I23@
-1 WIFE @P05I22@
-1 CHIL @P05I24@
-1 CHIL @P05I29@
-1 CHIL @P05I33@
-
-0 @P05F9@ FAM
-1 HUSB @P05I24@
-1 WIFE @P05I25@
-1 CHIL @P05I26@
-1 CHIL @P05I27@
-
-0 @P05F10@ FAM
-1 HUSB @P05I24@
-1 WIFE @P05I28@
-1 NOTE Second union of Mark Alan Johnson. No children printed under this
-2 CONT union.
-
-0 @P05F11@ FAM
-1 HUSB @P05I30@
-1 WIFE @P05I29@
-1 CHIL @P05I31@
-1 CHIL @P05I32@
-
-0 @P05F12@ FAM
-1 HUSB @P05I33@
-1 WIFE @P05I34@
-1 CHIL @P05I35@
-1 CHIL @P05I36@
-1 CHIL @P05I37@
-
-0 @P05F13@ FAM
-1 HUSB @P05I39@
-1 WIFE @P05I38@
-1 CHIL @P05I40@
-1 CHIL @P06I3@
-1 CHIL @P06I5@
-1 NOTE @P06I3@ (Emily Lynn Kapsch) and @P06I5@ (Daniel Nathan Kapsch)
-2 CONT defined in p06.ged.
-
-0 @P05F14@ FAM
-1 HUSB @P05I40@
-1 WIFE @P05I41@
-1 CHIL @P06I1@
-1 CHIL @P06I2@
-1 NOTE @P06I1@ (Stefan Norman Kapsch) and @P06I2@ (Benjamin Kapsch)
-2 CONT defined in p06.ged, resolving the incomplete flag this family had.
-
-0 @P06I1@ INDI
-1 NAME Living /Kapsch/
-1 SEX M
-1 FAMC @P05F14@
-1 NOTE Source: images/p06.jpg, generation 12. Resolves the incomplete
-2 CONT flag on @P05F14@ from p05.ged. Likely a living person.
-
-0 @P06I2@ INDI
-1 NAME Living /Kapsch/
-1 SEX M
-1 FAMC @P05F14@
-1 NOTE Source: images/p06.jpg, generation 12. Likely a living person.
-
-0 @P06I3@ INDI
-1 NAME Living /Kapsch/
-1 SEX F
-1 FAMC @P05F13@
-1 FAMS @P06F1@
-1 NOTE Source: images/p06.jpg, generation 11 (previously-uncaptured
-2 CONT sibling of John Arlie Kapsch). Likely a living person.
-
-0 @P06I4@ INDI
-1 NAME Living /Markewitz/
-1 SEX M
-1 FAMS @P06F1@
-1 NOTE Source: images/p06.jpg, generation 11 (spouse of Emily Lynn
-2 CONT Kapsch). No children printed under this union. Likely a living
-2 CONT person.
-
-0 @P06I5@ INDI
-1 NAME Living /Kapsch/
-1 SEX M
-1 FAMC @P05F13@
-1 FAMS @P06F2@
-1 NOTE Source: images/p06.jpg, generation 11 (previously-uncaptured
-2 CONT sibling of John Arlie Kapsch). Likely a living person.
-
-0 @P06I6@ INDI
-1 NAME Living /Miller/
-1 SEX F
-1 FAMS @P06F2@
-1 NOTE Source: images/p06.jpg, generation 11 (spouse of Daniel Nathan
-2 CONT Kapsch). No children printed under this union. Likely a living
-2 CONT person.
-
-0 @P06I7@ INDI
-1 NAME Dorothy Katherine /Cluseau/
-1 SEX F
-1 BIRT
-2 DATE 27 DEC 1912
-1 DEAT
-2 DATE 30 AUG 2003
-1 FAMC @P05F4@
-1 FAMS @P06F3@
-1 NOTE FamilySearch: https://www.familysearch.org/en/tree/person/details/LRT9-DR3, Source: images/p06.jpg, generation 9.
-
-0 @P06I8@ INDI
-1 NAME Clarence /Voigt/
+1 _LIVING Y
+1 FAMC @F1@
+1 FAMS @F65@
+0 @I6@ INDI
+1 NAME Harvey Clifford /Johnson/
+2 GIVN Harvey Clifford
+2 SURN Johnson
 1 SEX M
 1 BIRT
-2 DATE 16 SEP 1908
+2 DATE 12 Nov 1907
+2 PLAC Wisconsin
 1 DEAT
-2 DATE Abt 1982
-1 FAMS @P06F3@
-1 NOTE Source: images/p06.jpg, generation 9 (spouse of Dorothy Cluseau).
-2 CONT No children printed under this union.
-
-0 @P06I9@ INDI
-1 NAME Living /Cluseau/
-1 SEX F
-1 FAMC @P05F4@
-1 FAMS @P06F4@
-1 NOTE FamilySearch: https://www.familysearch.org/en/tree/person/details/LRTS-FC9, Source: images/p06.jpg, generation 9. Only a burial year is given,
-2 CONT no death date - recorded as printed.
-
-0 @P06I10@ INDI
-1 NAME Living /Leino/
-1 SEX M
-1 FAMS @P06F4@
-1 NOTE Source: images/p06.jpg, generation 9 (spouse of Lorraine Cluseau).
-2 CONT No children printed under this union.
-
-0 @P06I11@ INDI
-1 NAME Fern Marie /Cluseau/
-1 SEX F
-1 BIRT
-2 DATE 21 JUL 1918
-1 DEAT
-2 DATE 04 FEB 1980
-1 FAMC @P05F4@
-1 FAMS @P06F5@
-1 NOTE FamilySearch: https://www.familysearch.org/en/tree/person/details/LRTS-JVX, Source: images/p06.jpg, generation 9.
-
-0 @P06I12@ INDI
-1 NAME Frank /Perpich/
-1 SEX M
-1 BIRT
-2 DATE 25 DEC 1912
-1 DEAT
-2 DATE 08 SEP 1996
-1 FAMS @P06F5@
-1 NOTE Source: images/p06.jpg, generation 9 (spouse of Fern Marie
-2 CONT Cluseau). No children printed under this union.
-
-0 @P06I13@ INDI
-1 NAME Darline Veronica /Cluseau/
-1 SEX F
-1 BIRT
-2 DATE 29 APR 1921
-1 DEAT
-2 DATE 18 SEP 2003
-1 FAMC @P05F4@
-1 FAMS @P06F6@
-1 NOTE FamilySearch: https://www.familysearch.org/en/tree/person/details/LRTS-X1N, Source: images/p06.jpg, generation 9.
-
-0 @P06I14@ INDI
-1 NAME Alvin O. /Wickstrom/
-1 SEX M
-1 BIRT
-2 DATE 27 APR 1923
-1 DEAT
-2 DATE 1976
-1 FAMS @P06F6@
-1 NOTE Source: images/p06.jpg, generation 9 (spouse of Darline Veronica
-2 CONT Cluseau). No children printed under this union.
-
-0 @P06I15@ INDI
-1 NAME Living /Cluseau/
-1 SEX F
-1 FAMC @P05F4@
-1 FAMS @P06F7@
-1 NOTE Source: images/p06.jpg, generation 9. Shares her name with her
-2 CONT niece @P05I38@ (Shirley Clusiau, b.1942, generation 10, daughter of
-2 CONT Arlie Clusiau) - two different people, disambiguated by generation
-2 CONT and birth year, same pattern as the two "Peg" Clusiaus noted
-2 CONT earlier in this tree.
-
-0 @P06I16@ INDI
-1 NAME Living /Mason/
-1 SEX M
-1 FAMS @P06F7@
-1 NOTE Source: images/p06.jpg, generation 9 (spouse of Shirley Clusiau
-2 CONT b.1923). No children printed under this union.
-
-0 @P06I17@ INDI
-1 NAME Kenneth Eugene /Cluseau/
-1 SEX M
-1 BIRT
-2 DATE 16 SEP 1926
-1 DEAT
-2 DATE 26 MAY 1983
-1 FAMC @P05F4@
-1 FAMS @P06F8@
-1 NOTE FamilySearch: https://www.familysearch.org/en/tree/person/details/MZWC-LLY, Source: images/p06.jpg, generation 9.
-
-0 @P06I18@ INDI
-1 NAME Mary Lou /McDonald/
-1 SEX F
-1 BIRT
-2 DATE 13 FEB 1928
-1 DEAT
-2 DATE 10 DEC 2002
-1 FAMS @P06F8@
-1 NOTE Source: images/p06.jpg, generation 9 (spouse of Kenneth Cluseau).
-2 CONT No children printed under this union.
-
-0 @P06I19@ INDI
-1 NAME Living /Cluseau/
-1 SEX M
-1 FAMC @P05F4@
-1 FAMS @P06F9@
-1 NOTE Source: images/p06.jpg, generation 9.
-
-0 @P06I20@ INDI
-1 NAME Betty Jean /Marsh/
-1 SEX F
-1 BIRT
-2 DATE 04 NOV 1928
-1 DEAT
-2 DATE 20 FEB 1989
-1 FAMS @P06F9@
-1 NOTE Source: images/p06.jpg, generation 9 (spouse of Terrance Cluseau).
-2 CONT No children printed under this union. The raw OCR briefly read as
-2 CONT if a second spouse (Josephine Zeleznikar) might belong here instead
-2 CONT of to Jack Cluseau - the photo's own generation markers ("9-" on
-2 CONT separate lines for Terrance and Jack) resolve this cleanly; OCR
-2 CONT reflow, not a real structural ambiguity.
-
-0 @P06I21@ INDI
-1 NAME Jack /Cluseau/
-1 SEX M
-1 BIRT
-2 DATE 25 DEC 1930
-1 DEAT
-2 DATE 09 JUL 2003
-1 FAMC @P05F4@
-1 FAMS @P06F10@
-1 NOTE Source: images/p06.jpg, generation 9.
-
-0 @P06I22@ INDI
-1 NAME Josephine /Zeleznikar/
-1 SEX F
-1 BIRT
-2 DATE 21 MAR 1936
-1 DEAT
-2 DATE 17 DEC 1999
-1 FAMS @P06F10@
-1 NOTE Source: images/p06.jpg, generation 9 (spouse of Jack Cluseau). See
-2 CONT note on @P06I20@ regarding a brief OCR-reflow ambiguity, resolved by
-2 CONT the photo. No children printed under this union.
-
-0 @P06I23@ INDI
-1 NAME Alexina /Clusiau/
-1 SEX F
-1 BIRT
-2 DATE 17 JUN 1884
-2 PLAC Masham, Gatineau, Québec, Canada
-1 CHR
-2 DATE 22 JUN 1884
-2 PLAC Masham, Gatineau, Québec, Canada
-1 DEAT
-2 DATE 11 OCT 1951
-2 PLAC Ottawa, Carleton, Ontario, Canada
+2 DATE 10 Feb 1948
+2 PLAC Duluth, Minnesota
 1 BURI
-2 DATE 15 OCT 1951
-2 PLAC Ottawa, Carleton, Ontario, Canada
-1 FAMC @P02F2@
-1 FAMS @P06F11@
-1 NOTE Source: images/p06.jpg, generation 8 (previously-uncaptured sibling
-2 CONT of Mélina, Hercule, Charles Arthur, Théophile Eméry, and Alexis
-2 CONT Clusiau - all children of Charles Clusiau and Julie Philippe,
-2 CONT @P02F2@ in p02.ged).
-
-0 @P06I24@ INDI
-1 NAME Alphonse /Dumais/
-1 SEX M
-1 BIRT
-2 DATE 07 FEB 1881
-2 PLAC Ottawa, Carleton, Ontario, Canada
-1 CHR
-2 DATE 13 FEB 1881
-2 PLAC Ottawa, Carleton, Ontario, Canada
-1 DEAT
-2 DATE 08 MAY 1951
-2 PLAC Ottawa, Carleton, Ontario, Canada
-1 BURI
-2 DATE 11 MAY 1951
-2 PLAC Ottawa, Carleton, Ontario, Canada
-1 FAMS @P06F11@
-1 NOTE Source: images/p06.jpg, generation 8 (spouse of Alexina Clusiau).
-2 CONT Died three days before her (8 May / 11 Oct - actually five months
-2 CONT apart, not concurrent; noted only because both death and burial
-2 CONT dates are unusually close together for an unrelated couple, but
-2 CONT nothing here is inconsistent or flagged as an error).
-
-0 @P06I25@ INDI
-1 NAME Yvonne /Dumais/
+2 PLAC Grand Marais, Minnesota
+1 FAMC @F7@
+1 FAMS @F22@
+0 @I7@ INDI
+1 NAME Constance Otilia /Hall Johnson/
+2 GIVN Constance Otilia
+2 SURN Hall Johnson
+2 NICK Connie
 1 SEX F
 1 BIRT
-2 DATE 15 SEP 1904
-2 PLAC Ottawa, Carleton, Ontario, Canada
-1 CHR
-2 DATE 16 SEP 1904
-2 PLAC Ottawa, Carleton, Ontario, Canada
+2 DATE 29 Oct 1908
+2 PLAC Angora, MN
+2 SOUR @S6@
+3 DATA
+4 TEXT Hall, Constance Otilia
+5 CONT Date of Birth: 29 Oct 1908
+5 CONT Mother Maiden Name: Ofstad
+5 CONT certid# DC-66870
+5 CONT County of Birth: St. Louis
+5 CONT
+5 CONT
+3 PAGE certid# DC-66870
+3 QUAY 3
 1 DEAT
-2 DATE 04 SEP 1984
-2 PLAC Hawkesbury, Prescott-Russell, Ontario, Canada
+2 DATE 14 May 1989
+2 PLAC Ely, MN
 1 BURI
-2 DATE 07 SEP 1984
-2 PLAC Ottawa, Carleton, Ontario, Canada
-1 FAMC @P06F11@
-1 FAMS @P06F12@
-1 FAMS @P07F1@
-1 NOTE Source: images/p06.jpg, generation 9. Second marriage (to Isidore
-2 CONT Sicard, @P07I2@) recorded via an explicit cross-reference note
-2 CONT printed on p07.jpg itself ("see Yvonne Dumais on page 6") - same
-2 CONT convention as the Bonnie Gray / Arthur Francis Clusiau case in
-2 CONT p03.ged and p04.ged. High confidence, not inferred from position.
-
-0 @P06I26@ INDI
+2 PLAC Grand Marais, MN
+1 FAMC @F32@
+1 FAMS @F22@
+0 @I8@ INDI
+1 NAME Hilma Eleanor /Kokkinen Clusiau/
+2 GIVN Hilma Eleanor
+2 SURN Kokkinen Clusiau
+2 NICK Eleanor
+1 SEX F
+1 BIRT
+2 DATE 23 Nov 1916
+2 PLAC Nashwauk, Minnesota
+1 DEAT
+2 DATE 21 May 2008
+2 PLAC Ely, Minnesota
+2 SOUR @S5@
+3 DATA
+4 DATE Friday, May 23, 2008
+4 TEXT Eleanor Clusiau, 91, of Ely passed away peacefully on May 21.
+5 CONT
+5 CONT She was born in Nashwauk to Finnish immigrant parents John and Mina Kokkinen. She married Arlie Clusiau and together they owned Clusiau Motor Sales in Ely from 1947-1958, the Babbitt Bowling Center in Babbitt and Clusiau Lincoln-Mercury in Roche
+5 CONC ster where she worked side-by-side with her husband as the office manager. She continued to summer in Ely at her Burntside Lake cabin after her husband died in 1969 and moved to Ely permanently in 1983.
+5 CONT
+5 CONT She personified "sisu" and enjoyed fishing, golfing and bowling and was an avid cribbage player right up to the end, counting her own cards and sometimes correcting her cribbage partners' counts. Always a perfectionist, she took great pride an
+5 CONC d satisfaction in maintaining her house and yard. In her later years, she was very interested in politics, enjoyed Newsweek, and watching all the TV political talk shows, being especially careful to monitor what the "other side" was saying. Sh
+5 CONC e knew her values and had strong opinions on just about anything that was going on. She never, ever failed to vote, often looking forward to "voting the rascals out."
+5 CONT
+5 CONT She is survived by her daughters, Marilyn Johnson (Bruce) of White Bear Lake and Shirley Kapsch (Steve) of Lake Oswego, OR, six grandchildren and 12 great grand children. She was the last of the Kokkinen family of Nashwauk, three brothers Eero
+5 CONC , Ernest and Edmund Kokkinen and two sisters Ayla Merila and Sylvia Sarell.
+5 CONT
+5 CONT Private services will be held with burial in Hibbing. The family suggests memorial contributions to the Ely-Bloomenson Community Hospital Foundation, 328 West Conan St., Ely, MN 55731.
+5 CONT
+3 QUAY 3
+1 BURI
+2 PLAC Hibbing, Minnesota
+1 FAMC @F27@
+1 FAMS @F26@
+0 @I9@ INDI
+1 NAME Arlie Charles /Clusiau/
+2 GIVN Arlie Charles
+2 SURN Clusiau
+1 SEX M
+1 BIRT
+2 DATE 06 Dec 1910
+2 PLAC Minnesota
+1 DEAT
+2 DATE 08 Jun 1969
+2 PLAC Rochester, Minnesota
+2 SOUR @S7@
+3 DATA
+4 TEXT CLUSIAU, ARLIE
+5 CONT Date of Birth:  06 Dec 1910
+5 CONT Place of Birth:  MINNESOTA
+5 CONT Mother Maiden Name:  KERTSING
+5 CONT
+5 CONT
+5 CONT
+5 CONT certid# 1969-MN-014987
+5 CONT
+5 CONT Date of Death:  08 Jun 1969
+5 CONT County of Death: OLMSTED
+3 PAGE certid# 1969-MN-014987
+3 QUAY 3
+1 BURI
+2 PLAC Hibbing, Minnesota
+1 FAMC @F28@
+1 FAMS @F26@
+0 @I10@ INDI
+1 NAME Aurora Wilhelmina /Kokkinen/
+2 GIVN Aurora Wilhelmina
+2 SURN Kokkinen
+2 NICK Mina
+1 SEX F
+1 BIRT
+2 DATE 31 May 1877
+2 PLAC Isojoki, Finland
+1 DEAT
+2 DATE May 1955
+2 PLAC Superior WI
+1 NATU Declaration of Intention to stay in the United States
+2 DATE 07 May 1921
+2 PLAC Grand Rapids, Minnesota
+2 AGE 44
+1 NATU
+2 DATE 11 Oct 1923
+2 PLAC Itasca County, Minnesota
+1 IMMI Emigrated to USA from Liverpool, England on the vessel Gunerd Line through New York; previous residence Iaojaki, Finland
+2 DATE 13 Dec 1899
+2 PLAC Liverpool, England
+2 AGE 22
+1 IMMI Arrived in New York on the Gunard Line
+2 DATE 19 Dec 1899
+2 PLAC New York
+2 AGE 22
+1 FAMS @F27@
+0 @I11@ INDI
+1 NAME Severson /Johnson/
+2 GIVN Severson
+2 SURN Johnson
+2 NICK Sever (in US)
+1 SEX M
+1 BIRT
+2 DATE 1833
+2 PLAC Norway
+1 DEAT
+2 DATE 1916
+1 FAMS @F3@
+0 @I12@ INDI
+1 NAME Mary /Olson/
+2 GIVN Mary
+2 SURN Olson
+1 SEX F
+1 BIRT
+2 DATE 1845
+2 PLAC Norway
+1 DEAT
+2 DATE 1921
+1 FAMS @F3@
+0 @I13@ INDI
 1 NAME John /Johnson/
+2 GIVN John
+2 SURN Johnson
 1 SEX M
 1 BIRT
-2 DATE Abt 1881
-2 PLAC Allemagne
-1 DEAT
-2 DATE Abt 1950
-2 PLAC Ottawa, Carleton, Ontario, Canada
-1 FAMS @P06F12@
-1 NOTE Source: images/p06.jpg, generation 9 (spouse of Yvonne Dumais).
-2 CONT Birthplace printed simply as "Allemagne" with no further detail -
-2 CONT ambiguous whether this means the country (Allemagne is French for
-2 CONT Germany) or a specific place named Allemagne (there is a village of
-2 CONT that name in Calvados, France). Recorded exactly as printed rather
-2 CONT than translated or resolved either way; worth checking against the
-2 CONT photo or other records if his origin matters for your tree.
-
-0 @P06I27@ INDI
-1 NAME Living /Johnson/
-1 SEX M
-1 FAMC @P06F12@
-1 NOTE Source: images/p06.jpg, generation 10. Same given name as his
-2 CONT father (@P06I26@) - no "Jr" printed, unlike other same-name cases
-2 CONT elsewhere in this tree (e.g. Pierre Cluseau, Dave Jr Clusiau), so
-2 CONT recorded without one. Christening date is nine years after birth -
-2 CONT see note on his brother Gordon (@P06I28@), who shares the identical
-2 CONT christening date; looks like a delayed/batch baptism for multiple
-2 CONT siblings at once, not an error. Likely a living person.
-
-0 @P06I28@ INDI
-1 NAME Living /Johnson/
-1 SEX M
-1 FAMC @P06F12@
-1 NOTE Source: images/p06.jpg, generation 10. Christening date identical
-2 CONT to his brother John's (@P06I27@) despite an 11-month birth gap -
-2 CONT consistent with a single delayed/batch baptism event for both
-2 CONT (and likely Douglas too), not a transcription conflict. Likely a
-2 CONT living person.
-
-0 @P06I29@ INDI
-1 NAME Douglas /Johnson/
+2 DATE 1869
+1 FAMC @F3@
+0 @I14@ INDI
+1 NAME Charles Anton /Johnson/
+2 GIVN Charles Anton
+2 SURN Johnson
+2 NICK Moonlight
 1 SEX M
 1 BIRT
-2 DATE 24 SEP 1934
-2 PLAC Ottawa, Carleton, Ontario, Canada
-1 CHR
-2 DATE 09 APR 1941
-2 PLAC Ottawa, Carleton, Ontario, Canada
+2 DATE 30 Dec 1873
+2 PLAC Wisconsin
 1 DEAT
-2 DATE 2009
-2 PLAC Ottawa, Carleton, Ontario, Canada
-1 FAMC @P06F12@
-1 NOTE Source: images/p06.jpg and images/p07.jpg, generation 10. Death
-2 CONT date completed from p07.jpg, which repeats this entry at the top of
-2 CONT the next photographed section - resolving the incomplete flag this
-2 CONT record had.
-
-0 @P06F1@ FAM
-1 HUSB @P06I4@
-1 WIFE @P06I3@
-
-0 @P06F2@ FAM
-1 HUSB @P06I5@
-1 WIFE @P06I6@
-
-0 @P06F3@ FAM
-1 HUSB @P06I8@
-1 WIFE @P06I7@
-
-0 @P06F4@ FAM
-1 HUSB @P06I10@
-1 WIFE @P06I9@
-
-0 @P06F5@ FAM
-1 HUSB @P06I12@
-1 WIFE @P06I11@
-
-0 @P06F6@ FAM
-1 HUSB @P06I14@
-1 WIFE @P06I13@
-
-0 @P06F7@ FAM
-1 HUSB @P06I16@
-1 WIFE @P06I15@
-
-0 @P06F8@ FAM
-1 HUSB @P06I17@
-1 WIFE @P06I18@
-
-0 @P06F9@ FAM
-1 HUSB @P06I19@
-1 WIFE @P06I20@
-
-0 @P06F10@ FAM
-1 HUSB @P06I21@
-1 WIFE @P06I22@
-
-0 @P06F11@ FAM
-1 HUSB @P06I24@
-1 WIFE @P06I23@
-1 CHIL @P06I25@
-1 CHIL @P07I3@
-1 CHIL @P07I12@
-1 CHIL @P08I19@
-1 CHIL @P08I21@
-1 NOTE @P07I3@ (Germaine Dumais) and @P07I12@ (Roméo Dumais) defined in
-2 CONT p07.ged. These CHIL links were missed when p07.ged was first built
-2 CONT and added retroactively.
-2 CONT @P08I19@ (Laurette Dumais) and @P08I21@ (Irène Dumais) defined in
-2 CONT p08.ged - a family of five children total.
-
-0 @P06F12@ FAM
-1 HUSB @P06I26@
-1 WIFE @P06I25@
-1 CHIL @P06I27@
-1 CHIL @P06I28@
-1 CHIL @P06I29@
-1 CHIL @P07I1@
-1 NOTE @P07I1@ (Robert Johnson) defined in p07.ged, resolving the
-2 CONT incomplete flag this family had.
-
-0 @P07I1@ INDI
-1 NAME Living /Johnson/
-1 SEX M
-1 FAMC @P06F12@
-1 NOTE Source: images/p07.jpg, generation 10 (previously-uncaptured
-2 CONT fourth sibling - John, Gordon, and Douglas Johnson were already
-2 CONT recorded in p06.ged). No spouse/children printed. Likely a living
-2 CONT person.
-
-0 @P07I2@ INDI
-1 NAME Isidore /Sicard/
-1 SEX M
-1 BIRT
-2 DATE 15 JUN 1901
-2 PLAC Ile-du-Grand-Calumet, Pontiac, Québec, Canada
-1 CHR
-2 DATE 16 JUN 1901
-2 PLAC Ile-du-Grand-Calumet, Pontiac, Québec, Canada
-1 DEAT
-2 DATE 30 AUG 1977
-2 PLAC Ottawa, Carleton, Ontario, Canada
+2 DATE 27 Jun 1952
 1 BURI
-2 DATE Abt SEP 1977
-2 PLAC Ottawa, Carleton, Ontario, Canada
-1 FAMS @P07F1@
-1 NOTE Source: images/p07.jpg, generation 9 (second husband of Yvonne
-2 CONT Dumais, @P06I25@ in p06.ged). Printed with an explicit
-2 CONT cross-reference "(see Yvonne Dumais on page 6)" - see the note on
-2 CONT her record.
-
-0 @P07I3@ INDI
-1 NAME Germaine /Dumais/
+2 PLAC Grand Marais, Minnesota
+1 FAMC @F3@
+1 FAMS @F7@
+0 @I15@ INDI
+1 NAME Mildred /Johnson/
+2 GIVN Mildred
+2 SURN Johnson
 1 SEX F
 1 BIRT
-2 DATE 26 JAN 1906
-2 PLAC Ottawa, Carleton, Ontario, Canada
-1 CHR
-2 DATE 28 JAN 1906
-2 PLAC Ottawa, Carleton, Ontario, Canada
-1 DEAT
-2 DATE 1956
-2 PLAC Ottawa, Carleton, Ontario, Canada
-1 BURI
-2 DATE 1956
-2 PLAC Ottawa, Carleton, Ontario, Canada
-1 FAMC @P06F11@
-1 FAMS @P07F2@
-1 NOTE Source: images/p07.jpg, generation 9 (previously-uncaptured sibling
-2 CONT of Yvonne Dumais - both children of Alexina Clusiau and Alphonse
-2 CONT Dumais, @P06F11@ in p06.ged).
-
-0 @P07I4@ INDI
-1 NAME Salomon /Lanthier/
+2 DATE 1874
+1 FAMC @F3@
+0 @I16@ INDI
+1 NAME Sam /Johnson/
+2 GIVN Sam
+2 SURN Johnson
 1 SEX M
 1 BIRT
-2 DATE 23 OCT 1898
-2 PLAC L'Orignal, Prescott, Ontario, Canada
-1 CHR
-2 DATE 24 OCT 1898
-2 PLAC L'Orignal, Prescott, Ontario, Canada
-1 DEAT
-2 DATE 1951
-2 PLAC Ottawa, Carleton, Ontario, Canada
-1 BURI
-2 DATE 1951
-2 PLAC Ottawa, Carleton, Ontario, Canada
-1 FAMS @P07F2@
-1 NOTE Source: images/p07.jpg, generation 9 (spouse of Germaine Dumais).
-
-0 @P07I5@ INDI
-1 NAME Living /Lanthier/
-1 SEX F
-1 FAMC @P07F2@
-1 FAMS @P07F3@
-1 FAMS @P07F4@
-1 NOTE Source: images/p07.jpg, generation 10. Two spouses listed - see
-2 CONT the surname-matching note on @P07I8@ (Tammy Wolfe) explaining why
-2 CONT she's attached to the second-listed spouse.
-2 CONT DUPLICATE IN SOURCE (found via p08.jpg): this entire individual and
-2 CONT her descendant subtree also appear printed under Laurette Dumais +
-2 CONT Unknown (@P08I19@/@P08F6@) in p08.ged. Her own surname (Lanthier)
-2 CONT matches her father here (Salomon Lanthier) and not "Unknown," so
-2 CONT this attachment is treated as correct and the p08.jpg appearance as
-2 CONT a source-document duplication, not a second real person. See the
-2 CONT note on @P08I19@.
-
-0 @P07I6@ INDI
-1 NAME Living /Benoit/
-1 SEX M
-1 FAMS @P07F3@
-1 NOTE Source: images/p07.jpg, generation 10 (first husband of Françoise
-2 CONT Lanthier). No children printed under this union - see note on
-2 CONT @P07I8@ regarding Tammy Wolfe's actual parentage.
-
-0 @P07I7@ INDI
-1 NAME Gorden /Wolfe/
-1 SEX M
-1 BIRT
-2 DATE 04 APR 1946
-2 PLAC Hull, Gatineau, Québec, Canada
-1 DEAT
-2 DATE 06 JUN 1983
-2 PLAC Hull, Gatineau, Québec, Canada
-1 FAMS @P07F4@
-1 NOTE Source: images/p07.jpg, generation 10 (second husband of Françoise
-2 CONT Lanthier). His "+" line prints after Tammy Wolfe's entire subtree
-2 CONT in the source, but her surname (Wolfe) matches his, not
-2 CONT first-listed Jean-Guy Benoit's - attached here as her actual
-2 CONT father on that evidence.
-
-0 @P07I8@ INDI
-1 NAME Living /Wolfe/
-1 SEX F
-1 FAMC @P07F4@
-1 FAMS @P07F5@
-1 FAMS @P07F6@
-1 NOTE Source: images/p07.jpg, generation 11. SURNAME-MATCHED: printed
-2 CONT immediately after Jean-Guy Benoit's spouse line, which would
-2 CONT suggest he's her father by position - but her surname (Wolfe)
-2 CONT matches Gorden Wolfe, printed several lines later as her mother's
-2 CONT second husband. Attached to @P07F4@ (Gorden Wolfe) on that
-2 CONT evidence, not to @P07F3@ (Jean-Guy Benoit). Likely a living person.
-
-0 @P07I9@ INDI
-1 NAME Living /Gauvreau/
-1 SEX M
-1 FAMS @P07F5@
-1 NOTE Source: images/p07.jpg, generation 11 (first partner of Tammy
-2 CONT Wolfe). No birth/death date printed. No children printed under
-2 CONT this union - see note on @P07I11@ (Samantha Durand) regarding her
-2 CONT actual parentage. Likely a living person.
-
-0 @P07I10@ INDI
-1 NAME Living /Durand/
-1 SEX M
-1 FAMS @P07F6@
-1 NOTE Source: images/p07.jpg, generation 11 (second partner of Tammy
-2 CONT Wolfe). No birth/death date printed. Same surname-matching pattern
-2 CONT as his own mother-in-law's generation - see note on @P07I11@.
-2 CONT Likely a living person.
-
-0 @P07I11@ INDI
-1 NAME Living /Durand/
-1 SEX F
-1 FAMC @P07F6@
-1 NOTE Source: images/p07.jpg, generation 12. SURNAME-MATCHED, same
-2 CONT pattern as her mother Tammy Wolfe one generation up: printed right
-2 CONT after Pascal Gauvreau's line, but her surname (Durand) matches
-2 CONT Stéphane Durand, printed after - attached to @P07F6@ on that
-2 CONT evidence. Likely a living person.
-
-0 @P07I12@ INDI
-1 NAME Roméo /Dumais/
-1 SEX M
-1 BIRT
-2 DATE 22 SEP 1907
-2 PLAC Ottawa, Carleton, Ontario, Canada
-1 CHR
-2 DATE 23 SEP 1907
-2 PLAC Ottawa, Carleton, Ontario, Canada
-1 DEAT
-2 DATE 13 JAN 2002
-2 PLAC Clarence Creek, Ontario, Canada
-1 BURI
-2 DATE 17 JAN 2002
-2 PLAC Ottawa, Carleton, Ontario, Canada
-1 FAMC @P06F11@
-1 FAMS @P07F7@
-1 NOTE Source: images/p07.jpg, generation 9 (previously-uncaptured sibling
-2 CONT of Yvonne and Germaine Dumais, @P06F11@ in p06.ged).
-
-0 @P07I13@ INDI
-1 NAME Isabelle /Lemay/
+2 DATE 1876
+1 FAMC @F3@
+0 @I17@ INDI
+1 NAME Anna /Johnson/
+2 GIVN Anna
+2 SURN Johnson
 1 SEX F
 1 BIRT
-2 DATE 16 NOV 1917
-2 PLAC Ontario, Canada
-1 CHR
-2 DATE 20 NOV 1917
-2 PLAC Ontario, Canada
-1 DEAT
-2 DATE 25 APR 1957
-2 PLAC Ottawa, Carleton, Ontario, Canada
-1 BURI
-2 DATE 27 APR 1957
-2 PLAC Ottawa, Carleton, Ontario, Canada
-1 FAMS @P07F7@
-1 NOTE Source: images/p07.jpg, generation 9 (spouse of Roméo Dumais).
-2 CONT Birthplace printed with blank city/county fields before "Ontario,
-2 CONT Canada" - same convention as other sparse-PLAC records elsewhere in
-2 CONT this tree.
-
-0 @P07I14@ INDI
-1 NAME Living /Dumais/
-1 SEX F
-1 FAMC @P07F7@
-1 FAMS @P07F8@
-1 NOTE Source: images/p07.jpg, generation 10.
-
-0 @P07I15@ INDI
-1 NAME Gilbert /Pageau/
+2 DATE 1877
+1 FAMC @F3@
+0 @I18@ INDI
+1 NAME Christdom /Murphy/
+2 GIVN Christdom
+2 SURN Murphy
 1 SEX M
 1 BIRT
-2 DATE 13 DEC 1937
-2 PLAC Ottawa, Carleton, Ontario, Canada
-1 CHR
-2 DATE 19 DEC 1937
-2 PLAC Ottawa, Carleton, Ontario, Canada
+2 DATE 1780
 1 DEAT
-2 DATE 21 SEP 2010
-2 PLAC Hawkesbury, Prescott-Russell, Ontario, Canada
-1 BURI
-2 DATE 24 SEP 2010
-2 PLAC Hawkesbury, Prescott-Russell, Ontario, Canada
-1 FAMS @P07F8@
-1 NOTE Source: images/p07.jpg, generation 10 (spouse of Rachel Dumais).
-
-0 @P07I16@ INDI
-1 NAME Living /Pageau/
-1 SEX M
-1 FAMC @P07F8@
-1 FAMS @P07F9@
-1 NOTE Source: images/p07.jpg, generation 11. Birth date printed with only
-2 CONT a month, no day or year - recorded exactly as sparse as the
-2 CONT source has it. Likely a living person.
-
-0 @P07I17@ INDI
-1 NAME Living //
-1 SEX F
-1 FAMS @P07F9@
-1 NOTE Source: images/p07.jpg, generation 11. Printed literally as
-2 CONT "+Unknown" - spouse of Michel Pageau, name not recorded in the
-2 CONT source.
-
-0 @P07I18@ INDI
-1 NAME Living /Pageau/
-1 SEX M
-1 FAMC @P07F9@
-1 NOTE Source: images/p07.jpg, generation 12. No birth/death date printed.
-2 CONT Likely a living person.
-
-0 @P07I19@ INDI
-1 NAME Living /Pageau/
-1 SEX F
-1 FAMC @P07F8@
-1 FAMS @P07F10@
-1 NOTE Source: images/p07.jpg, generation 11. Birth date printed with day
-2 CONT and month but no year - recorded as sparse as the source has it.
-2 CONT Likely a living person.
-
-0 @P07I20@ INDI
-1 NAME Living /MacLennan/
-1 SEX M
-1 FAMS @P07F10@
-1 NOTE Source: images/p07.jpg, generation 11 (spouse of Renée Pageau). No
-2 CONT birth/death date printed. Likely a living person.
-
-0 @P07I21@ INDI
-1 NAME Living /MacLennan/
-1 SEX F
-1 FAMC @P07F10@
-1 NOTE Source: images/p07.jpg, generation 12. Likely a living person.
-
-0 @P07I22@ INDI
-1 NAME Living /MacLennan/
-1 SEX M
-1 FAMC @P07F10@
-1 NOTE Source: images/p07.jpg, generation 12. Likely a living person.
-
-0 @P07I23@ INDI
-1 NAME Living /Dumais/
-1 SEX M
-1 FAMC @P07F7@
-1 FAMS @P07F11@
-1 NOTE Source: images/p07.jpg, generation 10.
-
-0 @P07I24@ INDI
-1 NAME Living /Morin/
-1 SEX F
-1 FAMS @P07F11@
-1 NOTE Source: images/p07.jpg, generation 10 (spouse of Pierre Dumais).
-2 CONT Birth date printed with only a month, no day or year.
-
-0 @P07I25@ INDI
-1 NAME Living /Dumais/
-1 SEX M
-1 FAMC @P07F11@
-1 NOTE Source: images/p07.jpg, generation 11. Birth date printed with day
-2 CONT and month but no year. Likely a living person.
-
-0 @P07I26@ INDI
-1 NAME Living /Dumais/
-1 SEX M
-1 FAMC @P07F11@
-1 NOTE Source: images/p07.jpg, generation 11. Christening date printed
-2 CONT with place but no date. Likely a living person.
-
-0 @P07I27@ INDI
-1 NAME Jean-Marc /Dumais/
-1 SEX M
-1 BIRT
-2 DATE 06 OCT 1944
-2 PLAC Ottawa, Carleton, Ontario, Canada
-1 CHR
-2 DATE 08 OCT 1944
-2 PLAC Ottawa, Carleton, Ontario, Canada
-1 DEAT
-2 DATE 01 MAY 2005
-2 PLAC Masham, Gatineau, Québec, Canada
-1 BURI
-2 DATE 07 MAY 2005
-2 PLAC East Aldfield, Québec, Canada
-1 FAMC @P07F7@
-1 NOTE Source: images/p07.jpg, generation 10. No spouse/children printed.
-
-0 @P07I28@ INDI
-1 NAME Living /Dumais/
-1 SEX M
-1 FAMC @P07F7@
-1 FAMS @P07F12@
-1 NOTE Source: images/p07.jpg, generation 10.
-
-0 @P07I29@ INDI
-1 NAME Living /Ganescu/
-1 SEX F
-1 FAMS @P07F12@
-1 NOTE Source: images/p07.jpg, generation 10 (spouse of Jacques Dumais).
-2 CONT Birth date printed with day and month but no year; birthplace
-2 CONT printed at country level only ("Romania"), no city. No children
-2 CONT printed under this union. Likely a living person.
-
-0 @P07I30@ INDI
-1 NAME Living /Dumais/
-1 SEX M
-1 FAMC @P07F7@
-1 FAMS @P07F13@
-1 NOTE Source: images/p07.jpg, generation 10.
-
-0 @P07I31@ INDI
-1 NAME Living /Béland/
-1 SEX F
-1 FAMS @P07F13@
-1 NOTE Source: images/p07.jpg, generation 10 (spouse of Daniel Dumais).
-2 CONT Christening date printed with only a month, no day.
-
-0 @P07I32@ INDI
-1 NAME Living /Dumais/
-1 SEX M
-1 FAMC @P07F13@
-1 FAMS @P07F14@
-1 NOTE Source: images/p07.jpg, generation 11. Likely a living person.
-
-0 @P07I33@ INDI
-1 NAME Living /Joncas-Thiebaut/
-1 SEX F
-1 FAMS @P07F14@
-1 NOTE Source: images/p07.jpg, generation 11 (spouse of Philippe Dumais).
-2 CONT Cut off at the very bottom of the page immediately after this -
-2 CONT birthplace inferred as Ottawa, Carleton, Ontario, Canada by pattern
-2 CONT with every other entry on this page, not fully confirmed since the
-2 CONT source text is cut off mid-place-name. Likely a living person.
-
-0 @P07I34@ INDI
-1 NAME Living /Thiebaut/
-1 SEX M
-1 FAMC @P07F14@
-1 NOTE Source: images/p07.jpg and images/p08.jpg, generation 12.
-2 CONT Completed from p08.jpg, which repeats this entry at the top of the
-2 CONT next photographed section - resolving the incomplete flag. Surname
-2 CONT matches his mother's (Joncas-Thiebaut) rather than his father's
-2 CONT (Dumais); not flagged as a parentage question, since compound
-2 CONT surname children taking the mother's name is a plausible naming
-2 CONT choice on its own. Likely a living person.
-
-0 @P07F1@ FAM
-1 HUSB @P07I2@
-1 WIFE @P06I25@
-1 NOTE Wife is @P06I25@ (Yvonne Dumais), defined in p06.ged. No children
-2 CONT printed under this union.
-
-0 @P07F2@ FAM
-1 HUSB @P07I4@
-1 WIFE @P07I3@
-1 CHIL @P07I5@
-
-0 @P07F3@ FAM
-1 HUSB @P07I6@
-1 WIFE @P07I5@
-1 NOTE First marriage of Françoise Lanthier. No children confirmed under
-2 CONT this union - see note on @P07I8@.
-
-0 @P07F4@ FAM
-1 HUSB @P07I7@
-1 WIFE @P07I5@
-1 CHIL @P07I8@
-1 NOTE Second marriage of Françoise Lanthier. Child attached here by
-2 CONT surname match - see note on @P07I8@.
-
-0 @P07F5@ FAM
-1 HUSB @P07I9@
-1 WIFE @P07I8@
-1 NOTE First relationship of Tammy Wolfe. No children confirmed under
-2 CONT this union - see note on @P07I11@.
-
-0 @P07F6@ FAM
-1 HUSB @P07I10@
-1 WIFE @P07I8@
-1 CHIL @P07I11@
-1 NOTE Second relationship of Tammy Wolfe. Child attached here by
-2 CONT surname match - see note on @P07I11@.
-
-0 @P07F7@ FAM
-1 HUSB @P07I12@
-1 WIFE @P07I13@
-1 CHIL @P07I14@
-1 CHIL @P07I23@
-1 CHIL @P07I27@
-1 CHIL @P07I28@
-1 CHIL @P07I30@
-1 CHIL @P08I4@
-1 CHIL @P08I10@
-1 CHIL @P08I11@
-1 CHIL @P08I15@
-1 NOTE @P08I4@ (Claire), @P08I10@ (Francine), @P08I11@ (Gaëtan), and
-2 CONT @P08I15@ (Lorraine) Dumais defined in p08.ged - a family of nine
-2 CONT children total.
-
-0 @P07F8@ FAM
-1 HUSB @P07I15@
-1 WIFE @P07I14@
-1 CHIL @P07I16@
-1 CHIL @P07I19@
-
-0 @P07F9@ FAM
-1 HUSB @P07I16@
-1 WIFE @P07I17@
-1 CHIL @P07I18@
-
-0 @P07F10@ FAM
-1 HUSB @P07I20@
-1 WIFE @P07I19@
-1 CHIL @P07I21@
-1 CHIL @P07I22@
-
-0 @P07F11@ FAM
-1 HUSB @P07I23@
-1 WIFE @P07I24@
-1 CHIL @P07I25@
-1 CHIL @P07I26@
-
-0 @P07F12@ FAM
-1 HUSB @P07I28@
-1 WIFE @P07I29@
-
-0 @P07F13@ FAM
-1 HUSB @P07I30@
-1 WIFE @P07I31@
-1 CHIL @P07I32@
-1 CHIL @P08I1@
-1 NOTE @P08I1@ (Isabelle Dumais) defined in p08.ged.
-
-0 @P07F14@ FAM
-1 HUSB @P07I32@
-1 WIFE @P07I33@
-1 CHIL @P07I34@
-
-0 @P08I1@ INDI
-1 NAME Living /Dumais/
-1 SEX F
-1 FAMC @P07F13@
-1 FAMS @P08F1@
-1 NOTE Source: images/p08.jpg, generation 11 (previously-uncaptured
-2 CONT sibling of Philippe Dumais). Likely a living person.
-
-0 @P08I2@ INDI
-1 NAME Living /Bergeron/
-1 SEX M
-1 FAMS @P08F1@
-1 NOTE Source: images/p08.jpg, generation 11 (spouse of Isabelle Dumais).
-2 CONT Christening printed with place but no date. Likely a living person.
-
-0 @P08I3@ INDI
-1 NAME Living /Bergeron/
-1 SEX F
-1 FAMC @P08F1@
-1 NOTE Source: images/p08.jpg, generation 12. Likely a living person.
-
-0 @P08I4@ INDI
-1 NAME Living /Dumais/
-1 SEX F
-1 FAMC @P07F7@
-1 FAMS @P08F2@
-1 NOTE Source: images/p08.jpg, generation 10. Christening date printed
-2 CONT with only a month, no day.
-
-0 @P08I5@ INDI
-1 NAME Living /Millette/
-1 SEX M
-1 FAMS @P08F2@
-1 NOTE Source: images/p08.jpg, generation 10 (spouse of Claire Dumais).
-2 CONT Christening printed with place but no date.
-
-0 @P08I6@ INDI
-1 NAME Living /Millette/
-1 SEX M
-1 FAMC @P08F2@
-1 FAMS @P08F3@
-1 NOTE Source: images/p08.jpg, generation 11. Likely a living person.
-
-0 @P08I7@ INDI
-1 NAME Living /Namespetra/
-1 SEX F
-1 FAMS @P08F3@
-1 NOTE Source: images/p08.jpg, generation 11 (spouse of Sylvain Millette).
-2 CONT Likely a living person.
-
-0 @P08I8@ INDI
-1 NAME Living /Millette/
-1 SEX F
-1 FAMC @P08F3@
-1 NOTE Source: images/p08.jpg, generation 12. Likely a living person.
-
-0 @P08I9@ INDI
-1 NAME Living /Millette/
-1 SEX M
-1 FAMC @P08F2@
-1 NOTE Source: images/p08.jpg, generation 11. No spouse/children printed.
-2 CONT Likely a living person.
-
-0 @P08I10@ INDI
-1 NAME Living /Dumais/
-1 SEX F
-1 FAMC @P07F7@
-1 NOTE Source: images/p08.jpg, generation 10. No spouse/children printed.
-
-0 @P08I11@ INDI
-1 NAME Living /Dumais/
-1 SEX M
-1 FAMC @P07F7@
-1 FAMS @P08F4@
-1 NOTE Source: images/p08.jpg, generation 10.
-
-0 @P08I12@ INDI
-1 NAME Living /Barbe/
-1 SEX F
-1 FAMS @P08F4@
-1 NOTE Source: images/p08.jpg, generation 10 (spouse of Gaëtan Dumais).
-
-0 @P08I13@ INDI
-1 NAME Living /Dumais/
-1 SEX F
-1 FAMC @P08F4@
-1 NOTE Source: images/p08.jpg, generation 11. Likely a living person.
-
-0 @P08I14@ INDI
-1 NAME Living /Dumais/
-1 SEX M
-1 FAMC @P08F4@
-1 NOTE Source: images/p08.jpg, generation 11. Likely a living person.
-
-0 @P08I15@ INDI
-1 NAME Living /Dumais/
-1 SEX F
-1 FAMC @P07F7@
-1 FAMS @P08F5@
-1 NOTE Source: images/p08.jpg, generation 10.
-
-0 @P08I16@ INDI
-1 NAME Living /Gareau/
-1 SEX M
-1 FAMS @P08F5@
-1 NOTE Source: images/p08.jpg, generation 10 (spouse of Lorraine Dumais).
-2 CONT Birth date printed with day and month but no year.
-
-0 @P08I17@ INDI
-1 NAME Living /Gareau/
-1 SEX M
-1 FAMC @P08F5@
-1 NOTE Source: images/p08.jpg, generation 11. Likely a living person.
-
-0 @P08I18@ INDI
-1 NAME Living /Gareau/
-1 SEX F
-1 FAMC @P08F5@
-1 NOTE Source: images/p08.jpg, generation 11. No date printed at all, only
-2 CONT birthplace. Likely a living person.
-
-0 @P08I19@ INDI
-1 NAME Laurette /Dumais/
+2 DATE 1885
+1 FAMS @F4@
+0 @I19@ INDI
+1 NAME Judith /Myarty/
+2 GIVN Judith
+2 SURN Myarty
 1 SEX F
 1 BIRT
-2 DATE 04 JUN 1909
-2 PLAC Ottawa, Carleton, Ontario, Canada
-1 CHR
-2 DATE 06 JUN 1909
-2 PLAC Ottawa, Carleton, Ontario, Canada
+2 DATE 1800
 1 DEAT
-2 DATE 03 JUN 1974
-2 PLAC Ottawa, Carleton, Ontario, Canada
-1 BURI
-2 DATE 06 JUN 1974
-2 PLAC Ottawa, Carleton, Ontario, Canada
-1 FAMC @P06F11@
-1 FAMS @P08F6@
-1 NOTE Source: images/p08.jpg, generation 9 (previously-uncaptured sibling
-2 CONT of Yvonne, Germaine, and Roméo Dumais - all children of Alexina
-2 CONT Clusiau and Alphonse Dumais, @P06F11@ in p06.ged).
-2 CONT LIKELY SOURCE-DOCUMENT DUPLICATION: the source prints Françoise
-2 CONT Lanthier's entire subtree (her, Jean-Guy Benoit, Tammy Wolfe, Pascal
-2 CONT Gauvreau, Samantha Durand, Stéphane Durand, Gorden Wolfe) again
-2 CONT directly under this individual and her "+Unknown" spouse - identical
-2 CONT names and dates to the copy already recorded under Germaine Dumais +
-2 CONT Salomon Lanthier (@P07I5@ / @P07F2@ in p07.ged). Françoise's own
-2 CONT surname (Lanthier) matches Salomon Lanthier, not "Unknown," so that
-2 CONT original attachment is treated as correct and this repetition as a
-2 CONT duplication in the source report itself. NOT re-transcribed as a
-2 CONT second set of individuals - recorded here only as a note, with
-2 CONT "Unknown" as a placeholder spouse and no re-created children.
-
-0 @P08I20@ INDI
-1 NAME Living //
-1 SEX M
-1 FAMS @P08F6@
-1 NOTE Source: images/p08.jpg, generation 9. Printed literally as
-2 CONT "+Unknown" - spouse of Laurette Dumais. See the duplication note on
-2 CONT @P08I19@; this union's printed "child" (Françoise Lanthier) is not
-2 CONT re-created here as a separate individual.
-
-0 @P08I21@ INDI
-1 NAME Irène /Dumais/
+2 DATE 1895
+1 FAMS @F4@
+0 @I20@ INDI
+1 NAME Catherine /Murphy/
+2 GIVN Catherine
+2 SURN Murphy
 1 SEX F
 1 BIRT
-2 DATE 05 JUN 1910
-2 PLAC Ottawa, Carleton, Ontario, Canada
-1 CHR
-2 DATE 07 JUN 1910
-2 PLAC Ottawa, Carleton, Ontario, Canada
+2 DATE 17 Mar 1848
+2 PLAC Bandon, Cork County, Ireland
 1 DEAT
-2 DATE 07 AUG 1910
-2 PLAC Ottawa, Carleton, Ontario, Canada
-1 BURI
-2 DATE 08 AUG 1910
-2 PLAC Ottawa, Carleton, Ontario, Canada
-1 FAMC @P06F11@
-1 NOTE Source: images/p08.jpg, generation 9. Died in infancy, no spouse.
-
-0 @P08I22@ INDI
-1 NAME Adélia /Clusiau/
-1 SEX F
-1 BIRT
-2 DATE 20 SEP 1886
-2 PLAC Masham, Gatineau, Québec, Canada
-1 CHR
-2 DATE 25 SEP 1886
-2 PLAC Masham, Gatineau, Québec, Canada
-1 DEAT
-2 DATE 1964
-2 PLAC Masham, Gatineau, Québec, Canada
-1 FAMC @P02F2@
-1 FAMS @P08F7@
-1 NOTE Source: images/p08.jpg, generation 8 (previously-uncaptured sibling
-2 CONT of Mélina, Hercule, Charles Arthur, Théophile Eméry, Alexis, and
-2 CONT Alexina Clusiau - all children of Charles Clusiau and Julie
-2 CONT Philippe, @P02F2@ in p02.ged).
-2 CONT LIKELY TWIN: shares an identical birth date and christening date
-2 CONT with the next entry, Aurélie Clusiau, cut off at the bottom of this
-2 CONT page - same pattern as Marie/Augustin Cluseau (p01) and Travis/
-2 CONT Christine Case (p05). Needs p09 to confirm.
-
-0 @P08I23@ INDI
-1 NAME Ludger /Barnabé/
+2 DATE 1941
+1 FAMC @F4@
+1 FAMS @F6@
+0 @I21@ INDI
+1 NAME John /Gonia/
+2 GIVN John
+2 SURN Gonia
 1 SEX M
 1 BIRT
 2 DATE 1870
 1 DEAT
-2 DATE 18 JAN 1931
-2 PLAC Masham, Gatineau, Québec, Canada
+2 DATE 1948
+1 FAMC @F6@
+0 @I22@ INDI
+1 NAME Levi /Gonia/
+2 GIVN Levi
+2 SURN Gonia
+1 SEX M
+1 BIRT
+2 DATE 1872
+1 DEAT
+2 DATE 1947
+1 FAMC @F6@
+0 @I23@ INDI
+1 NAME Ellen /Gonia/
+2 GIVN Ellen
+2 SURN Gonia
+2 NICK Nellie
+1 SEX F
+1 BIRT
+2 DATE 29 Jun 1874
+1 DEAT
+2 DATE 22 Feb 1946
+1 FAMC @F6@
+1 FAMS @F7@
+0 @I24@ INDI
+1 NAME Christ /Gonia/
+2 GIVN Christ
+2 SURN Gonia
+1 SEX M
+1 BIRT
+2 DATE 1878
+1 DEAT
+2 DATE 1946
+1 FAMC @F6@
+0 @I25@ INDI
+1 NAME Mary Ann /Gonia/
+2 GIVN Mary Ann
+2 SURN Gonia
+1 SEX F
+1 BIRT
+2 DATE 1881
+1 FAMC @F6@
+0 @I26@ INDI
+1 NAME Levi /Gonia/
+2 GIVN Levi
+2 SURN Gonia
+1 SEX M
+1 BIRT
+2 DATE 1794
+2 PLAC France
+1 DEAT
+2 DATE 1879
+1 FAMS @F5@
+0 @I27@ INDI
+1 NAME Ellen /Keyes/
+2 GIVN Ellen
+2 SURN Keyes
+1 SEX F
+1 BIRT
+2 DATE 1804
+2 PLAC France
+1 DEAT
+2 DATE 1894
+1 FAMS @F5@
+0 @I28@ INDI
+1 NAME Robert /Gonia/
+2 GIVN Robert
+2 SURN Gonia
+1 SEX M
+1 BIRT
+2 DATE 17 Mar 1844
+2 PLAC Ontario, Canada
+1 DEAT
+2 DATE 1938
+1 FAMC @F5@
+1 FAMS @F6@
+0 @I29@ INDI
+1 NAME George /Gonia/
+2 GIVN George
+2 SURN Gonia
+1 SEX M
+1 BIRT
+2 DATE 1884
+1 FAMC @F6@
+0 @I30@ INDI
+1 NAME James /Gonia/
+2 GIVN James
+2 SURN Gonia
+1 SEX M
+1 BIRT
+2 DATE 1886
+1 FAMC @F6@
+0 @I31@ INDI
+1 NAME William /Gonia/
+2 GIVN William
+2 SURN Gonia
+1 SEX M
+1 BIRT
+2 DATE 1889
+1 FAMC @F6@
+0 @I32@ INDI
+1 NAME Catherine /Gonia/
+2 GIVN Catherine
+2 SURN Gonia
+1 SEX F
+1 BIRT
+2 DATE 1892
+1 FAMC @F6@
+0 @I33@ INDI
+1 NAME Robert /Gonia/ Jr
+2 GIVN Robert
+2 SURN Gonia
+2 NSFX Jr
+1 SEX M
+1 BIRT
+2 DATE 1897
+1 FAMC @F6@
+0 @I34@ INDI
+1 NAME Viola E. /Johnson/
+2 GIVN Viola E.
+2 SURN Johnson
+1 SEX F
+1 BIRT
+2 DATE 05 Aug 1900
+1 DEAT
+2 DATE 17 Oct 2000
+1 FAMC @F7@
+1 FAMS @F8@
+0 @I35@ INDI
+1 NAME Living /Fairbanks/
+2 GIVN Norman
+2 SURN Fairbanks
+1 SEX M
+1 FAMS @F8@
+0 @I36@ INDI
+1 NAME Living /Fairbanks/
+2 GIVN Norman D.
+2 SURN Fairbanks
+2 NSFX Jr
+1 SEX M
+1 FAMC @F8@
+1 FAMS @F9@
+0 @I37@ INDI
+1 NAME Living /Hartung/
+2 GIVN Barbara
+2 SURN Hartung
+1 SEX F
+1 FAMS @F9@
+0 @I38@ INDI
+1 NAME Living /Fairbanks/
+2 GIVN Jerry
+2 SURN Fairbanks
+1 SEX M
+1 FAMC @F9@
+0 @I39@ INDI
+1 NAME Living /Fairbanks/
+2 GIVN Kimberly
+2 SURN Fairbanks
+1 SEX F
+1 FAMC @F9@
+0 @I40@ INDI
+1 NAME Living /Fairbanks/
+2 GIVN Susan
+2 SURN Fairbanks
+1 SEX F
+1 FAMC @F9@
+0 @I41@ INDI
+1 NAME John W /Fairbanks/
+2 GIVN John W
+2 SURN Fairbanks
+1 SEX M
+1 BIRT
+2 DATE 27 Dec 1929
+1 DEAT
+2 DATE 29 Apr 1959
+0 @I42@ INDI
+1 NAME Living /Fairbanks/
+2 GIVN Patrick D.
+2 SURN Fairbanks
+1 SEX M
+1 FAMS @F10@
+1 FAMS @F11@
+1 FAMS @F12@
+0 @I43@ INDI
+1 NAME Living /Fairbanks/
+2 GIVN Nancy A.
+2 SURN Fairbanks
+1 SEX F
+1 FAMS @F13@
+0 @I44@ INDI
+1 NAME Living /Urbin/
+2 GIVN Dorlie
+2 SURN Urbin
+1 SEX F
+1 _LIVING Y
+1 FAMS @F10@
+0 @I45@ INDI
+1 NAME Living /Fairbanks/
+2 GIVN Timothy Robert
+2 SURN Fairbanks
+1 SEX M
+1 _LIVING Y
+1 FAMC @F10@
+0 @I46@ INDI
+1 NAME Living /De Lee Penten/
+2 GIVN Gene
+2 SURN De Lee Penten
+1 SEX F
+1 FAMS @F11@
+0 @I47@ INDI
+1 NAME Living /Fairbanks/
+2 GIVN Jennifer L.
+2 SURN Fairbanks
+1 SEX F
+1 _LIVING Y
+1 FAMC @F11@
+0 @I48@ INDI
+1 NAME Living /Lutze/
+2 GIVN Katherine
+2 SURN Lutze
+1 SEX F
+1 _LIVING Y
+1 FAMS @F12@
+0 @I49@ INDI
+1 NAME Living /Vinum/
+2 GIVN James
+2 SURN Vinum
+1 SEX M
+1 _LIVING Y
+1 FAMS @F13@
+0 @I50@ INDI
+1 NAME Living /Vinum/
+2 GIVN Gregory
+2 SURN Vinum
+1 SEX M
+1 _LIVING Y
+1 FAMC @F13@
+0 @I51@ INDI
+1 NAME Living /Vinum/
+2 GIVN Jeffrey
+2 SURN Vinum
+1 SEX M
+1 _LIVING Y
+1 FAMC @F13@
+0 @I52@ INDI
+1 NAME Living /Vinum/
+2 GIVN Heidi
+2 SURN Vinum
+1 SEX F
+1 _LIVING Y
+1 FAMC @F13@
+0 @I53@ INDI
+1 NAME Francis W. /Johnson/
+2 GIVN Francis W.
+2 SURN Johnson
+1 SEX M
+1 BIRT
+2 DATE 06 Sep 1902
+1 DEAT
+2 DATE 10 Apr 1991
+2 PLAC Fridley, MN
+1 FAMC @F7@
+1 FAMS @F14@
+0 @I54@ INDI
+1 NAME Pearl G. /Johnson/
+2 GIVN Pearl G.
+2 SURN Johnson
+1 SEX F
+1 BIRT
+2 DATE 17 Oct 1905
+1 DEAT
+2 DATE 20 Jun 2003
+1 FAMC @F7@
+1 FAMS @F18@
+0 @I56@ INDI
+1 NAME Veva /Wilkinson Johnson/
+2 GIVN Veva
+2 SURN Wilkinson Johnson
+1 SEX F
+1 BIRT
+2 DATE 25 Dec 1933
+1 DEAT
+2 DATE 30 May 1999
+1 FAMS @F14@
+0 @I57@ INDI
+1 NAME Muriel Rae /Johnson Wamstad/
+2 GIVN Muriel Rae
+2 SURN Johnson Wamstad
+2 NICK Murray
+1 SEX F
+1 BIRT
+2 DATE 21 Nov 1935
+1 DEAT
+2 DATE 31 Dec 2010
+1 FAMC @F14@
+1 FAMS @F15@
+0 @I58@ INDI
+1 NAME David /Wamstad/
+2 GIVN David
+2 SURN Wamstad
+1 SEX M
+1 DEAT
+2 DATE Jun 2009
+1 FAMS @F15@
+0 @I59@ INDI
+1 NAME Living /Wamstad/
+2 GIVN Lynn
+2 SURN Wamstad
+1 SEX U
+1 _LIVING Y
+1 FAMC @F15@
+0 @I60@ INDI
+1 NAME Living /Wamstad/
+2 GIVN Larry
+2 SURN Wamstad
+1 SEX M
+1 _LIVING Y
+1 FAMC @F15@
+0 @I61@ INDI
+1 NAME Living /Wamstad/
+2 GIVN Andy
+2 SURN Wamstad
+1 SEX M
+1 _LIVING Y
+1 FAMC @F15@
+0 @I62@ INDI
+1 NAME Living /Johnson Christie/
+2 GIVN Sharon
+2 SURN Johnson Christie
+1 SEX F
+1 FAMC @F14@
+1 FAMS @F16@
+1 FAMS @F17@
+0 @I63@ INDI
+1 NAME Living /Buffalo/
+2 GIVN Bob
+2 SURN Buffalo
+1 SEX M
+1 _LIVING Y
+1 FAMS @F16@
+0 @I64@ INDI
+1 NAME Living /Buffalo/
+2 GIVN Robert
+2 SURN Buffalo
+1 SEX M
+1 _LIVING Y
+1 FAMC @F16@
+0 @I65@ INDI
+1 NAME Living /Buffalo/
+2 GIVN Joseph
+2 SURN Buffalo
+1 SEX M
+1 _LIVING Y
+1 FAMC @F16@
+0 @I66@ INDI
+1 NAME Living /Christie/
+2 GIVN Patrick
+2 SURN Christie
+1 SEX M
+1 _LIVING Y
+1 FAMS @F17@
+0 @I67@ INDI
+1 NAME Living /Anderson/
+2 GIVN Gordon
+2 SURN Anderson
+1 SEX M
+1 _LIVING Y
+1 FAMS @F18@
+0 @I68@ INDI
+1 NAME Living /Anderson Newell/
+2 GIVN Rosemary
+2 SURN Anderson Newell
+1 SEX F
+1 _LIVING Y
+1 FAMC @F18@
+1 FAMS @F53@
+0 @I69@ INDI
+1 NAME Living /Wantiez/
+2 GIVN John
+2 SURN Wantiez
+1 SEX M
+1 _LIVING Y
+0 @I70@ INDI
+1 NAME Living /Wantiez/
+2 GIVN Cindy Ann
+2 SURN Wantiez
+1 SEX F
+1 _LIVING Y
+0 @I71@ INDI
+1 NAME Living /Powell/
+2 GIVN Bob
+2 SURN Powell
+1 SEX M
+1 _LIVING Y
+0 @I72@ INDI
+1 NAME Living /Newell/
+2 GIVN Tom
+2 SURN Newell
+1 SEX M
+1 _LIVING Y
+0 @I73@ INDI
+1 NAME Living /Newell/
+2 GIVN Thomas D.
+2 SURN Newell
+1 SEX M
+1 _LIVING Y
+0 @I74@ INDI
+1 NAME Living /Johnson/
+2 GIVN Dennis Roger
+2 SURN Johnson
+2 NICK Denny
+1 SEX M
+1 _LIVING Y
+1 FAMC @F22@
+1 FAMS @F23@
+0 @I75@ INDI
+1 NAME Living /Coombe Johnson/
+2 GIVN Renee
+2 SURN Coombe Johnson
+1 SEX F
+1 _LIVING Y
+1 FAMS @F23@
+0 @I76@ INDI
+1 NAME Living /Johnson/
+2 GIVN Dennis Keith
+2 SURN Johnson
+2 NICK Keith
+1 SEX M
+1 _LIVING Y
+1 FAMC @F23@
+1 FAMS @F69@
+0 @I77@ INDI
+1 NAME Living /Johnson/
+2 GIVN Michael
+2 SURN Johnson
+2 NICK Mike
+1 SEX M
+1 _LIVING Y
+1 FAMC @F23@
+1 FAMS @F70@
+0 @I78@ INDI
+1 NAME Living /Johnson/
+2 GIVN Richard
+2 SURN Johnson
+2 NICK Rich
+1 SEX M
+1 _LIVING Y
+1 FAMC @F23@
+1 FAMS @F71@
+0 @I79@ INDI
+1 NAME Living /Johnson/
+2 GIVN Gary Allen
+2 SURN Johnson
+1 SEX M
+1 _LIVING Y
+1 FAMC @F22@
+1 FAMS @F24@
+0 @I80@ INDI
+1 NAME Living /Junke Johnson/
+2 GIVN Jean
+2 SURN Junke Johnson
+1 SEX F
+1 _LIVING Y
+1 FAMS @F24@
+0 @I81@ INDI
+1 NAME Living /Johnson Belardes/
+2 GIVN Deborah
+2 SURN Johnson Belardes
+2 NICK Debbie
+1 SEX F
+1 _LIVING Y
+1 FAMC @F24@
+1 FAMS @F68@
+0 @I82@ INDI
+1 NAME Living /Johnson/
+2 GIVN Laura
+2 SURN Johnson
+1 SEX F
+1 _LIVING Y
+1 FAMC @F24@
+0 @I83@ INDI
+1 NAME Living /Johnson Tomsich/
+2 GIVN Kay Eileen
+2 SURN Johnson Tomsich
+1 SEX F
+1 _LIVING Y
+1 FAMC @F22@
+1 FAMS @F25@
+0 @I84@ INDI
+1 NAME Living /Tomsich/
+2 GIVN Robert
+2 SURN Tomsich
+1 SEX M
+1 _LIVING Y
+1 FAMS @F25@
+0 @I85@ INDI
+1 NAME Living /Tomsich Evans/
+2 GIVN Kathy
+2 SURN Tomsich Evans
+1 SEX F
+1 _LIVING Y
+1 FAMC @F25@
+1 FAMS @F88@
+0 @I86@ INDI
+1 NAME Living /Tomsich Sadusky/
+2 GIVN Elizabeth
+2 SURN Tomsich Sadusky
+2 NICK Beth
+1 SEX F
+1 _LIVING Y
+1 FAMC @F25@
+1 FAMS @F89@
+0 @I87@ INDI
+1 NAME Living /Tomsich/
+2 GIVN Jason
+2 SURN Tomsich
+1 SEX M
+1 _LIVING Y
+1 FAMC @F25@
+1 FAMS @F90@
+0 @I88@ INDI
+1 NAME Living /Tomsich-Bell/
+2 GIVN Jennifer
+2 SURN Tomsich-Bell
+2 NICK Jenny
+1 SEX F
+1 _LIVING Y
+1 FAMC @F25@
+1 FAMS @F91@
+0 @I89@ INDI
+1 NAME Charles Hall /Johnson/
+2 GIVN Charles Hall
+2 SURN Johnson
+1 SEX M
+1 BIRT
+2 DATE 28 Feb 1944
+2 PLAC Grand Marais, Minnesota
+1 DEAT
+2 DATE 20 Jun 1947
+2 PLAC Grand Marais, Minnesota
 1 BURI
-2 DATE 20 JAN 1931
-2 PLAC Masham, Gatineau, Québec, Canada
-1 FAMS @P08F7@
-1 NOTE Source: images/p08.jpg, generation 8 (spouse of Adélia Clusiau).
-
-0 @P08I24@ INDI
-1 NAME Living /Barnabé/
-1 SEX M
-1 FAMC @P08F7@
-1 FAMS @P08F8@
-1 NOTE Source: images/p08.jpg, generation 9.
-
-0 @P08I25@ INDI
-1 NAME Living /Lapierre/
+2 PLAC Grand Marais, Minnesota
+1 FAMC @F22@
+0 @I90@ INDI
+1 NAME Living /Clusiau Kapsch/
+2 GIVN Shirley Ann
+2 SURN Clusiau Kapsch
 1 SEX F
-1 FAMS @P08F8@
-1 NOTE Source: images/p08.jpg, generation 9 (spouse of Jean-Charles
-2 CONT Barnabé). No children printed under this union.
-
-0 @P08I26@ INDI
-1 NAME Aurélie /Clusiau/
+1 _LIVING Y
+1 FAMC @F26@
+1 FAMS @F39@
+0 @I91@ INDI
+1 NAME John /Kokkinen/
+2 GIVN John
+2 SURN Kokkinen
+1 SEX M
+1 DEAT
+2 DATE 07 Aug 1935
+2 SOUR @S3@
+3 DATA
+4 TEXT KOKKONEN JOHN NA 8/7/1935 Cert #5609 Location: NICHOLS
+3 PAGE http://www.rootsweb.ancestry.com/~mnstloui/192549k4.htm
+1 FAMS @F27@
+0 @I93@ INDI
+1 NAME Eero /Kokkinen/
+2 GIVN Eero
+2 SURN Kokkinen
+2 NICK Eero
+1 SEX M
+1 BIRT
+2 DATE 06 Jul 1909
+2 PLAC Stevenson, Minnesota
+1 DEAT
+2 DATE 17 Jan 2003
+1 FAMC @F27@
+1 FAMS @F75@
+0 @I94@ INDI
+1 NAME Ernest /Kokkinen/
+2 GIVN Ernest
+2 SURN Kokkinen
+1 SEX M
+1 BIRT
+2 DATE 09 Jan 1911
+2 PLAC Stevenson, Minnesota
+1 DEAT
+2 DATE Sep 1980
+2 NOTE Ernest KOKKINEN
+3 CONT     Birth Date: 9 Jan 1911
+3 CONT     Death Date: Sep 1980
+3 CONT     Social Security Number:  475-01-9551
+3 CONT     State or Territory Where Number Was Issued:  Minnesota
+3 CONT
+3 CONT   Death Residence Localities
+3 CONT     ZIP Code: 55769
+3 CONT     Localities:  Cooley, Itasca, Minnesota
+3 CONT   Lone Pine, Itasca, Minnesota
+3 CONT   Nashwauk, Itasca, Minnesota
+3 CONT
+1 FAMC @F27@
+1 FAMS @F77@
+0 @I95@ INDI
+1 NAME Living /Kokkinen/
+2 GIVN Edmund
+2 SURN Kokkinen
+1 SEX M
+1 FAMC @F27@
+1 FAMS @F97@
+0 @I96@ INDI
+1 NAME Ayla /Kokkinen/
+2 GIVN Ayla
+2 SURN Kokkinen
+1 SEX F
+1 DEAT
+2 DATE 1 Nov 1991
+1 FAMC @F27@
+1 FAMS @F81@
+0 @I97@ INDI
+1 NAME Sylvia /Kokkinen Sarell/
+2 GIVN Sylvia
+2 SURN Kokkinen Sarell
 1 SEX F
 1 BIRT
-2 DATE 20 SEP 1886
-2 PLAC Masham, Gatineau, Québec, Canada
-1 CHR
-2 DATE 25 SEP 1886
-2 PLAC Masham, Gatineau, Québec, Canada
-1 FAMC @P02F2@
-1 NOTE Source: images/p08.jpg and images/p09.jpg, generation 8. p09.jpg
-2 CONT confirms this record is complete as printed - birth and christening
-2 CONT only, no death/spouse/children - not cut off as originally flagged.
-2 CONT LIKELY TWIN of Adélia Clusiau (@P08I22@): identical birth date and
-2 CONT christening date - same pattern as Marie/Augustin Cluseau (p01) and
-2 CONT Travis/Christine Case (p05).
-
-0 @P08F1@ FAM
-1 HUSB @P08I2@
-1 WIFE @P08I1@
-1 CHIL @P08I3@
-
-0 @P08F2@ FAM
-1 HUSB @P08I5@
-1 WIFE @P08I4@
-1 CHIL @P08I6@
-1 CHIL @P08I9@
-
-0 @P08F3@ FAM
-1 HUSB @P08I6@
-1 WIFE @P08I7@
-1 CHIL @P08I8@
-
-0 @P08F4@ FAM
-1 HUSB @P08I11@
-1 WIFE @P08I12@
-1 CHIL @P08I13@
-1 CHIL @P08I14@
-
-0 @P08F5@ FAM
-1 HUSB @P08I16@
-1 WIFE @P08I15@
-1 CHIL @P08I17@
-1 CHIL @P08I18@
-
-0 @P08F6@ FAM
-1 HUSB @P08I20@
-1 WIFE @P08I19@
-1 NOTE See duplication note on @P08I19@ - the source's printed child
-2 CONT under this union is not re-created as a separate individual here.
-
-0 @P08F7@ FAM
-1 HUSB @P08I23@
-1 WIFE @P08I22@
-1 CHIL @P08I24@
-
-0 @P08F8@ FAM
-1 HUSB @P08I24@
-1 WIFE @P08I25@
-
-0 @P09I1@ INDI
-1 NAME Oscar /Clusiau/
+2 DATE 26 Nov 1906
+2 PLAC Chisholm, Minnesota
+1 FAMC @F27@
+1 FAMS @F57@
+0 @I98@ INDI
+1 NAME Alexander /Clusiau/
+2 GIVN Alexander
+2 SURN Clusiau
 1 SEX M
 1 BIRT
-2 DATE 17 NOV 1888
-2 PLAC Masham, Gatineau, Québec, Canada
-1 CHR
-2 DATE 19 NOV 1888
-2 PLAC Masham, Gatineau, Québec, Canada
+2 DATE 20 May 1881
 1 DEAT
-2 DATE 1961
-2 PLAC Masham, Gatineau, Québec, Canada
-1 FAMC @P02F2@
-1 NOTE Source: images/p09.jpg, generation 8. No spouse/children printed.
-
-0 @P09I2@ INDI
-1 NAME Joseph /Clusiau/
-1 SEX M
+2 DATE 27 Oct 1966
+1 FAMS @F28@
+0 @I99@ INDI
+1 NAME Katherine /Kersting Clusiau/
+2 GIVN Katherine
+2 SURN Kersting Clusiau
+1 SEX F
 1 BIRT
-2 DATE 17 APR 1892
-2 PLAC Masham, Gatineau, Québec, Canada
-1 CHR
-2 DATE 17 APR 1892
-2 PLAC Masham, Gatineau, Québec, Canada
+2 DATE 10 Sep 1886
 1 DEAT
-2 DATE 17 APR 1892
-2 PLAC Masham, Gatineau, Québec, Canada
+2 DATE 6 Dec 1966
 1 BURI
-2 DATE 18 APR 1892
-2 PLAC Masham, Gatineau, Québec, Canada
-1 FAMC @P02F2@
-1 NOTE Source: images/p09.jpg, generation 8. Born, christened, and died
-2 CONT the same day.
-
-0 @P09I3@ INDI
-1 NAME Marie-Rose /Clusiau/
-1 SEX F
-1 BIRT
-2 DATE 05 FEB 1894
-2 PLAC Masham, Gatineau, Québec, Canada
-1 CHR
-2 DATE 05 FEB 1894
-2 PLAC Masham, Gatineau, Québec, Canada
-1 FAMC @P02F2@
-1 NOTE Source: images/p09.jpg, generation 8. No spouse/children/death
-2 CONT printed.
-
-0 @P09I4@ INDI
-1 NAME Jeanne /Clusiau/
-1 SEX F
-1 BIRT
-2 DATE Abt 1896
-1 DEAT
-2 DATE 01 JUN 1943
-2 PLAC Ottawa, Carleton, Ontario, Canada
-1 BURI
-2 DATE 04 JUN 1943
-2 PLAC Ottawa, Carleton, Ontario, Canada
-1 FAMC @P02F2@
-1 FAMS @P09F1@
-1 NOTE Source: images/p09.jpg, generation 8.
-
-0 @P09I5@ INDI
-1 NAME Omer /Dumais/
-1 SEX M
-1 BIRT
-2 DATE 26 JUN 1895
-2 PLAC Ottawa, Carleton, Ontario, Canada
-1 CHR
-2 DATE 28 JUN 1895
-2 PLAC Ottawa, Carleton, Ontario, Canada
-1 FAMS @P09F1@
-1 NOTE Source: images/p09.jpg, generation 8 (spouse of Jeanne Clusiau).
-
-0 @P09I6@ INDI
-1 NAME Living /Dumais/
-1 SEX F
-1 FAMC @P09F1@
-1 NOTE Source: images/p09.jpg, generation 9. Printed before her older
-2 CONT brother Léo (@P09I7@, b.1914) in the source - an ordering quirk,
-2 CONT not an error; her own birth date is unambiguous.
-
-0 @P09I7@ INDI
-1 NAME Living /Dumais/
-1 SEX M
-1 FAMC @P09F1@
-1 NOTE Source: images/p09.jpg, generation 9.
-
-0 @P09I8@ INDI
-1 NAME Rose Alma /Clusiau/
-1 SEX F
-1 BIRT
-2 DATE 06 FEB 1897
-2 PLAC Masham, Gatineau, Québec, Canada
-1 CHR
-2 DATE 10 FEB 1897
-2 PLAC Masham, Gatineau, Québec, Canada
-1 DEAT
-2 DATE MAY 1974
-2 PLAC Ottawa, Carleton, Ontario, Canada
-1 FAMC @P02F2@
-1 FAMS @P09F2@
-1 NOTE Source: images/p09.jpg, generation 8.
-
-0 @P09I9@ INDI
-1 NAME Zéphyrin /Robert/
-1 SEX M
-1 BIRT
-2 DATE 14 DEC 1886
-2 PLAC Ottawa, Carleton, Ontario, Canada
-1 DEAT
-2 DATE Abt 1969
-2 PLAC Ottawa, Carleton, Ontario, Canada
-1 FAMS @P09F2@
-1 NOTE Source: images/p09.jpg, generation 8 (spouse of Rose Alma Clusiau).
-
-0 @P09I10@ INDI
-1 NAME Marguerite /Robert/
-1 SEX F
-1 BIRT
-2 DATE 1921
-2 PLAC Ottawa, Carleton, Ontario, Canada
-1 DEAT
-2 DATE 2007
-2 PLAC Oshawa, Ontario, Canada
-1 FAMC @P09F2@
-1 NOTE Source: images/p09.jpg, generation 9. No spouse/children printed.
-
-0 @P09I11@ INDI
-1 NAME Aurèle /Robert/
+2 PLAC Hibbing, Minnesota
+1 FAMS @F28@
+0 @I100@ INDI
+1 NAME Kenneth E. /Clusiau/
+2 GIVN Kenneth E.
+2 SURN Clusiau
 1 SEX M
 1 BIRT
 2 DATE 1926
-2 PLAC Ottawa, Carleton, Ontario, Canada
 1 DEAT
-2 DATE 05 JUL 2008
-2 PLAC Ottawa, Carleton, Ontario, Canada
-1 FAMC @P09F2@
-1 FAMS @P09F3@
-1 NOTE Source: images/p09.jpg, generation 9.
-
-0 @P09I12@ INDI
-1 NAME Living /Nadeau/
-1 SEX F
-1 FAMS @P09F3@
-1 NOTE Source: images/p09.jpg, generation 9 (spouse of Aurèle Robert). No
-2 CONT birth/death date printed. No children printed under this union.
-
-0 @P09I13@ INDI
-1 NAME Rhéal /Robert/
-1 SEX M
-1 DEAT
-2 DATE 16 OCT 2004
-2 PLAC Ottawa, Carleton, Ontario, Canada
+2 DATE 26 May 1984
+2 PLAC Hibbing, Minnesota
+2 SOUR @S3@
+3 DATA
+4 TEXT CLUSIAUKENNETHEUGENE5/26/1984 Cert: 5424 Location:HIBBING
+5 CONT
+3 PAGE http://www.rootsweb.ancestry.com/~mnstloui/197599c4.htm
+3 QUAY 3
 1 BURI
-2 DATE 22 OCT 2004
-2 PLAC Ottawa, Carleton, Ontario, Canada
-1 FAMC @P09F2@
-1 FAMS @P09F4@
-1 NOTE Source: images/p09.jpg, generation 9. No birth date printed, only
-2 CONT death/burial - recorded as sparse as the source has it.
-
-0 @P09I14@ INDI
-1 NAME Living /Guindon/
+2 PLAC Hibbing, Minnesota
+1 FAMC @F28@
+1 FAMS @F29@
+0 @I101@ INDI
+1 NAME Mary Lou /Clusiau/
+2 GIVN Mary Lou
+2 SURN Clusiau
 1 SEX F
-1 FAMS @P09F4@
-1 NOTE Source: images/p09.jpg, generation 9 (spouse of Rhéal Robert). No
-2 CONT birth/death date printed. No children printed under this union.
-
-0 @P09I15@ INDI
-1 NAME Living /Robert/
-1 SEX M
-1 FAMC @P09F2@
-1 NOTE Source: images/p09.jpg, generation 9. No dates, spouse, or children
-2 CONT printed at all.
-
-0 @P09I16@ INDI
-1 NAME Living /Robert/
-1 SEX F
-1 FAMC @P09F2@
-1 NOTE Source: images/p09.jpg, generation 9. No dates, spouse, or children
-2 CONT printed at all.
-
-0 @P09I17@ INDI
-1 NAME Living /Robert/
-1 SEX F
-1 FAMC @P09F2@
-1 NOTE Source: images/p09.jpg, generation 9. No dates, spouse, or children
-2 CONT printed at all.
-
-0 @P09I18@ INDI
-1 NAME Living /Robert/
-1 SEX M
-1 FAMC @P09F2@
-1 NOTE Source: images/p09.jpg, generation 9. No dates, spouse, or children
-2 CONT printed at all.
-
-0 @P09I19@ INDI
-1 NAME Maurice /Robert/
+1 BIRT
+2 DATE 1928
+1 DEAT
+2 DATE 9 Dec 2002
+1 FAMS @F29@
+0 @I102@ INDI
+1 NAME Daniel E. /Clusiau/
+2 GIVN Daniel E.
+2 SURN Clusiau
 1 SEX M
 1 BIRT
-2 DATE 1918
+2 DATE 1948
 1 DEAT
-2 DATE 2007
-1 FAMC @P09F2@
-1 FAMS @P09F5@
-1 NOTE Source: images/p09.jpg, generation 9.
-
-0 @P09I20@ INDI
-1 NAME Marguerite /Courville/
+2 DATE 5 Sep 1998
+1 BURI
+2 PLAC Hibbing, Minnesota
+1 FAMC @F29@
+1 FAMS @F30@
+0 @I103@ INDI
+1 NAME Living /Clusiau/
+2 GIVN Patti J.
+2 SURN Clusiau
+1 SEX F
+1 _LIVING Y
+1 FAMS @F30@
+0 @I104@ INDI
+1 NAME Living /Clusiau/
+2 GIVN Terrance K.
+2 SURN Clusiau
+2 NICK Terry
+1 SEX M
+1 _LIVING Y
+1 FAMC @F28@
+1 FAMS @F31@
+0 @I105@ INDI
+1 NAME Bette J. /Marsh Clusiau/
+2 GIVN Bette J.
+2 SURN Marsh Clusiau
+1 SEX F
+1 BIRT
+2 DATE 1928
+1 DEAT
+2 DATE 1989
+1 BURI
+2 PLAC Hibbing, Minnesota
+1 FAMS @F31@
+0 @I106@ INDI
+1 NAME Gunhild /Ofstad Hall/
+2 GIVN Gunhild
+2 SURN Ofstad Hall
+1 SEX F
+1 BIRT
+2 DATE 30 Mar 1878
+2 PLAC Geitastranda, Orkdal, S�r-Tr�ndelag, Norway
+1 DEAT
+2 DATE 22 Apr 1966
+2 PLAC Ely, MN
+1 BURI
+2 PLAC Celina, MN
+1 FAMC @F37@
+1 FAMS @F32@
+0 @I107@ INDI
+1 NAME Theodore Frederick /Hall/
+2 GIVN Theodore Frederick
+2 SURN Hall
+1 SEX M
+1 BIRT
+2 DATE 08 Oct 1864 (04?)
+2 PLAC Norway
+1 DEAT
+2 DATE 20 Dec 1949
+2 PLAC Virginia, MN
+1 BURI
+2 PLAC Celina, MN
+1 FAMS @F32@
+0 @I108@ INDI
+1 NAME Florence Celina /Hall Johnson/
+2 GIVN Florence Celina
+2 SURN Hall Johnson
+1 SEX F
+1 BIRT
+2 DATE 28 Oct 1905
+2 PLAC Celina, MN
+1 DEAT
+2 DATE 26 Aug 1960 (20 Dec?)
+1 FAMC @F32@
+1 FAMS @F40@
+0 @I109@ INDI
+1 NAME Theodore G /Hall/
+2 GIVN Theodore G
+2 SURN Hall
+1 SEX M
+1 BIRT
+2 DATE 06 Feb 1907
+2 PLAC St. Louis County, MN
+1 DEAT
+2 DATE Sep 1966
+1 BURI
+2 DATE Clam Gulch, AL
+1 FAMC @F32@
+1 FAMS @F42@
+0 @I110@ INDI
+1 NAME Leonard Roy /Hall/
+2 GIVN Leonard Roy
+2 SURN Hall
+1 SEX M
+1 BIRT
+2 DATE 18 Mar 1912
+2 PLAC St. Louis County, MN
+1 DEAT
+2 DATE 24 Nov 1993
+2 PLAC St. Louis County, MN
+1 FAMC @F32@
+1 FAMS @F43@
+0 @I111@ INDI
+1 NAME Ruby Marie /Hall Nikkola/
+2 GIVN Ruby Marie
+2 SURN Hall Nikkola
+1 SEX F
+1 BIRT
+2 DATE 14 Feb 1914
+2 PLAC St. Louis County, MN
+1 DEAT
+2 DATE 4 Dec 2005
+2 PLAC Ely, MN
+1 FAMC @F32@
+1 FAMS @F44@
+0 @I112@ INDI
+1 NAME Ardelle Berthine /Hall Long Prosen/
+2 GIVN Ardelle Berthine
+2 SURN Hall Long Prosen
+1 SEX F
+1 BIRT
+2 DATE 29 Sep 1917
+2 PLAC St. Louis County, MN
+1 DEAT
+2 DATE 15 Apr 2000
+2 PLAC St. Louis County, MiN
+1 FAMC @F32@
+1 FAMS @F33@
+1 FAMS @F116@
+0 @I113@ INDI
+1 NAME Alvin Severin /Hall/
+2 GIVN Alvin Severin
+2 SURN Hall
+1 SEX M
+1 BIRT
+2 DATE 31 Oct 1920
+2 PLAC St. Louis County, MN
+1 DEAT
+2 DATE 20 Jan 1987
+2 PLAC St. Louis County, MN
+1 FAMC @F32@
+1 FAMS @F47@
+0 @I114@ INDI
+1 NAME Frank J. /Prosen/
+2 GIVN Frank J.
+2 SURN Prosen
+1 SEX M
+1 BIRT
+2 DATE 03 Dec 1915
+2 PLAC St. Louis County, Minnesota
+1 DEAT
+2 DATE 12 Jan 1990
+2 PLAC St. Louis County, Minnesota
+1 FAMC @F34@
+1 FAMS @F33@
+0 @I115@ INDI
+1 NAME Frank /Prosen/
+2 GIVN Frank
+2 SURN Prosen
+1 SEX M
+1 BIRT
+2 DATE 16 May 1886
+2 PLAC Carniola, Slovenia
+1 DEAT
+2 DATE 08 Sep 1953
+2 PLAC St. Louis County, Minnesota
+1 FAMS @F34@
+0 @I116@ INDI
+1 NAME Noble Martin /Hall/
+2 GIVN Noble Martin
+2 SURN Hall
+1 SEX M
+1 _LIVING Y
+1 BIRT
+2 DATE 18 Oct 1915
+2 PLAC St. Louis County, MN
+1 DEAT
+2 DATE 11 Dec 1995
+1 FAMC @F32@
+1 FAMS @F45@
+0 @I117@ INDI
+1 NAME Living /Hall Welo/
+2 GIVN Dorothy Elizabeth
+2 SURN Hall Welo
+1 SEX F
+1 FAMC @F32@
+1 FAMS @F46@
+0 @I118@ INDI
+1 NAME Edward Lloyd /Hall/
+2 GIVN Edward Lloyd
+2 SURN Hall
+1 SEX M
+1 BIRT
+2 DATE 26 Dec 1922
+2 PLAC Celina, MN
+1 DEAT
+2 DATE 28 Dec 1922
+2 PLAC Celina, MN
+1 FAMC @F32@
+0 @I119@ INDI
+1 NAME Freeman D. /Hall/
+2 GIVN Freeman D.
+2 SURN Hall
+1 SEX M
+1 _LIVING Y
+1 BIRT
+2 DATE 05 Jun 1910
+2 PLAC St. Louis County, MN
+1 DEAT
+2 DATE 11 Jun 1950
+1 FAMC @F32@
+0 @I120@ INDI
+1 NAME John W. /Fairbanks/
+2 GIVN John W.
+2 SURN Fairbanks
+1 SEX M
+1 BIRT
+2 DATE 27 Dec 1929
+1 DEAT
+2 DATE 29 Apr 1959
+1 FAMC @F8@
+0 @I121@ INDI
+1 NAME Living /Fairbanks/
+2 GIVN Patrick D.
+2 SURN Fairbanks
+1 SEX M
+1 FAMC @F8@
+0 @I123@ INDI
+1 NAME Russell /Johnson/
+2 GIVN Russell
+2 SURN Johnson
+1 SEX M
+1 BIRT
+2 DATE 13 Nov 1909
+1 DEAT
+2 DATE 02 Feb 1974
+1 FAMC @F7@
+0 @I124@ INDI
+1 NAME Living /Johnson/
+2 GIVN Donald E.
+2 SURN Johnson
+1 SEX M
+1 FAMC @F7@
+1 FAMS @F36@
+0 @I125@ INDI
+1 NAME Vivian M. /Johnson Morris/
+2 GIVN Vivian M.
+2 SURN Johnson Morris
+1 SEX F
+1 BIRT
+2 DATE 04 May 1918
+1 DEAT
+2 DATE 29 Nov 2005
+1 FAMC @F7@
+1 FAMS @F41@
+0 @I126@ INDI
+1 NAME Living /Martin/
+2 GIVN Marley Martin
+2 SURN Martin
+1 SEX M
+1 _LIVING Y
+1 FAMC @F35@
+1 FAMS @F64@
+0 @I127@ INDI
+1 NAME Living /Johnson/
+2 GIVN Eric Martin
+2 SURN Johnson
+1 SEX M
+1 _LIVING Y
+1 FAMC @F35@
+0 @I128@ INDI
+1 NAME Grace Eileen /McRandle Eliasen Johnson/
+2 GIVN Grace Eileen
+2 SURN McRandle Eliasen Johnson
+1 SEX F
+1 BIRT
+2 DATE 20 May 1913
+2 PLAC Bessemer, Michigan
+1 DEAT
+2 DATE 20 Jun 2010
+2 PLAC Grand Marais, Minnesota
+1 FAMS @F36@
+0 @I129@ INDI
+1 NAME Living /Eliasen/
+2 GIVN Lawrence
+2 SURN Eliasen
+2 NICK Larry
+1 SEX M
+1 _LIVING Y
+1 FAMC @F36@
+0 @I130@ INDI
+1 NAME Living /Eliasen/
+2 GIVN David
+2 SURN Eliasen
+1 SEX M
+1 _LIVING Y
+1 FAMC @F36@
+0 @I131@ INDI
+1 NAME Living /Eliasen/
+2 GIVN Richard
+2 SURN Eliasen
+1 SEX M
+1 _LIVING Y
+1 FAMC @F36@
+0 @I132@ INDI
+1 NAME Living /Eliasen/
+2 GIVN Tom
+2 SURN Eliasen
+1 SEX M
+1 _LIVING Y
+1 FAMC @F36@
+0 @I133@ INDI
+1 NAME Living /Johnson/
+2 GIVN Fran
+2 SURN Johnson
+1 SEX M
+1 _LIVING Y
+1 FAMC @F36@
+0 @I134@ INDI
+1 NAME Living /Johnson/
+2 GIVN Charles
+2 SURN Johnson
+2 NICK Chuck
+1 SEX M
+1 _LIVING Y
+1 FAMC @F36@
+0 @I135@ INDI
+1 NAME Living /Johnson/
+2 GIVN James
+2 SURN Johnson
+1 SEX M
+1 _LIVING Y
+1 FAMC @F36@
+0 @I136@ INDI
+1 NAME Living /Johnson/
+2 GIVN William
+2 SURN Johnson
+1 SEX M
+1 _LIVING Y
+1 FAMC @F36@
+0 @I137@ INDI
+1 NAME Living /Johnson/
+2 GIVN Robert
+2 SURN Johnson
+1 SEX M
+1 _LIVING Y
+1 FAMC @F36@
+0 @I138@ INDI
+1 NAME Living /Johnson Olson/
+2 GIVN Mary
+2 SURN Johnson Olson
+1 SEX F
+1 _LIVING Y
+1 FAMC @F36@
+0 @I139@ INDI
+1 NAME Ola Eriksson Husdal /Ofstad/
+2 GIVN Ola Eriksson Husdal
+2 SURN Ofstad
+1 SEX M
+1 BIRT
+2 DATE 14 Apr 1834
+2 PLAC Husdalsk�ret, Husdalen, Geitastranda, Orkdal, S�r-Tr�ndelag, Norway
+1 DEAT
+2 DATE 6 Mar 1901
+2 PLAC Geitastranda, Orkdal, S�r-Tr�ndelag, Norway
+1 FAMS @F37@
+0 @I140@ INDI
+1 NAME Fredrikka Pedersdatter /Bj�rnbeit Ofstad/
+2 GIVN Fredrikka Pedersdatter
+2 SURN Bj�rnbeit Ofstad
+1 SEX F
+1 BIRT
+2 DATE 14 (7?) Dec 1839
+2 PLAC Monsskjervika, Geitastranda, Orkdal, S�r-Tr�ndelag,  Norway
+1 DEAT
+2 DATE 7 Dec 1924
+2 PLAC Angora, Minnesota
+1 FAMS @F37@
+0 @I141@ INDI
+1 NAME Ole Olsson /Ofstad/
+2 GIVN Ole Olsson
+2 SURN Ofstad
+1 SEX M
+1 BIRT
+2 DATE 29 Feb 1872
+2 PLAC Geitastranda, Orkdal, S�r-Tr�ndelag,  Norway
+1 FAMC @F37@
+1 FAMS @F114@
+0 @I142@ INDI
+1 NAME Gunhild Olsdatter /Ofstad/
+2 GIVN Gunhild Olsdatter
+2 SURN Ofstad
+1 SEX F
+1 BIRT
+2 DATE 5 May 1874
+2 PLAC Geitastranda, Orkdal, S�r-Tr�ndelag,  Norway
+1 DEAT
+2 DATE 1874
+2 PLAC Geitastranda, Orkdal, S�r-Tr�ndelag,  Norway
+1 FAMC @F37@
+0 @I143@ INDI
+1 NAME Bernt Olsson /Ofstad/
+2 GIVN Bernt Olsson
+2 SURN Ofstad
+1 SEX M
+1 BIRT
+2 DATE 5 May 1874
+2 PLAC Geitastranda, Orkdal, S�r-Tr�ndelag, Norway
+1 DEAT
+2 DATE 1951
+2 PLAC Virginia, Minnesota
+1 FAMC @F37@
+1 FAMS @F115@
+0 @I144@ INDI
+1 NAME Nikolai Olsson /Ofstad/
+2 GIVN Nikolai Olsson
+2 SURN Ofstad
+1 SEX M
+1 BIRT
+2 DATE 5 Mar 1876
+2 PLAC Geitastranda, Orkdal, S�r-Tr�ndelag, Norway
+1 DEAT
+2 DATE 1876
+2 PLAC Geitastranda, Orkdal, S�r-Tr�ndelag, Norway
+1 FAMC @F37@
+0 @I145@ INDI
+1 NAME Gunnerius Olsson /Ofstad/
+2 GIVN Gunnerius Olsson
+2 SURN Ofstad
+1 SEX M
+1 BIRT
+2 DATE 5 Mar 1876
+2 PLAC Geitastranda, Orkdal, S�r-Tr�ndelag, Norway
+1 DEAT
+2 DATE 1876
+1 FAMC @F37@
+0 @I146@ INDI
+1 NAME Nikolai Olsson /Ofstad/
+2 GIVN Nikolai Olsson
+2 SURN Ofstad
+1 SEX M
+1 BIRT
+2 DATE 26 Jan 1877
+2 PLAC Geitastranda, Orkdal, S�r-Tr�ndelag, Norway
+1 DEAT
+2 PLAC Geitastranda, Orkdal, S�r-Tr�ndelag, Norway
+1 FAMC @F37@
+0 @I147@ INDI
+1 NAME Andreas Olsen /Ofstad/
+2 GIVN Andreas Olsen
+2 SURN Ofstad
+1 SEX M
+1 BIRT
+2 DATE 14 Sep 1861
+2 PLAC �stan, Geitastranda, Orkdal, S�r-Tr�ndelag, Norway
+1 DEAT
+2 DATE 7 Sep 1919
+2 PLAC Angora, Minnesota
+1 FAMC @F37@
+1 FAMS @F103@
+0 @I148@ INDI
+1 NAME Randi Olsdatter /Ofstad/
+2 GIVN Randi Olsdatter
+2 SURN Ofstad
+1 SEX F
+1 BIRT
+2 DATE 1 Mar 1864
+2 PLAC Korsholtmoen, Geitastranda,  Orkanger, S�r-Tr�ndelag, Norway
+1 DEAT
+2 DATE 16 Apr 1896
+2 PLAC Geitastranda, Orkdal, S�r-Tr�ndelag, Norway
+1 FAMC @F37@
+0 @I149@ INDI
+1 NAME Edrikke Olsdatter /Ofstad/
+2 GIVN Edrikke Olsdatter
+2 SURN Ofstad
+1 SEX F
+1 BIRT
+2 DATE 10 Jan 1866
+2 PLAC Korsholtmoen, Geitastranda,  Orkdal, S�r-Tr�ndelag, Norway
+1 DEAT
+2 DATE 1948
+1 FAMC @F37@
+1 FAMS @F109@
+0 @I150@ INDI
+1 NAME Petter Olsson /Ofstad/
+2 GIVN Petter Olsson
+2 SURN Ofstad
+1 SEX M
+1 BIRT
+2 DATE 20 Jan 1868
+2 PLAC Geitastranda, Orkdal, S�r-Tr�ndelag, Norway
+1 FAMC @F37@
+0 @I151@ INDI
+1 NAME Marit Olsdatter /Ofstad/
+2 GIVN Marit Olsdatter
+2 SURN Ofstad
+1 SEX F
+1 BIRT
+2 DATE 24 Mar 1870
+1 DEAT
+2 DATE Nov 1963
+2 PLAC America
+1 FAMC @F37@
+1 FAMS @F113@
+0 @I152@ INDI
+1 NAME Living /Kapsch/
+2 GIVN Stefan
+2 SURN Kapsch
+2 NICK Steve
+1 SEX M
+1 FAMS @F39@
+0 @I153@ INDI
+1 NAME Living /Johnson/
+2 GIVN Douglas
+2 SURN Johnson
+2 NICK Doug
+1 SEX M
+1 FAMS @F40@
+0 @I154@ INDI
+1 NAME Living /Johnson/
+2 GIVN Eileen
+2 SURN Johnson
+1 SEX F
+1 FAMC @F40@
+0 @I155@ INDI
+1 NAME Living /Johnson/
+2 GIVN Douglas
+2 SURN Johnson
+1 SEX M
+1 _LIVING Y
+1 FAMC @F40@
+1 FAMS @F61@
+0 @I156@ INDI
+1 NAME Living /Johnson Blackwell/
+2 GIVN Diane
+2 SURN Johnson Blackwell
+1 SEX F
+1 _LIVING Y
+1 FAMC @F40@
+1 FAMS @F62@
+0 @I157@ INDI
+1 NAME Living /Johnson Heisel/
+2 GIVN Sharon
+2 SURN Johnson Heisel
+1 SEX F
+1 _LIVING Y
+1 FAMC @F40@
+1 FAMS @F63@
+0 @I158@ INDI
+1 NAME Living /Morris/
+2 GIVN Ken
+2 SURN Morris
+1 SEX M
+1 _LIVING Y
+1 FAMS @F41@
+0 @I159@ INDI
+1 NAME Living /Morris/
+2 GIVN Terry
+2 SURN Morris
+1 SEX F
+1 _LIVING Y
+1 FAMC @F41@
+0 @I160@ INDI
+1 NAME Living /Morris/
+2 GIVN Roger
+2 SURN Morris
+1 SEX M
+1 _LIVING Y
+1 FAMC @F41@
+1 FAMS @F80@
+0 @I161@ INDI
+1 NAME Living /Morris/
+2 GIVN Patricia
+2 SURN Morris
+2 NICK Pat
+1 SEX F
+1 _LIVING Y
+1 FAMC @F41@
+0 @I162@ INDI
+1 NAME Living /Morris/
+2 GIVN Debra
+2 SURN Morris
+1 SEX F
+1 _LIVING Y
+1 FAMC @F41@
+0 @I163@ INDI
+1 NAME Living /Sjoberg Hall/
+2 GIVN Florence
+2 SURN Sjoberg Hall
+1 SEX F
+1 FAMS @F42@
+0 @I164@ INDI
+1 NAME Theodore L /Hall/
+2 GIVN Theodore L
+2 SURN Hall
+2 NICK Ted
+1 SEX M
+1 DEAT
+2 DATE 4 Jun 2007
+1 FAMC @F42@
+1 FAMS @F50@
+0 @I165@ INDI
+1 NAME Living /Hall Engel/
+2 GIVN Nancy
+2 SURN Hall Engel
+1 SEX F
+1 _LIVING Y
+1 FAMC @F42@
+1 FAMS @F49@
+0 @I166@ INDI
+1 NAME Living /Hall/
+2 GIVN Robert
+2 SURN Hall
+2 NICK Bob
+1 SEX M
+1 _LIVING Y
+1 FAMC @F42@
+1 FAMS @F48@
+0 @I167@ INDI
+1 NAME Living /Kitto Hall/
+2 GIVN Evangeline
+2 SURN Kitto Hall
+2 NICK Van
+1 SEX F
+1 FAMS @F43@
+0 @I168@ INDI
+1 NAME Living /Hall Johnson/
+2 GIVN Lenore
+2 SURN Hall Johnson
+1 SEX F
+1 _LIVING Y
+1 FAMC @F43@
+0 @I169@ INDI
+1 NAME Living /Hall/
+2 GIVN Lee
+2 SURN Hall
+1 SEX M
+1 _LIVING Y
+1 FAMC @F43@
+0 @I170@ INDI
+1 NAME Living /Hall/
+2 GIVN Valorie
+2 SURN Hall
+1 SEX F
+1 _LIVING Y
+1 FAMC @F43@
+0 @I171@ INDI
+1 NAME Living /Hall/
+2 GIVN Vance
+2 SURN Hall
+1 SEX M
+1 _LIVING Y
+1 FAMC @F43@
+0 @I172@ INDI
+1 NAME Living /Hall/
+2 GIVN Virgil
+2 SURN Hall
+1 SEX M
+1 _LIVING Y
+1 FAMC @F43@
+0 @I173@ INDI
+1 NAME Living /Nikkola/
+2 GIVN Waldemar
+2 SURN Nikkola
+2 NICK Wally
+1 SEX M
+1 FAMS @F44@
+0 @I174@ INDI
+1 NAME Living /Nikkola Nicolls/
+2 GIVN Constance
+2 SURN Nikkola Nicolls
+2 NICK Connie
+1 SEX F
+1 _LIVING Y
+1 FAMC @F44@
+1 FAMS @F85@
+0 @I175@ INDI
+1 NAME Living /Nikkola/
+2 GIVN Warren
+2 SURN Nikkola
+1 SEX M
+1 _LIVING Y
+1 FAMC @F44@
+1 FAMS @F86@
+0 @I176@ INDI
+1 NAME Living /Hall/
+2 GIVN Martha
+2 SURN Hall
+1 SEX F
+1 _LIVING Y
+1 FAMS @F45@
+0 @I177@ INDI
+1 NAME Living /Hall/
+2 GIVN Martha Jean
+2 SURN Hall
+1 SEX F
+1 _LIVING Y
+1 FAMC @F45@
+0 @I178@ INDI
+1 NAME Living /Hall/
+2 GIVN Franklin
+2 SURN Hall
+1 SEX M
+1 _LIVING Y
+1 FAMC @F45@
+0 @I179@ INDI
+1 NAME Living //
+2 GIVN Earl Welo
+1 SEX M
+1 FAMS @F46@
+0 @I180@ INDI
+1 NAME Living /Welo Strickland/
+2 GIVN Barbara
+2 SURN Welo Strickland
+1 SEX F
+1 _LIVING Y
+1 FAMC @F46@
+1 FAMS @F52@
+0 @I181@ INDI
+1 NAME Living /Welo Jaquay/
+2 GIVN Elizabeth
+2 SURN Welo Jaquay
+2 NICK Liz
+1 SEX F
+1 _LIVING Y
+1 FAMC @F46@
+0 @I182@ INDI
+1 NAME Living /Welo Benhardus/
+2 GIVN Kathy
+2 SURN Welo Benhardus
+1 SEX F
+1 _LIVING Y
+1 FAMC @F46@
+1 FAMS @F51@
+0 @I183@ INDI
+1 NAME Living /Welo/
+2 GIVN Anthony
+2 SURN Welo
+1 SEX M
+1 _LIVING Y
+1 FAMC @F46@
+0 @I184@ INDI
+1 NAME Living /Welo/
+2 GIVN Beverly
+2 SURN Welo
+1 SEX F
+1 _LIVING Y
+1 FAMC @F46@
+0 @I185@ INDI
+1 NAME Living /Long/
+2 GIVN Alan
+2 SURN Long
+1 SEX M
+1 _LIVING Y
+1 FAMC @F116@
+0 @I186@ INDI
+1 NAME Living /Prosen/
+2 GIVN David
+2 SURN Prosen
+1 SEX M
+1 _LIVING Y
+1 FAMC @F33@
+0 @I187@ INDI
+1 NAME Mildred /Fredlund Hall/
+2 GIVN Mildred
+2 SURN Fredlund Hall
 1 SEX F
 1 BIRT
 2 DATE 1921
 1 DEAT
-2 DATE 1974
-1 FAMS @P09F5@
-1 NOTE Source: images/p09.jpg, generation 9 (spouse of Maurice Robert). No
-2 CONT children printed under this union.
-
-0 @P09I21@ INDI
-1 NAME Anne /Cluseau/
+2 DATE 1986
+1 FAMS @F47@
+0 @I188@ INDI
+1 NAME Living /Hall/
+2 GIVN Eldon
+2 SURN Hall
+1 SEX M
+1 _LIVING Y
+1 FAMC @F47@
+0 @I189@ INDI
+1 NAME Living /Hall/
+2 GIVN Rebecca
+2 SURN Hall
+1 SEX F
+1 _LIVING Y
+1 FAMC @F47@
+0 @I190@ INDI
+1 NAME Living /Hall/
+2 GIVN Margaret
+2 SURN Hall
+1 SEX F
+1 _LIVING Y
+1 FAMC @F48@
+0 @I191@ INDI
+1 NAME Living /Hall/
+2 GIVN David
+2 SURN Hall
+1 SEX M
+1 _LIVING Y
+1 FAMC @F48@
+0 @I192@ INDI
+1 NAME Living /Hall/
+2 GIVN Michael
+2 SURN Hall
+1 SEX M
+1 _LIVING Y
+1 FAMC @F48@
+0 @I193@ INDI
+1 NAME Living /Engel/
+2 GIVN Debbie
+2 SURN Engel
+1 SEX F
+1 _LIVING Y
+1 FAMC @F49@
+0 @I194@ INDI
+1 NAME Living /Engel/
+2 GIVN Jayne
+2 SURN Engel
+1 SEX F
+1 _LIVING Y
+1 FAMC @F49@
+0 @I195@ INDI
+1 NAME Living /Engel/
+2 GIVN Renee
+2 SURN Engel
+1 SEX F
+1 _LIVING Y
+1 FAMC @F49@
+0 @I196@ INDI
+1 NAME Living /Engel/
+2 GIVN Dawn
+2 SURN Engel
+1 SEX F
+1 _LIVING Y
+1 FAMC @F49@
+0 @I197@ INDI
+1 NAME Living /Engel/
+2 GIVN Darlene
+2 SURN Engel
+1 SEX F
+1 _LIVING Y
+1 FAMC @F49@
+0 @I198@ INDI
+1 NAME Living /Carlson/
+2 GIVN Majorie
+2 SURN Carlson
+2 NICK Marge
+1 SEX F
+1 _LIVING Y
+1 FAMS @F50@
+0 @I199@ INDI
+1 NAME Living /Hall/
+2 GIVN Holly
+2 SURN Hall
+1 SEX F
+1 _LIVING Y
+1 FAMC @F50@
+0 @I200@ INDI
+1 NAME Living /Hall/
+2 GIVN Ted
+2 SURN Hall
+1 SEX M
+1 _LIVING Y
+1 FAMC @F50@
+0 @I201@ INDI
+1 NAME Living /Hall/
+2 GIVN Shery
+2 SURN Hall
+1 SEX F
+1 _LIVING Y
+1 FAMC @F50@
+0 @I202@ INDI
+1 NAME Living /Hall/
+2 GIVN Becky
+2 SURN Hall
+1 SEX F
+1 _LIVING Y
+1 FAMC @F50@
+0 @I203@ INDI
+1 NAME Living /Hall/
+2 GIVN Gladys
+2 SURN Hall
+1 SEX F
+1 _LIVING Y
+1 FAMS @F48@
+0 @I204@ INDI
+1 NAME Arnim /Clusiau/
+2 GIVN Arnim
+2 SURN Clusiau
+1 SEX M
+1 BIRT
+2 DATE 25 Jul 1906
+1 DEAT
+2 DATE 15 Apr 1995
+1 FAMC @F28@
+1 FAMS @F96@
+0 @I205@ INDI
+1 NAME Verna Mary /Clusiau Butner/
+2 GIVN Verna Mary
+2 SURN Clusiau Butner
 1 SEX F
 1 BIRT
-2 DATE 21 FEB 1849
-2 PLAC Masham, Gatineau, Québec, Canada
-1 CHR
-2 DATE 21 MAR 1849
-2 PLAC Pointe-Gatineau, Gatineau, Québec, Canada
-1 FAMC @P01F14@
-1 FAMS @P09F6@
-1 NOTE Source: images/p09.jpg, generation 7 (previously-uncaptured sibling
-2 CONT of Marie Louise, Eloise, and Charles Clusiau - all children of
-2 CONT Charles Cluseau b.1804 and Hortense Dazé, @P01F14@ in p01.ged).
-2 CONT Surname printed "Cluseau" here, matching her father's generation's
-2 CONT spelling rather than her brother Charles's "Clusiau" - preserved
-2 CONT as printed.
-
-0 @P09I22@ INDI
-1 NAME Living /Gosselin/
-1 SEX M
-1 FAMS @P09F6@
-1 NOTE Source: images/p09.jpg, generation 7 (spouse of Anne Cluseau). No
-2 CONT birth/death date printed. No children printed under this union.
-
-0 @P09I23@ INDI
-1 NAME Joseph /Cluseau/
-1 SEX M
+2 DATE 22 Nov 1908
+1 DEAT
+2 DATE 26 Aug 1990
+1 FAMC @F28@
+1 FAMS @F95@
+0 @I206@ INDI
+1 NAME Dorothy Katherine /Clusiau Rosso/
+2 GIVN Dorothy Katherine
+2 SURN Clusiau Rosso
+1 SEX F
 1 BIRT
-2 DATE Abt 1850
-1 FAMC @P01F14@
-1 FAMS @P09F7@
-1 NOTE Source: images/p09.jpg, generation 7 (previously-uncaptured sibling
-2 CONT of Marie Louise, Eloise, Charles, and Anne Cluseau - all children
-2 CONT of Charles Cluseau b.1804 and Hortense Dazé, @P01F14@ in p01.ged).
-
-0 @P09I24@ INDI
-1 NAME Aurélie /Galipeau/
+2 DATE 27 Dec 1912
+1 DEAT
+2 DATE 31 (31?) Aug 2003
+1 FAMC @F28@
+1 FAMS @F87@
+0 @I207@ INDI
+1 NAME Living /Clusiau Perpich/
+2 GIVN Fern Marie
+2 SURN Clusiau Perpich
+1 SEX F
+1 FAMC @F28@
+1 FAMS @F94@
+1 FAMS @F101@
+0 @I208@ INDI
+1 NAME Living /Clusiau Laino/
+2 GIVN Lorraine
+2 SURN Clusiau Laino
+1 SEX F
+1 FAMC @F28@
+1 FAMS @F93@
+0 @I209@ INDI
+1 NAME Darline /Clusiau Wickstrom/
+2 GIVN Darline
+2 SURN Clusiau Wickstrom
+2 NICK Dicky
 1 SEX F
 1 DEAT
-2 DATE 09 OCT 1898
-2 PLAC Bonfield, Nipissing, Ontario, Canada
-1 BURI
-2 DATE 11 OCT 1898
-2 PLAC Bonfield, Nipissing, Ontario, Canada
-1 FAMS @P09F7@
-1 NOTE Source: images/p09.jpg, generation 7 (spouse of Joseph Cluseau). No
-2 CONT birth date printed, only death/burial.
-
-0 @P09I25@ INDI
-1 NAME Living /Cluseau/
+2 DATE 18 Sep 2003
+1 FAMC @F28@
+1 FAMS @F92@
+0 @I210@ INDI
+1 NAME Living /Clusiau Mason/
+2 GIVN Shirley
+2 SURN Clusiau Mason
 1 SEX F
-1 FAMC @P09F7@
-1 FAMS @P09F8@
-1 NOTE Source: images/p09.jpg, generation 8. No birth/death date printed
-2 CONT for her directly.
-
-0 @P09I26@ INDI
-1 NAME Agibe Caudille /Chénier/
-1 SEX M
-1 BIRT
-2 DATE 10 FEB 1883
-2 PLAC Bouchette, Québec, Canada
-1 DEAT
-2 DATE 27 NOV 1949
-2 PLAC Timmins, Ontario, Canada
-1 FAMS @P09F8@
-1 NOTE Source: images/p09.jpg and images/p10.jpg, generation 8 (spouse of
-2 CONT Délia Cluseau). Name, birth date, and birthplace confirmed from
-2 CONT p10.jpg's clean transcription - resolving the illegible-name flag
-2 CONT from p09.ged. "Agibe Caudille" is an unusual given name but reads
-2 CONT consistently across sources with real supporting data, unlike the
-2 CONT original garbled reading.
-
-0 @P09I27@ INDI
-1 NAME Alexis /Cluseau/
+1 FAMC @F28@
+1 FAMS @F67@
+0 @I213@ INDI
+1 NAME Jack /Clusiau/
+2 GIVN Jack
+2 SURN Clusiau
 1 SEX M
 1 DEAT
-2 DATE 25 APR 1893
-2 PLAC Bonfield, Nipissing, Ontario, Canada
-1 BURI
-2 DATE 27 APR 1893
-2 PLAC Bonfield, Nipissing, Ontario, Canada
-1 FAMC @P09F7@
-1 NOTE Source: images/p09.jpg, generation 8. No birth date printed, only
-2 CONT death/burial - recorded as sparse as the source has it. Possibly an
-2 CONT infant, but this can't be confirmed without a birth date.
-
-0 @P09I28@ INDI
-1 NAME Albina /Cluseau/
+2 DATE 9 Jul 2003
+1 FAMC @F28@
+1 FAMS @F56@
+0 @I215@ INDI
+1 NAME Living /Clusiau Benolken/
+2 GIVN Marsha
+2 SURN Clusiau Benolken
 1 SEX F
-1 BIRT
-2 DATE 01 FEB 1879
-2 PLAC Masham, Gatineau, Québec, Canada
-1 CHR
-2 DATE 09 FEB 1879
-2 PLAC Masham, Gatineau, Québec, Canada
-1 FAMC @P09F7@
-1 FAMS @P09F9@
-1 NOTE Source: images/p09.jpg, generation 8.
-
-0 @P09I29@ INDI
-1 NAME Living /Miron/
+1 _LIVING Y
+1 FAMC @F29@
+1 FAMS @F54@
+0 @I216@ INDI
+1 NAME Living /Clusiau/
+2 GIVN Tom
+2 SURN Clusiau
 1 SEX M
-1 FAMS @P09F9@
-1 NOTE Source: images/p09.jpg and images/p10.jpg, generation 8 (spouse of
-2 CONT Albina Cluseau). p10.jpg confirms nothing more is attached to him -
-2 CONT this sparse name-only record is complete as printed, not cut off
-2 CONT as originally flagged.
-
-0 @P09F1@ FAM
-1 HUSB @P09I5@
-1 WIFE @P09I4@
-1 CHIL @P09I6@
-1 CHIL @P09I7@
-
-0 @P09F2@ FAM
-1 HUSB @P09I9@
-1 WIFE @P09I8@
-1 CHIL @P09I10@
-1 CHIL @P09I11@
-1 CHIL @P09I13@
-1 CHIL @P09I15@
-1 CHIL @P09I16@
-1 CHIL @P09I17@
-1 CHIL @P09I18@
-1 CHIL @P09I19@
-
-0 @P09F3@ FAM
-1 HUSB @P09I11@
-1 WIFE @P09I12@
-
-0 @P09F4@ FAM
-1 HUSB @P09I13@
-1 WIFE @P09I14@
-
-0 @P09F5@ FAM
-1 HUSB @P09I19@
-1 WIFE @P09I20@
-
-0 @P09F6@ FAM
-1 HUSB @P09I22@
-1 WIFE @P09I21@
-
-0 @P09F7@ FAM
-1 HUSB @P09I23@
-1 WIFE @P09I24@
-1 CHIL @P09I25@
-1 CHIL @P09I27@
-1 CHIL @P09I28@
-
-0 @P09F8@ FAM
-1 HUSB @P09I26@
-1 WIFE @P09I25@
-
-0 @P09F9@ FAM
-1 HUSB @P09I29@
-1 WIFE @P09I28@
-
-0 @P10I2@ INDI
-1 NAME Alexis /Cluseau/
+1 _LIVING Y
+1 FAMC @F29@
+1 FAMS @F55@
+0 @I217@ INDI
+1 NAME Living /Benhardus/
+2 GIVN Odel
+2 SURN Benhardus
 1 SEX M
-1 BIRT
-2 DATE 12 SEP 1853
-2 PLAC Masham, Gatineau, Québec, Canada
-1 CHR
-2 DATE 24 SEP 1853
-2 PLAC Masham, Gatineau, Québec, Canada
-1 FAMC @P01F14@
-1 NOTE Source: images/p10.jpg, generation 7. Resolves the cutoff flagged
-2 CONT at the bottom of p09.jpg. No spouse/children printed.
-
-0 @P10I3@ INDI
-1 NAME Héli /Cluseau/
+1 _LIVING Y
+1 FAMS @F51@
+0 @I218@ INDI
+1 NAME Living /Benhardus/
+2 GIVN Jenny
+2 SURN Benhardus
+1 SEX F
+1 _LIVING Y
+1 FAMC @F51@
+0 @I219@ INDI
+1 NAME Living /Benhardus/
+2 GIVN Andy
+2 SURN Benhardus
 1 SEX M
-1 BIRT
-2 DATE 18 AUG 1855
-2 PLAC Masham, Gatineau, Québec, Canada
-1 CHR
-2 DATE 02 SEP 1855
-2 PLAC Masham, Gatineau, Québec, Canada
+1 _LIVING Y
+1 FAMC @F51@
+0 @I220@ INDI
+1 NAME Living /Strickland/
+2 GIVN Daryl
+2 SURN Strickland
+1 SEX M
+1 _LIVING Y
+1 FAMS @F52@
+0 @I221@ INDI
+1 NAME Living /Strickland/
+2 GIVN David
+2 SURN Strickland
+1 SEX M
+1 _LIVING Y
+1 FAMC @F52@
+0 @I222@ INDI
+1 NAME Living /Strickland/
+2 GIVN Mark
+2 SURN Strickland
+1 SEX M
+1 _LIVING Y
+1 FAMC @F52@
+0 @I223@ INDI
+1 NAME Living /Newell/
+2 GIVN Tom
+2 SURN Newell
+1 SEX M
+1 _LIVING Y
+1 FAMS @F53@
+0 @I224@ INDI
+1 NAME Living /Newell/
+2 GIVN Cindi
+2 SURN Newell
+1 SEX F
+1 _LIVING Y
+1 FAMC @F53@
+0 @I225@ INDI
+1 NAME Living /Newell/
+2 GIVN Tom
+2 SURN Newell
+1 SEX M
+1 _LIVING Y
+1 FAMC @F53@
+0 @I226@ INDI
+1 NAME Living /Clusiau/
+2 GIVN Greg
+2 SURN Clusiau
+1 SEX M
+1 _LIVING Y
+1 FAMC @F31@
+0 @I227@ INDI
+1 NAME Living /Clusiau/
+2 GIVN Patti
+2 SURN Clusiau
+1 SEX F
+1 _LIVING Y
+1 FAMC @F31@
+0 @I228@ INDI
+1 NAME Living /Clusiau/
+2 GIVN Terese
+2 SURN Clusiau
+1 SEX F
+1 _LIVING Y
+1 FAMC @F31@
+0 @I229@ INDI
+1 NAME Living /Clusiau/
+2 GIVN Bruce
+2 SURN Clusiau
+1 SEX M
+1 _LIVING Y
+1 FAMC @F31@
+0 @I230@ INDI
+1 NAME Living /Clusiau/
+2 GIVN Joel
+2 SURN Clusiau
+1 SEX M
+1 _LIVING Y
+1 FAMC @F31@
+0 @I231@ INDI
+1 NAME Living /Clusiau/
+2 GIVN Nick
+2 SURN Clusiau
+1 SEX M
+1 _LIVING Y
+1 FAMC @F31@
+0 @I232@ INDI
+1 NAME Living /Clusiau/
+2 GIVN Todd
+2 SURN Clusiau
+1 SEX M
+1 _LIVING Y
+1 FAMC @F31@
+0 @I233@ INDI
+1 NAME Living /Clusiau/
+2 GIVN Scott
+2 SURN Clusiau
+1 SEX M
+1 _LIVING Y
+1 FAMC @F31@
+0 @I234@ INDI
+1 NAME Living /Clusiau/
+2 GIVN Jason
+2 SURN Clusiau
+1 SEX M
+1 _LIVING Y
+1 FAMC @F30@
+0 @I235@ INDI
+1 NAME Living /Clusiau/
+2 GIVN Jean
+2 SURN Clusiau
+1 SEX F
+1 _LIVING Y
+1 FAMC @F30@
+0 @I236@ INDI
+1 NAME Living /Clusiau/
+2 GIVN Aaron
+2 SURN Clusiau
+1 SEX M
+1 _LIVING Y
+1 FAMC @F30@
+0 @I237@ INDI
+1 NAME Living /Clusiau/
+2 GIVN Kelly
+2 SURN Clusiau
+1 SEX F
+1 _LIVING Y
+1 FAMC @F30@
+0 @I238@ INDI
+1 NAME Living /Benolken/
+2 GIVN Max
+2 SURN Benolken
+1 SEX M
+1 _LIVING Y
+1 FAMS @F54@
+0 @I239@ INDI
+1 NAME Living /Benolken/
+2 GIVN Amy
+2 SURN Benolken
+1 SEX F
+1 _LIVING Y
+1 FAMC @F54@
+0 @I240@ INDI
+1 NAME Living /Benolken/
+2 GIVN Sarah
+2 SURN Benolken
+1 SEX F
+1 _LIVING Y
+1 FAMC @F54@
+0 @I241@ INDI
+1 NAME Living /Clusiau/
+2 GIVN Kenny
+2 SURN Clusiau
+1 SEX M
+1 _LIVING Y
+1 FAMC @F55@
+0 @I242@ INDI
+1 NAME Jo /Clusiau/
+2 GIVN Jo
+2 SURN Clusiau
+1 SEX F
 1 DEAT
-2 DATE 05 DEC 1910
-2 PLAC Bonfield, Nipissing, Ontario, Canada
-1 BURI
-2 DATE 07 DEC 1910
-2 PLAC Bonfield, Nipissing, Ontario, Canada
-1 FAMC @P01F14@
-1 FAMS @P10F1@
-1 NOTE Source: images/p10.jpg, generation 7.
-
-0 @P10I4@ INDI
-1 NAME Living /Proulx/
+2 DATE 18 Sep 1999
+1 FAMS @F56@
+0 @I243@ INDI
+1 NAME Living /Sarell/
+2 GIVN Eino
+2 SURN Sarell
+1 SEX M
+1 FAMS @F57@
+0 @I244@ INDI
+1 NAME Living /Sarell Ennis/
+2 GIVN Marlene
+2 SURN Sarell Ennis
 1 SEX F
-1 FAMS @P10F1@
-1 NOTE Source: images/p10.jpg, generation 7 (spouse of Héli Cluseau). No
-2 CONT birth/death date printed. No children printed under this union.
-
-0 @P10I5@ INDI
-1 NAME Hortense /Cluseau/
+1 _LIVING Y
+1 FAMC @F57@
+1 FAMS @F58@
+0 @I245@ INDI
+1 NAME Living /Sarell Battaglia/
+2 GIVN Dolores
+2 SURN Sarell Battaglia
 1 SEX F
-1 BIRT
-2 DATE 12 MAY 1858
-2 PLAC Masham, Gatineau, Québec, Canada
-1 CHR
-2 DATE 20 MAY 1858
-2 PLAC Masham, Gatineau, Québec, Canada
-1 FAMC @P01F14@
-1 NOTE Source: images/p10.jpg, generation 7. No spouse/children/death
-2 CONT printed. Shares her name with an ancestor five generations up
-2 CONT (Hortense Dazé, her own grandmother) - a family name, not an error.
-
-0 @P10I6@ INDI
-1 NAME Rosalie /Cluseau/
+1 _LIVING Y
+1 FAMC @F57@
+0 @I246@ INDI
+1 NAME Living /Ennis/
+2 GIVN Mick
+2 SURN Ennis
+1 SEX M
+1 FAMS @F58@
+0 @I247@ INDI
+1 NAME Living /Ennis Paugoulatos/
+2 GIVN Liz
+2 SURN Ennis Paugoulatos
 1 SEX F
-1 BIRT
-2 DATE Abt 1859
-1 FAMC @P01F14@
-1 NOTE Source: images/p10.jpg, generation 7. No other data printed at
-2 CONT all.
-
-0 @P10I7@ INDI
-1 NAME Léa /Cluseau/
+1 _LIVING Y
+1 FAMC @F58@
+1 FAMS @F59@
+0 @I248@ INDI
+1 NAME Living /Ennis/
+2 GIVN Nancy
+2 SURN Ennis
 1 SEX F
-1 BIRT
-2 DATE 28 JUL 1861
-2 PLAC Masham, Gatineau, Québec, Canada
-1 CHR
-2 DATE 08 AUG 1861
-2 PLAC Masham, Gatineau, Québec, Canada
-1 DEAT
-2 DATE 14 JAN 1921
-2 PLAC Ottawa, Carleton, Ontario, Canada
-1 BURI
-2 DATE 17 JAN 1921
-2 PLAC Ottawa, Carleton, Ontario, Canada
-1 FAMC @P01F14@
-1 NOTE Source: images/p10.jpg, generation 7. No spouse printed.
-
-0 @P10I8@ INDI
-1 NAME Elisa /Cluseau/
+1 _LIVING Y
+1 FAMC @F58@
+0 @I249@ INDI
+1 NAME Living /Ennis/
+2 GIVN Edward Sarell
+2 SURN Ennis
+2 NICK Ted
+1 SEX M
+1 _LIVING Y
+1 FAMC @F58@
+1 FAMS @F60@
+0 @I250@ INDI
+1 NAME Living /Paugoulatos/
+2 GIVN Tony
+2 SURN Paugoulatos
+1 SEX M
+1 _LIVING Y
+1 FAMS @F59@
+0 @I251@ INDI
+1 NAME Living /Paugoulatos/
+2 GIVN Brian
+2 SURN Paugoulatos
+1 SEX M
+1 _LIVING Y
+1 FAMC @F59@
+0 @I252@ INDI
+1 NAME Living /Paugoulatos/
+2 GIVN Jason
+2 SURN Paugoulatos
+1 SEX M
+1 _LIVING Y
+1 FAMC @F59@
+0 @I253@ INDI
+1 NAME Living /Ennis/
+2 GIVN Stephanie
+2 SURN Ennis
 1 SEX F
-1 BIRT
-2 DATE 24 DEC 1865
-2 PLAC Masham, Gatineau, Québec, Canada
-1 CHR
-2 DATE 24 DEC 1865
-2 PLAC Masham, Gatineau, Québec, Canada
-1 FAMC @P01F14@
-1 NOTE Source: images/p10.jpg, generation 7. Born and christened the same
-2 CONT day. No spouse/death printed.
-
-0 @P10I9@ INDI
-1 NAME Marie /Cluseau/
+1 _LIVING Y
+1 FAMS @F60@
+0 @I254@ INDI
+1 NAME Living /Ennis/
+2 GIVN Lauren Elizabeth
+2 SURN Ennis
 1 SEX F
-1 BIRT
-2 DATE Abt 1867
-2 PLAC Masham, Gatineau, Québec, Canada
-1 DEAT
-2 DATE 09 JAN 1939
-2 PLAC Bonfield, Nipissing, Ontario, Canada
-1 FAMC @P01F14@
-1 FAMS @P10F2@
-1 NOTE Source: images/p10.jpg, generation 7. Shares her given name with
-2 CONT several other Maries elsewhere in this tree - disambiguated by
-2 CONT generation, birth year, and parents throughout.
-
-0 @P10I10@ INDI
-1 NAME Pascal /Barbe/
+1 _LIVING Y
+1 FAMC @F60@
+0 @I255@ INDI
+1 NAME Living /Ennis/
+2 GIVN Teddy
+2 SURN Ennis
+1 SEX M
+1 _LIVING Y
+1 FAMC @F60@
+0 @I256@ INDI
+1 NAME Living /Johnson/
+2 GIVN Ciria
+2 SURN Johnson
+1 SEX F
+1 _LIVING Y
+1 FAMS @F61@
+0 @I257@ INDI
+1 NAME Living /Blackwell/
+2 GIVN Archie
+2 SURN Blackwell
+1 SEX M
+1 _LIVING Y
+1 FAMS @F62@
+0 @I258@ INDI
+1 NAME Manville /Heisel/
+2 GIVN Manville
+2 SURN Heisel
 1 SEX M
 1 DEAT
-2 DATE 02 MAR 1948
-2 PLAC Bonfield, Nipissing, Ontario, Canada
-1 FAMS @P10F2@
-1 NOTE Source: images/p10.jpg, generation 7 (spouse of Marie Cluseau
-2 CONT b.Abt1867). No birth date printed. No children printed under this
-2 CONT union.
-
-0 @P10I11@ INDI
-1 NAME Olivine /Cluseau/
+2 DATE Jun 1997
+1 FAMS @F63@
+0 @I259@ INDI
+1 NAME Living /Sevcik/
+2 GIVN Kevin Scott
+2 SURN Sevcik
+1 SEX M
+1 _LIVING Y
+1 FAMS @F64@
+0 @I260@ INDI
+1 NAME Living /Nanninga Johnson/
+2 GIVN Holly
+2 SURN Nanninga Johnson
 1 SEX F
-1 BIRT
-2 DATE Abt 1871
-2 PLAC Masham, Gatineau, Québec, Canada
+1 _LIVING Y
+1 FAMC @F66@
+1 FAMS @F65@
+0 @I261@ INDI
+1 NAME Living /Johnson/
+2 GIVN Kevin Christopher
+2 SURN Johnson
+1 SEX M
+1 _LIVING Y
+1 FAMC @F65@
+0 @I262@ INDI
+1 NAME Living /Johnson/
+2 GIVN Scott Thomas
+2 SURN Johnson
+1 SEX M
+1 _LIVING Y
+1 FAMC @F65@
+0 @I263@ INDI
+1 NAME Living /Johnson/
+2 GIVN Timothy Carter
+2 SURN Johnson
+2 NICK Tim
+1 SEX M
+1 _LIVING Y
+1 FAMC @F65@
+0 @I264@ INDI
+1 NAME Living /Nanninga/
+2 GIVN John
+2 SURN Nanninga
+1 SEX M
+1 _LIVING Y
+1 FAMS @F66@
+0 @I265@ INDI
+1 NAME Living /Nanninga/
+2 GIVN Pat
+2 SURN Nanninga
+1 SEX F
+1 _LIVING Y
+1 FAMS @F66@
+0 @I266@ INDI
+1 NAME Living /Nanninga/
+2 GIVN John David
+2 SURN Nanninga
+2 NICK J.D.
+1 SEX M
+1 _LIVING Y
+1 FAMC @F66@
+0 @I267@ INDI
+1 NAME Living /Mason/
+2 GIVN Merle
+2 SURN Mason
+1 SEX M
+1 FAMS @F67@
+0 @I268@ INDI
+1 NAME Living /Mason Osterhagen/
+2 GIVN Kathy
+2 SURN Mason Osterhagen
+1 SEX F
+1 _LIVING Y
+1 FAMC @F67@
+1 FAMS @F84@
+0 @I269@ INDI
+1 NAME Living /Belardes/
+2 GIVN Steve
+2 SURN Belardes
+1 SEX M
+1 _LIVING Y
+1 FAMS @F68@
+0 @I270@ INDI
+1 NAME Living /Belardes/
+2 GIVN David
+2 SURN Belardes
+1 SEX M
+1 _LIVING Y
+1 FAMC @F68@
+0 @I271@ INDI
+1 NAME Living /Belardes/
+2 GIVN Michael
+2 SURN Belardes
+1 SEX M
+1 _LIVING Y
+1 FAMC @F68@
+0 @I272@ INDI
+1 NAME Living /Johnson/
+2 GIVN Pam
+2 SURN Johnson
+1 SEX F
+1 _LIVING Y
+1 FAMS @F69@
+0 @I273@ INDI
+1 NAME Living /Johnson/
+2 GIVN Clint
+2 SURN Johnson
+1 SEX M
+1 _LIVING Y
+1 FAMC @F69@
+0 @I274@ INDI
+1 NAME Living /Johnson/
+2 GIVN Kristi
+2 SURN Johnson
+1 SEX F
+1 _LIVING Y
+1 FAMC @F69@
+0 @I275@ INDI
+1 NAME Living /Johnson/
+2 GIVN Vickie
+2 SURN Johnson
+1 SEX F
+1 _LIVING Y
+1 FAMS @F70@
+0 @I276@ INDI
+1 NAME Living /Johnson/
+2 GIVN Luke
+2 SURN Johnson
+1 SEX M
+1 _LIVING Y
+1 FAMC @F70@
+0 @I277@ INDI
+1 NAME Living /Johnson/
+2 GIVN Janeen
+2 SURN Johnson
+1 SEX F
+1 _LIVING Y
+1 FAMS @F71@
+0 @I278@ INDI
+1 NAME Living /Johnson/
+2 GIVN Dylan
+2 SURN Johnson
+1 SEX M
+1 _LIVING Y
+1 FAMC @F71@
+0 @I279@ INDI
+1 NAME Living /Johnson/
+2 GIVN Ryan
+2 SURN Johnson
+1 SEX M
+1 _LIVING Y
+1 FAMC @F71@
+0 @I280@ INDI
+1 NAME Living /Kapsch Solberg/
+2 GIVN John Arlie
+2 SURN Kapsch Solberg
+1 SEX M
+1 _LIVING Y
+1 FAMC @F39@
+1 FAMS @F72@
+0 @I281@ INDI
+1 NAME Living /Kapsch Markewitz/
+2 GIVN Emily
+2 SURN Kapsch Markewitz
+1 SEX F
+1 _LIVING Y
+1 FAMC @F39@
+1 FAMS @F73@
+0 @I282@ INDI
+1 NAME Living /Kapsch/
+2 GIVN Daniel Nathan
+2 SURN Kapsch
+1 SEX M
+1 _LIVING Y
+1 FAMC @F39@
+1 FAMS @F74@
+0 @I283@ INDI
+1 NAME Living /Solberg/
+2 GIVN Alisa
+2 SURN Solberg
+1 SEX F
+1 _LIVING Y
+1 FAMS @F72@
+0 @I284@ INDI
+1 NAME Living /Solberg/
+2 GIVN Stefan Norman
+2 SURN Solberg
+1 SEX M
+1 _LIVING Y
+1 FAMC @F72@
+0 @I285@ INDI
+1 NAME Living /Solberg/
+2 GIVN Benjamin
+2 SURN Solberg
+1 SEX M
+1 _LIVING Y
+1 FAMC @F72@
+0 @I286@ INDI
+1 NAME Living /Markewitz/
+2 GIVN John
+2 SURN Markewitz
+1 SEX M
+1 _LIVING Y
+1 FAMS @F73@
+0 @I287@ INDI
+1 NAME Living /Markewitz/
+2 GIVN Max Henry
+2 SURN Markewitz
+1 SEX M
+1 _LIVING Y
+1 FAMC @F73@
+0 @I288@ INDI
+1 NAME Living /Miller Kapsch/
+2 GIVN MaryBeth
+2 SURN Miller Kapsch
+2 NICK Beth
+1 SEX F
+1 _LIVING Y
+1 FAMS @F74@
+0 @I289@ INDI
+1 NAME Living /Kapsch/
+2 GIVN Quincy Rose
+2 SURN Kapsch
+1 SEX F
+1 _LIVING Y
+1 FAMC @F74@
+0 @I290@ INDI
+1 NAME Living /Kapsch/
+2 GIVN Baxter Israel
+2 SURN Kapsch
+1 SEX M
+1 _LIVING Y
+1 FAMC @F74@
+0 @I291@ INDI
+1 NAME Living /Schaefer Kokkinen/
+2 GIVN Violet
+2 SURN Schaefer Kokkinen
+1 SEX F
+1 FAMS @F75@
+0 @I292@ INDI
+1 NAME Living /Kokkinen/
+2 GIVN Alyn Dayle
+2 SURN Kokkinen
+1 SEX M
+1 _LIVING Y
+1 FAMC @F75@
+1 FAMS @F76@
+0 @I293@ INDI
+1 NAME Living /Kokkinen/
+2 GIVN Ken
+2 SURN Kokkinen
+1 SEX M
+1 _LIVING Y
+1 FAMC @F76@
+0 @I294@ INDI
+1 NAME Living /Kokkinen/
+2 GIVN Sam
+2 SURN Kokkinen
+1 SEX M
+1 _LIVING Y
+1 FAMC @F76@
+0 @I295@ INDI
+1 NAME Living /Kokkinen/
+2 GIVN Adam
+2 SURN Kokkinen
+1 SEX M
+1 _LIVING Y
+1 FAMC @F76@
+1 FAMS @F79@
+0 @I296@ INDI
+1 NAME Living /Kokkinen/
+2 GIVN Delima
+2 SURN Kokkinen
+1 SEX F
+1 FAMS @F77@
+0 @I297@ INDI
+1 NAME Living /Kokkinen Lenihan/
+2 GIVN Judy
+2 SURN Kokkinen Lenihan
+1 SEX F
+1 _LIVING Y
+1 FAMC @F77@
+1 FAMS @F78@
+0 @I298@ INDI
+1 NAME Living /Kokkinen/
+2 GIVN Duane
+2 SURN Kokkinen
+1 SEX M
+1 _LIVING Y
+1 FAMC @F77@
+0 @I299@ INDI
+1 NAME Tom //
+2 GIVN Tom
+1 SEX M
 1 DEAT
-2 DATE 17 NOV 1912
-2 PLAC Haileybury, Nipissing, Ontario, Canada
-1 FAMC @P01F14@
-1 FAMS @P10F3@
-1 NOTE Source: images/p10.jpg, generation 7. Last of the thirteen
-2 CONT children of Charles Cluseau (b.1804) and Hortense Dazé.
-
-0 @P10I12@ INDI
-1 NAME Alexandre /Laporte/
+2 DATE 2009
+1 FAMS @F78@
+0 @I300@ INDI
+1 NAME Living //
+2 GIVN Sean
+1 SEX M
+1 FAMC @F78@
+0 @I301@ INDI
+1 NAME Living //
+2 GIVN Kelly
+1 SEX F
+1 _LIVING Y
+1 FAMC @F78@
+0 @I302@ INDI
+1 NAME Living //
+2 GIVN Sherri
+1 SEX F
+1 _LIVING Y
+1 FAMS @F79@
+0 @I303@ INDI
+1 NAME Living /Morris/
+2 GIVN Lynda
+2 SURN Morris
+1 SEX F
+1 FAMS @F80@
+0 @I304@ INDI
+1 NAME Living /Merila/
+2 GIVN Aaron
+2 SURN Merila
+1 SEX M
+1 FAMS @F81@
+0 @I305@ INDI
+1 NAME Living /Merila Peterson/
+2 GIVN Loretta
+2 SURN Merila Peterson
+1 SEX F
+1 _LIVING Y
+1 FAMC @F81@
+0 @I306@ INDI
+1 NAME Living /Merila/
+2 GIVN Robert
+2 SURN Merila
+2 NICK Butch
+1 SEX M
+1 _LIVING Y
+1 FAMC @F81@
+1 FAMS @F82@
+0 @I307@ INDI
+1 NAME Living /Merila/
+2 GIVN Gordon
+2 SURN Merila
+2 NICK Gordie
+1 SEX M
+1 _LIVING Y
+1 FAMC @F81@
+1 FAMS @F83@
+0 @I308@ INDI
+1 NAME Living /Merila/
+2 GIVN Rosana
+2 SURN Merila
+1 SEX F
+1 FAMS @F82@
+0 @I309@ INDI
+1 NAME Living /Merila/
+2 GIVN Phyllis
+2 SURN Merila
+1 SEX F
+1 FAMS @F83@
+0 @I310@ INDI
+1 NAME Living /Osterhagen/
+2 GIVN John
+2 SURN Osterhagen
+1 SEX M
+1 FAMS @F84@
+0 @I311@ INDI
+1 NAME Living /Nicolls/
+2 GIVN Wayne
+2 SURN Nicolls
+2 NICK Nick
+1 SEX M
+1 _LIVING Y
+1 FAMS @F85@
+0 @I312@ INDI
+1 NAME Living /Nicolls/
+2 GIVN Heather
+2 SURN Nicolls
+1 SEX F
+1 _LIVING Y
+1 FAMC @F85@
+0 @I313@ INDI
+1 NAME Living /Nicolls/
+2 GIVN Gwen
+2 SURN Nicolls
+1 SEX F
+1 _LIVING Y
+1 FAMC @F85@
+0 @I314@ INDI
+1 NAME Living /Nicolls/
+2 GIVN Erin
+2 SURN Nicolls
+1 SEX F
+1 _LIVING Y
+1 FAMC @F85@
+0 @I315@ INDI
+1 NAME Living /Nikkola/
+2 GIVN Cathy
+2 SURN Nikkola
+1 SEX F
+1 _LIVING Y
+1 FAMS @F86@
+0 @I316@ INDI
+1 NAME Living /Nikkola/
+2 GIVN Tom
+2 SURN Nikkola
+1 SEX M
+1 _LIVING Y
+1 FAMC @F86@
+0 @I317@ INDI
+1 NAME Living /Nikkola/
+2 GIVN Bob
+2 SURN Nikkola
+1 SEX M
+1 _LIVING Y
+1 FAMC @F86@
+0 @I318@ INDI
+1 NAME Living /Evans/
+2 GIVN Dave
+2 SURN Evans
+1 SEX M
+1 _LIVING Y
+1 FAMS @F88@
+0 @I319@ INDI
+1 NAME Living /Evans/
+2 GIVN Kory
+2 SURN Evans
+1 SEX U
+1 _LIVING Y
+1 FAMC @F88@
+0 @I320@ INDI
+1 NAME Living /Evans/
+2 GIVN Kendric
+2 SURN Evans
+1 SEX U
+1 _LIVING Y
+1 FAMC @F88@
+0 @I321@ INDI
+1 NAME Living /Evans/
+2 GIVN Katryna
+2 SURN Evans
+1 SEX F
+1 _LIVING Y
+1 FAMC @F88@
+0 @I322@ INDI
+1 NAME Living /Evans/
+2 GIVN Garion
+2 SURN Evans
+1 SEX M
+1 _LIVING Y
+1 FAMC @F88@
+0 @I323@ INDI
+1 NAME Living /Sadusky/
+2 GIVN Tom
+2 SURN Sadusky
+1 SEX M
+1 _LIVING Y
+1 FAMS @F89@
+0 @I324@ INDI
+1 NAME Living /Sadusky/
+2 GIVN Cassie
+2 SURN Sadusky
+1 SEX F
+1 _LIVING Y
+1 FAMC @F89@
+0 @I325@ INDI
+1 NAME Living /Sadusky/
+2 GIVN Garrett
+2 SURN Sadusky
+1 SEX M
+1 _LIVING Y
+1 FAMC @F89@
+0 @I326@ INDI
+1 NAME Living /Sadusky/
+2 GIVN Jessica
+2 SURN Sadusky
+2 NICK Jetta
+1 SEX F
+1 _LIVING Y
+1 FAMC @F89@
+0 @I327@ INDI
+1 NAME Living /Tomsich/
+2 GIVN Missy
+2 SURN Tomsich
+1 SEX F
+1 _LIVING Y
+1 FAMS @F90@
+0 @I328@ INDI
+1 NAME Living /Tomsich/
+2 GIVN Marinka
+2 SURN Tomsich
+1 SEX F
+1 _LIVING Y
+1 FAMC @F90@
+0 @I329@ INDI
+1 NAME Living /Bell/
+2 GIVN James
+2 SURN Bell
+1 SEX M
+1 _LIVING Y
+1 FAMS @F91@
+0 @I330@ INDI
+1 NAME Living /Wickstrom/
+2 GIVN Alvin
+2 SURN Wickstrom
+1 SEX M
+1 FAMS @F92@
+0 @I331@ INDI
+1 NAME Living /Wickstrom/
+2 GIVN Terry
+2 SURN Wickstrom
+1 SEX M
+1 _LIVING Y
+1 FAMC @F92@
+0 @I332@ INDI
+1 NAME Living /Wickstrom/
+2 GIVN Tim
+2 SURN Wickstrom
+1 SEX M
+1 _LIVING Y
+1 FAMC @F92@
+0 @I333@ INDI
+1 NAME Eino /Laino/
+2 GIVN Eino
+2 SURN Laino
 1 SEX M
 1 BIRT
-2 DATE Abt 1859
-2 PLAC Aylmer, Gatineau, Québec, Canada
-1 FAMS @P10F3@
-1 NOTE Source: images/p10.jpg, generation 7 (spouse of Olivine Cluseau).
-2 CONT No children printed under this union.
-
-0 @P10I13@ INDI
-1 NAME Pierre /Cluseau/
-1 SEX M
-1 BIRT
-2 DATE Abt 1805
+2 DATE 3 Mar 1913
 1 DEAT
-2 DATE 21 NOV 1821
-2 PLAC Québec, Québec, Québec, Canada
-1 BURI
-2 DATE 23 NOV 1821
-2 PLAC Québec, Québec, Québec, Canada
-1 FAMC @P01F13@
-1 NOTE Source: images/p10.jpg, generation 6. Second child named Pierre in
-2 CONT this family - the first (@P01I30@) died in infancy in 1806, a name
-2 CONT reused afterward, same pattern seen elsewhere in this tree (e.g.
-2 CONT the two Augustin Cluseaus in @P01F11@). Died at about age 16, no
-2 CONT spouse.
-
-0 @P10I14@ INDI
-1 NAME Charlotte /Cluseau/
+2 DATE 2004
+1 FAMS @F93@
+0 @I334@ INDI
+1 NAME Living /Starcevich/
+2 GIVN John
+2 SURN Starcevich
+1 SEX M
+1 FAMS @F94@
+0 @I335@ INDI
+1 NAME Living /Starcevich/
+2 GIVN Denny
+2 SURN Starcevich
+1 SEX M
+1 _LIVING Y
+1 FAMC @F94@
+0 @I336@ INDI
+1 NAME Living /Russo/
+2 GIVN Clarence
+2 SURN Russo
+1 SEX M
+1 FAMS @F87@
+0 @I337@ INDI
+1 NAME Living /Russo/
+2 GIVN Pat
+2 SURN Russo
 1 SEX F
+1 FAMC @F87@
+0 @I338@ INDI
+1 NAME Living /Russo/
+2 GIVN Joey
+2 SURN Russo
+1 SEX F
+1 FAMC @F87@
+0 @I339@ INDI
+1 NAME Elmer /Butner/
+2 GIVN Elmer
+2 SURN Butner
+1 SEX M
 1 BIRT
-2 DATE 08 NOV 1808
-2 PLAC Québec, Québec, Québec, Canada
-1 CHR
-2 DATE 08 NOV 1808
-2 PLAC Québec, Québec, Québec, Canada
+2 DATE 15 Apr 1894
 1 DEAT
-2 DATE 30 MAY 1809
-2 PLAC Québec, Québec, Québec, Canada
-1 BURI
-2 DATE 31 MAY 1809
-2 PLAC Québec, Québec, Québec, Canada
-1 FAMC @P01F13@
-1 NOTE Source: images/p10.jpg, generation 6. Died in infancy.
-
-0 @P10I15@ INDI
-1 NAME Marie Ursule /Cluseau/
+2 DATE 13 Jun 1977
+1 FAMS @F95@
+0 @I340@ INDI
+1 NAME Ann /Moore Clusiau/
+2 GIVN Ann
+2 SURN Moore Clusiau
+2 NICK Rooney
 1 SEX F
 1 BIRT
-2 DATE 26 FEB 1810
-2 PLAC Québec, Québec, Québec, Canada
-1 CHR
-2 DATE 26 FEB 1810
-2 PLAC Québec, Québec, Québec, Canada
+2 DATE 10 Oct 1899
 1 DEAT
-2 DATE 09 MAR 1810
-2 PLAC Québec, Québec, Québec, Canada
-1 BURI
-2 DATE 11 MAR 1810
-2 PLAC Québec, Québec, Québec, Canada
-1 FAMC @P01F13@
-1 NOTE Source: images/p10.jpg, generation 6. Died in infancy, less than
-2 CONT two weeks old.
-
-0 @P10I16@ INDI
-1 NAME François-Xavier /Cluseau/
-1 SEX M
-1 BIRT
-2 DATE 27 MAR 1811
-2 PLAC Québec, Québec, Québec, Canada
-1 CHR
-2 DATE 28 MAR 1811
-2 PLAC Québec, Québec, Québec, Canada
-1 FAMC @P01F13@
-1 FAMS @P10F4@
-1 NOTE Source: images/p10.jpg, generation 6.
-
-0 @P10I17@ INDI
-1 NAME Living /Jobin/
+2 DATE 22 May 1995
+1 FAMS @F96@
+0 @I341@ INDI
+1 NAME Living /Kokkinen/
+2 GIVN Rose Marie
+2 SURN Kokkinen
 1 SEX F
-1 FAMS @P10F4@
-1 NOTE Source: images/p10.jpg, generation 6 (spouse of François-Xavier
-2 CONT Cluseau). No birth/death date printed. No children printed under
-2 CONT this union.
-
-0 @P10I18@ INDI
-1 NAME Scolastique /Cluseau/
+1 _LIVING Y
+1 FAMC @F75@
+0 @I342@ INDI
+1 NAME Living /Kokkinen/
+2 GIVN Sharon
+2 SURN Kokkinen
+1 SEX F
+1 FAMC @F77@
+0 @I343@ INDI
+1 NAME Living //
+2 GIVN Lucille
+1 SEX F
+1 FAMS @F97@
+0 @I344@ INDI
+1 NAME Living /Russo/
+2 GIVN Jan
+2 SURN Russo
+1 SEX F
+1 _LIVING Y
+1 FAMC @F87@
+0 @I345@ INDI
+1 NAME Living /Clusiau/
+2 GIVN Paul
+2 SURN Clusiau
+1 SEX M
+1 _LIVING Y
+1 FAMC @F56@
+0 @I346@ INDI
+1 NAME Living /Martin Johnson/
+2 GIVN Katherine
+2 SURN Martin Johnson
+1 SEX F
+1 _LIVING Y
+1 FAMS @F35@
+0 @I347@ INDI
+1 NAME Living /Youngblood/
+2 GIVN D�sir�e
+2 SURN Youngblood
+1 SEX F
+1 _LIVING Y
+1 FAMS @F102@
+0 @I348@ INDI
+1 NAME Living /Case/
+2 GIVN David
+2 SURN Case
+1 SEX M
+1 _LIVING Y
+1 FAMS @F99@
+0 @I349@ INDI
+1 NAME Living /Case/
+2 GIVN Travis
+2 SURN Case
+1 SEX M
+1 _LIVING Y
+1 FAMC @F99@
+1 FAMS @F100@
+0 @I350@ INDI
+1 NAME Living /Case/
+2 GIVN Christine Ann
+2 SURN Case
+1 SEX F
+1 _LIVING Y
+1 FAMC @F99@
+0 @I351@ INDI
+1 NAME Living /Denchfield Case/
+2 GIVN Meghan Diane
+2 SURN Denchfield Case
+1 SEX F
+1 _LIVING Y
+1 FAMS @F100@
+0 @I352@ INDI
+1 NAME Living /Case/
+2 GIVN Lilly Victoria Ann
+2 SURN Case
+1 SEX F
+1 _LIVING Y
+1 FAMC @F100@
+0 @I353@ INDI
+1 NAME Living /Perpich/
+2 GIVN Frank
+2 SURN Perpich
+1 SEX M
+1 FAMS @F101@
+0 @I354@ INDI
+1 NAME Gurine J /Melands�ren Ofstad/
+2 GIVN Gurine J
+2 SURN Melands�ren Ofstad
 1 SEX F
 1 BIRT
-2 DATE 10 FEB 1813
-2 PLAC Québec, Québec, Québec, Canada
-1 CHR
-2 DATE 11 FEB 1813
-2 PLAC Québec, Québec, Québec, Canada
-1 FAMC @P01F13@
-1 NOTE Source: images/p10.jpg, generation 6. Last of the seven children
-2 CONT of Pierre Cluseau (b.1776) and Charlotte Huot. No spouse/death
-2 CONT printed.
-
-0 @P10I19@ INDI
-1 NAME Etienne /Cluseau/
-1 SEX M
-1 BIRT
-2 DATE 03 AUG 1777
-2 PLAC Lauzon, Lévis, Québec, Canada
-1 CHR
-2 DATE 04 AUG 1777
-2 PLAC Lauzon, Lévis, Québec, Canada
+2 DATE 1862
 1 DEAT
-2 DATE 06 AUG 1777
-2 PLAC Lauzon, Lévis, Québec, Canada
-1 BURI
-2 DATE 06 AUG 1777
-2 PLAC Lauzon, Lévis, Québec, Canada
-1 FAMC @P01F11@
-1 NOTE Source: images/p10.jpg, generation 5. Died at three days old,
-2 CONT buried the same day as death.
-
-0 @P10I20@ INDI
-1 NAME Laurent /Cluseau/
+2 DATE 1939
+1 FAMS @F103@
+0 @I355@ INDI
+1 NAME Gjertine A /Ofstad Johnson/
+2 GIVN Gjertine A
+2 SURN Ofstad Johnson
+1 SEX F
+1 BIRT
+2 DATE 1884
+1 DEAT
+2 DATE 1966
+1 FAMC @F103@
+1 FAMS @F104@
+0 @I356@ INDI
+1 NAME Oline A /Ofstad Mingo Weeks/
+2 GIVN Oline A
+2 SURN Ofstad Mingo Weeks
+1 SEX F
+1 BIRT
+2 DATE 1887
+1 FAMC @F103@
+1 FAMS @F105@
+1 FAMS @F106@
+0 @I357@ INDI
+1 NAME Jon A /Ofstad/
+2 GIVN Jon A
+2 SURN Ofstad
 1 SEX M
 1 BIRT
-2 DATE 16 OCT 1778
-2 PLAC Lauzon, Lévis, Québec, Canada
-1 CHR
-2 DATE 16 OCT 1778
-2 PLAC Lauzon, Lévis, Québec, Canada
-1 FAMC @P01F11@
-1 NOTE Source: images/p10.jpg, generation 5. Born and christened the same
-2 CONT day. No spouse/death printed.
-
-0 @P10I21@ INDI
-1 NAME Marguerite /Cluseau/
+2 DATE 1890
+1 DEAT
+2 DATE 1891
+1 FAMC @F103@
+0 @I358@ INDI
+1 NAME Josie A /Ofstad Turnberg/
+2 GIVN Josie A
+2 SURN Ofstad Turnberg
 1 SEX F
 1 BIRT
-2 DATE 25 AUG 1780
-2 PLAC Lauzon, Lévis, Québec, Canada
-1 CHR
-2 DATE 25 AUG 1780
-2 PLAC Lauzon, Lévis, Québec, Canada
-1 FAMC @P01F11@
-1 NOTE Source: images/p10.jpg, generation 5. Second child named Marguerite
-2 CONT in this family (the first, @P01I23@, b.1765) - the source doesn't
-2 CONT state the first died, so this is recorded as a reused name, not
-2 CONT assumed to mean anything about the first Marguerite's fate.
-
-0 @P10I22@ INDI
-1 NAME Charles /Cluseau/
+2 DATE 1893
+1 DEAT
+2 DATE 1982
+1 FAMC @F103@
+1 FAMS @F107@
+0 @I359@ INDI
+1 NAME Annie A /Ofstad/
+2 GIVN Annie A
+2 SURN Ofstad
+1 SEX F
+1 BIRT
+2 DATE 1895
+1 DEAT
+2 DATE 1904
+1 FAMC @F103@
+0 @I360@ INDI
+1 NAME Arthur A /Ofstad/
+2 GIVN Arthur A
+2 SURN Ofstad
 1 SEX M
 1 BIRT
-2 DATE 21 OCT 1782
-2 PLAC Lauzon, Lévis, Québec, Canada
-1 CHR
-2 DATE 21 OCT 1782
-2 PLAC Lauzon, Lévis, Québec, Canada
-1 FAMC @P01F11@
-1 NOTE Source: images/p10.jpg, generation 5. Last of the nine children of
-2 CONT Augustin Cluseau (b.1738) and Marguerite Lucas. Shares his given
-2 CONT name with his great-great-grandfather (Charles Cluseau, b.1708) -
-2 CONT a family name, not an error. No spouse/death printed.
-
-0 @P10I23@ INDI
-1 NAME Jeanne /Cluseau/
+2 DATE 1898
+1 DEAT
+2 DATE 1930
+1 FAMC @F103@
+1 FAMS @F108@
+0 @I361@ INDI
+1 NAME Living /Johnson/
+2 GIVN Herman
+2 SURN Johnson
+1 SEX M
+1 FAMS @F104@
+0 @I362@ INDI
+1 NAME Living /Mingo/
+2 GIVN Andrew
+2 SURN Mingo
+1 SEX M
+1 FAMS @F105@
+0 @I363@ INDI
+1 NAME Living /Weeks/
+2 GIVN Sheldon
+2 SURN Weeks
+1 SEX M
+1 FAMS @F106@
+0 @I364@ INDI
+1 NAME Living /Turnberg/
+2 GIVN Clarence
+2 SURN Turnberg
+1 SEX M
+1 FAMS @F107@
+0 @I365@ INDI
+1 NAME Living /Olson Ofstad/
+2 GIVN Judith
+2 SURN Olson Ofstad
+1 SEX F
+1 FAMS @F108@
+0 @I366@ INDI
+1 NAME Johan G A B /Ofstad/
+2 GIVN Johan G A B
+2 SURN Ofstad
+1 SEX M
+1 BIRT
+2 DATE 1865
+1 DEAT
+2 DATE 1953
+1 FAMS @F109@
+0 @I367@ INDI
+1 NAME Sigrid Anna /Ofstad Mossing/
+2 GIVN Sigrid Anna
+2 SURN Ofstad Mossing
+1 SEX U
+1 BIRT
+2 DATE 1889
+1 DEAT
+2 DATE 1958
+1 FAMC @F109@
+1 FAMS @F110@
+1 FAMS @F111@
+0 @I368@ INDI
+1 NAME Odin /Mossing/
+2 GIVN Odin
+2 SURN Mossing
+1 SEX M
+1 BIRT
+2 DATE 1881
+1 DEAT
+2 DATE 1920
+1 FAMS @F110@
+0 @I369@ INDI
+1 NAME Johan A /N�shlund/
+2 GIVN Johan A
+2 SURN N�shlund
+1 SEX M
+1 BIRT
+2 DATE 1881
+1 DEAT
+2 DATE 1958
+1 FAMS @F111@
+0 @I370@ INDI
+1 NAME Oline F G  /Ofstad/
+2 GIVN Oline F G
+2 SURN Ofstad
 1 SEX F
 1 BIRT
-2 DATE 05 APR 1740
-2 PLAC Québec, Québec, Québec, Canada
-1 CHR
-2 DATE 06 APR 1740
-2 PLAC Québec, Québec, Québec, Canada
-1 FAMC @P01F10@
-1 NOTE Source: images/p10.jpg, generation 4. No spouse/death printed.
-
-0 @P10I24@ INDI
-1 NAME Josephe /Cluseau/
+2 DATE 1891
+1 DEAT
+2 DATE 1955
+1 FAMC @F109@
+0 @I371@ INDI
+1 NAME Anders G /Ofstad/
+2 GIVN Anders G
+2 SURN Ofstad
+1 SEX M
+1 BIRT
+2 DATE 1895
+1 DEAT
+2 DATE 1987
+1 FAMC @F109@
+1 FAMS @F112@
+0 @I372@ INDI
+1 NAME Karen B /Nordland/
+2 GIVN Karen B
+2 SURN Nordland
 1 SEX F
 1 BIRT
-2 DATE 19 MAR 1744
-2 PLAC Québec, Québec, Québec, Canada
-1 CHR
-2 DATE 19 MAR 1744
-2 PLAC Québec, Québec, Québec, Canada
-1 FAMC @P01F10@
-1 NOTE Source: images/p10.jpg, generation 4. Last of the three children
-2 CONT of Charles Cluseau (b.1708) and Thérèse Magnan. No spouse/death
-2 CONT printed. Immediately after this record, the source reprints Thérèse
-2 CONT Magnan's own record with a "(see Charles Cluseau on page 1)"
-2 CONT cross-reference, then reprints Augustin Cluseau's record with "(see
-2 CONT Augustin Cluseau on page 10)" - both already fully captured in
-2 CONT p01.ged. Not re-transcribed; see file header note.
-
-0 @P10F1@ FAM
-1 HUSB @P10I3@
-1 WIFE @P10I4@
-
-0 @P10F2@ FAM
-1 HUSB @P10I10@
-1 WIFE @P10I9@
-
-0 @P10F3@ FAM
-1 HUSB @P10I12@
-1 WIFE @P10I11@
-
-0 @P10F4@ FAM
-1 HUSB @P10I16@
-1 WIFE @P10I17@
-
+2 DATE 1897
+1 DEAT
+2 DATE 1971
+1 FAMS @F112@
+0 @I373@ INDI
+1 NAME Gabrielsen /Ofstad/
+2 GIVN Gabrielsen
+2 SURN Ofstad
+1 SEX M
+1 BIRT
+2 DATE 1901
+1 DEAT
+2 DATE 1901
+1 FAMC @F109@
+0 @I374@ INDI
+1 NAME Georg /Ofstad/
+2 GIVN Georg
+2 SURN Ofstad
+1 SEX M
+1 BIRT
+2 DATE 1905
+1 DEAT
+2 DATE 1905
+1 FAMC @F109@
+0 @I375@ INDI
+1 NAME Carl Leonard /Nord/
+2 GIVN Carl Leonard
+2 SURN Nord
+1 SEX M
+1 BIRT
+2 DATE 1872
+1 DEAT
+2 DATE 1965
+1 FAMS @F113@
+0 @I376@ INDI
+1 NAME Anne J /Haugnes/
+2 GIVN Anne J
+2 SURN Haugnes
+1 SEX F
+1 BIRT
+2 DATE 1871
+1 FAMS @F114@
+0 @I377@ INDI
+1 NAME Ellen K /Gr�/
+2 GIVN Ellen K
+2 SURN Gr�
+1 SEX F
+1 BIRT
+2 DATE 1872
+1 FAMS @F115@
+0 @I378@ INDI
+1 NAME Benjamin /Long/
+2 GIVN Benjamin
+2 SURN Long
+1 SEX M
+1 BIRT
+2 DATE 1913
+1 DEAT
+2 DATE 1945
+1 FAMS @F116@
+0 @F1@ FAM
+1 HUSB @I1@
+1 WIFE @I2@
+1 MARR
+2 DATE 06 Sep 1958
+2 PLAC Ely, Minnesota
+1 CHIL @I3@
+1 CHIL @I4@
+1 CHIL @I5@
+0 @F3@ FAM
+1 HUSB @I11@
+1 WIFE @I12@
+1 CHIL @I13@
+1 CHIL @I14@
+1 CHIL @I15@
+1 CHIL @I16@
+1 CHIL @I17@
+0 @F4@ FAM
+1 HUSB @I18@
+1 WIFE @I19@
+1 CHIL @I20@
+0 @F5@ FAM
+1 HUSB @I26@
+1 WIFE @I27@
+1 CHIL @I28@
+0 @F6@ FAM
+1 HUSB @I28@
+1 WIFE @I20@
+1 CHIL @I21@
+1 CHIL @I22@
+1 CHIL @I23@
+1 CHIL @I24@
+1 CHIL @I25@
+1 CHIL @I29@
+1 CHIL @I30@
+1 CHIL @I31@
+1 CHIL @I32@
+1 CHIL @I33@
+0 @F7@ FAM
+1 HUSB @I14@
+1 WIFE @I23@
+1 MARR
+2 DATE 27 Jun 1900
+2 PLAC Jackson, Wisconsin
+1 CHIL @I34@
+1 CHIL @I53@
+1 CHIL @I54@
+1 CHIL @I6@
+1 CHIL @I123@
+1 CHIL @I124@
+1 CHIL @I125@
+0 @F8@ FAM
+1 HUSB @I35@
+1 WIFE @I34@
+1 MARR
+2 DATE 01 Sep 1926
+1 CHIL @I36@
+1 CHIL @I120@
+1 CHIL @I121@
+0 @F9@ FAM
+1 HUSB @I36@
+1 WIFE @I37@
+1 MARR
+2 DATE 24 Aug 1951
+1 CHIL @I38@
+1 CHIL @I39@
+1 CHIL @I40@
+0 @F10@ FAM
+1 HUSB @I42@
+1 WIFE @I44@
+1 MARR
+2 DATE Jun 1957
+1 DIV
+2 DATE 1962
+1 CHIL @I45@
+0 @F11@ FAM
+1 HUSB @I42@
+1 WIFE @I46@
+1 DIV
+2 DATE 1966
+1 CHIL @I47@
+0 @F12@ FAM
+1 HUSB @I42@
+1 WIFE @I48@
+1 MARR
+2 DATE 19 Oct 1968
+0 @F13@ FAM
+1 HUSB @I49@
+1 WIFE @I43@
+1 MARR
+2 DATE 14 Sep 1958
+1 DIV
+2 DATE 1976
+1 CHIL @I50@
+1 CHIL @I51@
+1 CHIL @I52@
+0 @F14@ FAM
+1 HUSB @I53@
+1 WIFE @I56@
+1 MARR
+2 DATE 25 Dec 1933
+1 CHIL @I57@
+1 CHIL @I62@
+0 @F15@ FAM
+1 HUSB @I58@
+1 WIFE @I57@
+1 MARR
+2 DATE 10 Aug 1957
+1 CHIL @I59@
+1 CHIL @I60@
+1 CHIL @I61@
+0 @F16@ FAM
+1 HUSB @I63@
+1 WIFE @I62@
+1 MARR
+2 DATE 06 Apr 1060
+1 DIV
+2 DATE 1970
+1 CHIL @I64@
+1 CHIL @I65@
+0 @F17@ FAM
+1 HUSB @I66@
+1 WIFE @I62@
+1 MARR
+2 DATE 06 Aug 1975
+0 @F18@ FAM
+1 HUSB @I67@
+1 WIFE @I54@
+1 MARR
+2 DATE 21 May 1938
+1 DIV
+2 DATE 10 Oct 1941
+1 CHIL @I68@
+0 @F19@ FAM
+0 @F20@ FAM
+0 @F21@ FAM
+0 @F22@ FAM
+1 HUSB @I6@
+1 WIFE @I7@
+1 MARR
+2 DATE 05 Aug 1933
+1 CHIL @I74@
+1 CHIL @I1@
+1 CHIL @I79@
+1 CHIL @I83@
+1 CHIL @I89@
+0 @F23@ FAM
+1 HUSB @I74@
+1 WIFE @I75@
+1 MARR
+2 DATE 07 Feb 1953
+1 CHIL @I76@
+1 CHIL @I77@
+1 CHIL @I78@
+0 @F24@ FAM
+1 HUSB @I79@
+1 WIFE @I80@
+1 MARR
+2 DATE 29 Aug 1959
+1 CHIL @I81@
+1 CHIL @I82@
+0 @F25@ FAM
+1 HUSB @I84@
+1 WIFE @I83@
+1 MARR
+2 DATE 12 Jul 1958
+1 CHIL @I85@
+1 CHIL @I86@
+1 CHIL @I87@
+1 CHIL @I88@
+0 @F26@ FAM
+1 HUSB @I9@
+1 WIFE @I8@
+1 CHIL @I2@
+1 CHIL @I90@
+0 @F27@ FAM
+1 HUSB @I91@
+1 WIFE @I10@
+1 CHIL @I96@
+1 CHIL @I97@
+1 CHIL @I93@
+1 CHIL @I94@
+1 CHIL @I95@
+1 CHIL @I8@
+0 @F28@ FAM
+1 HUSB @I98@
+1 WIFE @I99@
+1 CHIL @I204@
+1 CHIL @I205@
+1 CHIL @I9@
+1 CHIL @I206@
+1 CHIL @I208@
+1 CHIL @I207@
+1 CHIL @I209@
+1 CHIL @I210@
+1 CHIL @I100@
+1 CHIL @I104@
+1 CHIL @I213@
+0 @F29@ FAM
+1 HUSB @I100@
+1 WIFE @I101@
+1 CHIL @I102@
+1 CHIL @I215@
+1 CHIL @I216@
+0 @F30@ FAM
+1 HUSB @I102@
+1 WIFE @I103@
+1 CHIL @I234@
+1 CHIL @I235@
+1 CHIL @I236@
+1 CHIL @I237@
+0 @F31@ FAM
+1 HUSB @I104@
+1 WIFE @I105@
+1 CHIL @I226@
+1 CHIL @I227@
+1 CHIL @I228@
+1 CHIL @I229@
+1 CHIL @I230@
+1 CHIL @I231@
+1 CHIL @I232@
+1 CHIL @I233@
+0 @F32@ FAM
+1 HUSB @I107@
+1 WIFE @I106@
+1 CHIL @I108@
+1 CHIL @I109@
+1 CHIL @I7@
+1 CHIL @I119@
+1 CHIL @I110@
+1 CHIL @I111@
+1 CHIL @I116@
+1 CHIL @I117@
+1 CHIL @I112@
+1 CHIL @I113@
+1 CHIL @I118@
+0 @F33@ FAM
+1 HUSB @I114@
+1 WIFE @I112@
+1 CHIL @I186@
+0 @F34@ FAM
+1 HUSB @I115@
+1 CHIL @I114@
+0 @F35@ FAM
+1 HUSB @I3@
+1 WIFE @I346@
+1 MARR
+2 DATE 28 Dec 1982
+1 DIV
+2 DATE 1990
+2 PLAC Austin, Texas
+1 REMR
+2 DATE 26 Jul 2003
+1 CHIL @I126@
+1 CHIL @I127@
+0 @F36@ FAM
+1 HUSB @I124@
+1 WIFE @I128@
+1 MARR
+2 DATE 1946
+2 PLAC Grand Marais, Minnesota
+1 CHIL @I129@
+1 CHIL @I130@
+1 CHIL @I131@
+1 CHIL @I132@
+1 CHIL @I133@
+1 CHIL @I134@
+1 CHIL @I135@
+1 CHIL @I136@
+1 CHIL @I137@
+1 CHIL @I138@
+0 @F37@ FAM
+1 HUSB @I139@
+1 WIFE @I140@
+1 CHIL @I147@
+1 CHIL @I148@
+1 CHIL @I149@
+1 CHIL @I150@
+1 CHIL @I151@
+1 CHIL @I141@
+1 CHIL @I142@
+1 CHIL @I143@
+1 CHIL @I106@
+1 CHIL @I144@
+1 CHIL @I145@
+1 CHIL @I146@
+0 @F39@ FAM
+1 HUSB @I152@
+1 WIFE @I90@
+1 CHIL @I280@
+1 CHIL @I281@
+1 CHIL @I282@
+0 @F40@ FAM
+1 HUSB @I153@
+1 WIFE @I108@
+1 CHIL @I154@
+1 CHIL @I155@
+1 CHIL @I156@
+1 CHIL @I157@
+0 @F41@ FAM
+1 HUSB @I158@
+1 WIFE @I125@
+1 MARR
+2 DATE 8 Jan 1944
+1 CHIL @I159@
+1 CHIL @I160@
+1 CHIL @I161@
+1 CHIL @I162@
+0 @F42@ FAM
+1 HUSB @I109@
+1 WIFE @I163@
+1 CHIL @I164@
+1 CHIL @I165@
+1 CHIL @I166@
+0 @F43@ FAM
+1 HUSB @I110@
+1 WIFE @I167@
+1 CHIL @I168@
+1 CHIL @I169@
+1 CHIL @I170@
+1 CHIL @I171@
+1 CHIL @I172@
+0 @F44@ FAM
+1 HUSB @I173@
+1 WIFE @I111@
+1 CHIL @I174@
+1 CHIL @I175@
+0 @F45@ FAM
+1 HUSB @I116@
+1 WIFE @I176@
+1 CHIL @I177@
+1 CHIL @I178@
+0 @F46@ FAM
+1 HUSB @I179@
+1 WIFE @I117@
+1 CHIL @I180@
+1 CHIL @I181@
+1 CHIL @I182@
+1 CHIL @I183@
+1 CHIL @I184@
+0 @F47@ FAM
+1 HUSB @I113@
+1 WIFE @I187@
+1 CHIL @I188@
+1 CHIL @I189@
+0 @F48@ FAM
+1 HUSB @I166@
+1 WIFE @I203@
+1 CHIL @I190@
+1 CHIL @I191@
+1 CHIL @I192@
+0 @F49@ FAM
+1 WIFE @I165@
+1 CHIL @I193@
+1 CHIL @I194@
+1 CHIL @I195@
+1 CHIL @I196@
+1 CHIL @I197@
+0 @F50@ FAM
+1 HUSB @I164@
+1 WIFE @I198@
+1 MARR
+2 DATE 24 Aug 1957
+1 CHIL @I199@
+1 CHIL @I200@
+1 CHIL @I201@
+1 CHIL @I202@
+0 @F51@ FAM
+1 HUSB @I217@
+1 WIFE @I182@
+1 CHIL @I218@
+1 CHIL @I219@
+0 @F52@ FAM
+1 HUSB @I220@
+1 WIFE @I180@
+1 CHIL @I221@
+1 CHIL @I222@
+0 @F53@ FAM
+1 HUSB @I223@
+1 WIFE @I68@
+1 CHIL @I224@
+1 CHIL @I225@
+0 @F54@ FAM
+1 HUSB @I238@
+1 WIFE @I215@
+1 CHIL @I239@
+1 CHIL @I240@
+0 @F55@ FAM
+1 HUSB @I216@
+1 CHIL @I241@
+0 @F56@ FAM
+1 HUSB @I213@
+1 WIFE @I242@
+1 CHIL @I345@
+0 @F57@ FAM
+1 HUSB @I243@
+1 WIFE @I97@
+1 CHIL @I245@
+1 CHIL @I244@
+0 @F58@ FAM
+1 HUSB @I246@
+1 WIFE @I244@
+1 CHIL @I247@
+1 CHIL @I248@
+1 CHIL @I249@
+0 @F59@ FAM
+1 HUSB @I250@
+1 WIFE @I247@
+1 CHIL @I251@
+1 CHIL @I252@
+0 @F60@ FAM
+1 HUSB @I249@
+1 WIFE @I253@
+1 CHIL @I254@
+1 CHIL @I255@
+0 @F61@ FAM
+1 HUSB @I155@
+1 WIFE @I256@
+0 @F62@ FAM
+1 HUSB @I257@
+1 WIFE @I156@
+0 @F63@ FAM
+1 HUSB @I258@
+1 WIFE @I157@
+0 @F64@ FAM
+1 HUSB @I259@
+1 WIFE @I126@
+0 @F65@ FAM
+1 HUSB @I5@
+1 WIFE @I260@
+1 MARR
+2 DATE 2 Jul 1988
+1 CHIL @I261@
+1 CHIL @I262@
+1 CHIL @I263@
+0 @F66@ FAM
+1 HUSB @I264@
+1 WIFE @I265@
+1 CHIL @I260@
+1 CHIL @I266@
+0 @F67@ FAM
+1 HUSB @I267@
+1 WIFE @I210@
+1 CHIL @I268@
+0 @F68@ FAM
+1 HUSB @I269@
+1 WIFE @I81@
+1 CHIL @I270@
+1 CHIL @I271@
+0 @F69@ FAM
+1 HUSB @I76@
+1 WIFE @I272@
+1 CHIL @I273@
+1 CHIL @I274@
+0 @F70@ FAM
+1 HUSB @I77@
+1 WIFE @I275@
+1 CHIL @I276@
+0 @F71@ FAM
+1 HUSB @I78@
+1 WIFE @I277@
+1 CHIL @I278@
+1 CHIL @I279@
+0 @F72@ FAM
+1 HUSB @I280@
+1 WIFE @I283@
+1 MARR
+2 DATE 4 Jul 1996
+1 CHIL @I284@
+1 CHIL @I285@
+0 @F73@ FAM
+1 HUSB @I286@
+1 WIFE @I281@
+1 MARR
+2 DATE 1 Jun 1999 (24 Jun 2000?)
+1 CHIL @I287@
+0 @F74@ FAM
+1 HUSB @I282@
+1 WIFE @I288@
+1 MARR
+2 DATE 7 Aug 1999
+1 CHIL @I289@
+1 CHIL @I290@
+0 @F75@ FAM
+1 HUSB @I93@
+1 WIFE @I291@
+1 CHIL @I341@
+1 CHIL @I292@
+0 @F76@ FAM
+1 HUSB @I292@
+1 CHIL @I293@
+1 CHIL @I294@
+1 CHIL @I295@
+0 @F77@ FAM
+1 HUSB @I94@
+1 WIFE @I296@
+1 CHIL @I297@
+1 CHIL @I342@
+1 CHIL @I298@
+0 @F78@ FAM
+1 HUSB @I299@
+1 WIFE @I297@
+1 CHIL @I300@
+1 CHIL @I301@
+0 @F79@ FAM
+1 HUSB @I295@
+1 WIFE @I302@
+0 @F80@ FAM
+1 HUSB @I160@
+1 WIFE @I303@
+0 @F81@ FAM
+1 HUSB @I304@
+1 WIFE @I96@
+1 CHIL @I305@
+1 CHIL @I306@
+1 CHIL @I307@
+0 @F82@ FAM
+1 HUSB @I306@
+1 WIFE @I308@
+0 @F83@ FAM
+1 HUSB @I307@
+1 WIFE @I309@
+0 @F84@ FAM
+1 HUSB @I310@
+1 WIFE @I268@
+0 @F85@ FAM
+1 HUSB @I311@
+1 WIFE @I174@
+1 CHIL @I312@
+1 CHIL @I313@
+1 CHIL @I314@
+0 @F86@ FAM
+1 HUSB @I175@
+1 WIFE @I315@
+1 CHIL @I316@
+1 CHIL @I317@
+0 @F87@ FAM
+1 HUSB @I336@
+1 WIFE @I206@
+1 CHIL @I337@
+1 CHIL @I338@
+1 CHIL @I344@
+0 @F88@ FAM
+1 HUSB @I318@
+1 WIFE @I85@
+1 CHIL @I319@
+1 CHIL @I320@
+1 CHIL @I321@
+1 CHIL @I322@
+0 @F89@ FAM
+1 HUSB @I323@
+1 WIFE @I86@
+1 CHIL @I324@
+1 CHIL @I325@
+1 CHIL @I326@
+0 @F90@ FAM
+1 HUSB @I87@
+1 WIFE @I327@
+1 CHIL @I328@
+0 @F91@ FAM
+1 HUSB @I329@
+1 WIFE @I88@
+0 @F92@ FAM
+1 HUSB @I330@
+1 WIFE @I209@
+1 CHIL @I331@
+1 CHIL @I332@
+0 @F93@ FAM
+1 HUSB @I333@
+1 WIFE @I208@
+0 @F94@ FAM
+1 HUSB @I334@
+1 WIFE @I207@
+1 CHIL @I335@
+0 @F95@ FAM
+1 HUSB @I339@
+1 WIFE @I205@
+0 @F96@ FAM
+1 HUSB @I204@
+1 WIFE @I340@
+0 @F97@ FAM
+1 HUSB @I95@
+1 WIFE @I343@
+0 @F99@ FAM
+1 HUSB @I348@
+1 WIFE @I4@
+1 MARR
+2 DATE 16 Mar 1985
+1 DIV
+2 DATE 1991
+1 CHIL @I349@
+1 CHIL @I350@
+0 @F100@ FAM
+1 HUSB @I349@
+1 WIFE @I351@
+1 MARR
+2 DATE 9 Jun 2007
+1 CHIL @I352@
+0 @F101@ FAM
+1 HUSB @I353@
+1 WIFE @I207@
+0 @F102@ FAM
+1 HUSB @I3@
+1 WIFE @I347@
+1 MARR
+2 DATE 26 Jul 2003
+1 REMR
+2 DATE 26 Jul 2003
+2 PLAC Austin, Texas
+1 STEP
+2 DATE 26 Jul 2003
+2 PLAC Austin, Texas
+0 @F103@ FAM
+1 HUSB @I147@
+1 WIFE @I354@
+1 CHIL @I355@
+1 CHIL @I356@
+1 CHIL @I357@
+1 CHIL @I358@
+1 CHIL @I359@
+1 CHIL @I360@
+0 @F104@ FAM
+1 HUSB @I361@
+1 WIFE @I355@
+0 @F105@ FAM
+1 HUSB @I362@
+1 WIFE @I356@
+0 @F106@ FAM
+1 HUSB @I363@
+1 WIFE @I356@
+0 @F107@ FAM
+1 HUSB @I364@
+1 WIFE @I358@
+0 @F108@ FAM
+1 HUSB @I360@
+1 WIFE @I365@
+0 @F109@ FAM
+1 HUSB @I366@
+1 WIFE @I149@
+1 CHIL @I367@
+1 CHIL @I370@
+1 CHIL @I371@
+1 CHIL @I373@
+1 CHIL @I374@
+0 @F110@ FAM
+1 HUSB @I368@
+1 WIFE @I367@
+0 @F111@ FAM
+1 HUSB @I369@
+1 WIFE @I367@
+0 @F112@ FAM
+1 HUSB @I371@
+1 WIFE @I372@
+0 @F113@ FAM
+1 HUSB @I375@
+1 WIFE @I151@
+0 @F114@ FAM
+1 HUSB @I141@
+1 WIFE @I376@
+0 @F115@ FAM
+1 HUSB @I143@
+1 WIFE @I377@
+0 @F116@ FAM
+1 HUSB @I378@
+1 WIFE @I112@
+1 CHIL @I185@
+0 @S1@ SOUR
+1 TITL Consanguinity Chart
+1 ABBR Consanguinity Chart
+1 REPO @REPO1@
+1 TEXT For a true "relationship" to exist, there must be an ancestor who is common to both individuals.
+2 CONT
+2 CONT Let us suppose that you have a grandson of that common ancestor and you want to know that grandson's relationship to a great-granddaughter. Go across to the second generation (Grandson or daughter) and then down to the third generation (Great Gr
+2 CONC andson or Daughter), the resulting relationship is 'First Cousin Once Removed.'
+2 CONT
+2 CONT http://www.mngs.org/tools.shtml
+0 @S01@ SOUR
+1 TITL U.S. Social Security Death Index
+1 AUTH The Church of Jesus Christ of Latter-day Saints
+1 PUBL This data is only accurate as of 30 Sep 2000
+1 REPO @R01@
+0 @S2@ SOUR
+1 TITL Norwegian in 5 Minutes a Month
+1 ABBR Norwegian in 5 Minutes a Month
+1 AUTH Sons of Norway
+1 PUBL Sons of Norway
+1 REPO @REPO2@
+1 TEXT Our monthly language lesson has been out for a while now, and many of you have let us know that it is working well. Thank you for taking the time to communicate with us.
+2 CONT
+2 CONT Visitors to "Norwegian in 5 Minutes a Month" have asked for information on the Norwegian alphabet and genealogical terms, so we have added pages on both topics. We look forward to your feedback. In the meantime, good luck!
+2 CONT
+2 CONT http://www.sofn.com/norwegian_culture/languagelessons_index.jsp
+0 @S3@ SOUR
+1 CALN http://www.rootsweb.ancestry.com/~mnstloui/slcmndi
+1 TITL St. Louis County, Minnesota - Death Records Index
+1 ABBR St. Louis County, Minnesota - Death Records Index
+1 AUTH www.rootsweb.ancestry.com
+1 PUBL www.rootsweb.ancestry.com
+1 REPO @REPO3@
+1 TEXT http://www.rootsweb.ancestry.com/~mnstloui/slcmndin.htm
+0 @S4@ SOUR
+1 TITL St. Louis County, Minnesota - Marriage Index
+1 ABBR St. Louis County, Minnesota - Marriage Index
+1 PUBL http://www.rootsweb.ancestry.com/~mnstloui/stlmarindex.htm
+1 REPO @REPO3@
+1 TEXT The following marriage index is being created by using the microfilms that contain copies of the actual marriage licenses and marriage certificates. The index contains the book and page where the certificate can be found, name of groom or bride
+2 CONC , name of bride or groom, marriage license date and place and date of marriage and place.
+2 CONT
+2 CONT http://www.rootsweb.ancestry.com/~mnstloui/stlmarindex.htm
+2 CONT
+2 CONT
+0 @S5@ SOUR
+1 TITL The Ely Echo Newspaper
+1 ABBR The Ely Echo Newspaper
+1 AUTH www.elyecho.com
+1 PUBL www.elyecho.com
+0 @S6@ SOUR
+1 CALN people.mnhs.org
+1 TITL Minnesota Birth Certificates Index
+1 ABBR Minnesota Birth Certificates Index
+1 AUTH Minnesota Historical Society
+1 PUBL people.mnhs.org
+1 REPO @REPO4@
+1 TEXT http://people.mnhs.org/bci/Search.cfm
+0 @S7@ SOUR
+1 TITL Minnesota Death Certificates Index
+1 ABBR Minnesota Death Certificates Index
+1 PUBL http://people.mnhs.org/dci/Search.cfm
+1 REPO @REPO4@
+1 TEXT http://people.mnhs.org/dci/Search.cfm
+0 @S8@ SOUR
+1 TITL Minnesota Dept of Health - Marriage Certificates
+1 ABBR Minnesota Dept of Health - Marriage Certificates
+1 PUBL http://www.health.state.mn.us/divs/chs/osr/mardiv.html
+1 REPO @REPO5@
+1 TEXT http://www.health.state.mn.us/divs/chs/osr/mardiv.html
+0 @S9@ SOUR
+1 TITL Family Search - Clusiau Search Results
+1 ABBR Family Search - Clusiau Search Results
+1 TEXT Results for:  Clusiau  [refine search]
+2 CONT   Exact Spelling: On
+2 CONT   Matches: All Sources - 37
+2 CONT  Ancestral File
+2 CONT  1. Kenneth CLUSIAU - Ancestral File
+2 CONT Gender: M Birth/Christening: 16 Sep 1926 Cohesset, , Minnesota
+2 CONT
+2 CONT  Matches: Ancestral File - 1
+2 CONT
+2 CONT --------------------------------------------------------------------------------
+2 CONT
+2 CONT  International Genealogical Index - Continental Europe
+2 CONT  2. SIMON JOSEPH CLUSIAU - International Genealogical Index / CE
+2 CONT Gender: Male Birth: 23 FEB 1810 Valenciennes, Nord, France
+2 CONT
+2 CONT  Matches: International Genealogical Index/Continental Europe - 1
+2 CONT
+2 CONT --------------------------------------------------------------------------------
+2 CONT
+2 CONT  International Genealogical Index - North America
+2 CONT  3. ALEXANDRE CLUSIAU - International Genealogical Index / NA
+2 CONT Gender: Male Marriage: 14 OCT 1833 , , Louisiana
+2 CONT
+2 CONT  4. Augustin Clusiau - International Genealogical Index / NA
+2 CONT Gender: Male Birth: About 1765 , Berthier, Quebec
+2 CONT
+2 CONT  5. Augustin Clusiau - International Genealogical Index / NA
+2 CONT Gender: Male Marriage: About 1788 , Berthier, Quebec
+2 CONT
+2 CONT  6. CHARLES CLUSIAU - International Genealogical Index / NA
+2 CONT Gender: Male Marriage: 21 NOV 1843 Ottawa, Carleton, Ontario
+2 CONT
+2 CONT  7. Genevieve Clusiau - International Genealogical Index / NA
+2 CONT Gender: Female Birth: About 1795
+2 CONT
+2 CONT  8. Genevieve Clusiau - International Genealogical Index / NA
+2 CONT Gender: Female Birth: About 1795 Berthierville, Berthier, Quebec
+2 CONT
+2 CONT  9. Genevieve Clusiau - International Genealogical Index / NA
+2 CONT Gender: Female Birth: About 1795 Berthierville, Berthier, Quebec
+2 CONT
+2 CONT  10. GENEVIEVE CLUSIAU - International Genealogical Index / NA
+2 CONT Gender: Female Marriage: 21 JAN 1799 Saint-Pierre Io, Montmorency Ii, Quebec
+2 CONT
+2 CONT  11. JOSEPH CLUSIAU - International Genealogical Index / NA
+2 CONT Gender: Male Marriage: 12 JUL 1813 Saint-Pierre Io, Montmorency Ii, Quebec
+2 CONT
+2 CONT  12. Julie Clusiau - International Genealogical Index / NA
+2 CONT Gender: Female Birth: About 1803
+2 CONT
+2 CONT  13. Julie Clusiau - International Genealogical Index / NA
+2 CONT Gender: Female Birth: About 1803 Berthierville, Berthier, Quebec
+2 CONT
+2 CONT  14. M. LOUISE CLUSIAU - International Genealogical Index / NA
+2 CONT Gender: Female Marriage: 10 FEB 1812 Berthierville, Berthier, Quebec
+2 CONT
+2 CONT  15. Marguerite Clusiau - International Genealogical Index / NA
+2 CONT Gender: Female Birth: About 1746
+2 CONT
+2 CONT  16. Marguerite Clusiau - International Genealogical Index / NA
+2 CONT Gender: Female Birth: About 1746 Berthierville, Berthier, Quebec
+2 CONT
+2 CONT  17. Marie Alexina Clusiau - International Genealogical Index / NA
+2 CONT Gender: Female Birth: 17 JUN 1884 , Gatineau, Quebec
+2 CONT
+2 CONT  18. Marie Josephte Clusiau - International Genealogical Index / NA
+2 CONT Gender: Female Birth: About 1793 Berthierville, Berthier, Quebec
+2 CONT
+2 CONT  19. Marie Louise Clusiau - International Genealogical Index / NA
+2 CONT Gender: Female Birth: About 1790
+2 CONT
+2 CONT  20. Marie Louise Clusiau - International Genealogical Index / NA
+2 CONT Gender: Female Birth: About 1790 Berthierville, Berthier, Quebec
+2 CONT
+2 CONT  21. Marie Louise Clusiau - International Genealogical Index / NA
+2 CONT Gender: Female Birth: About 1790 Berthierville, Berthier, Quebec
+2 CONT
+2 CONT  22. MARIE PHILOMENE CLUSIAU - International Genealogical Index / NA
+2 CONT Gender: Female Marriage: 14 FEB 1860 Saint-Pierre Io, Montmorency Ii, Quebec
+2 CONT
+2 CONT  Matches: International Genealogical Index/North America - 20
+2 CONT
+2 CONT --------------------------------------------------------------------------------
+2 CONT
+2 CONT  U.S. Social Security Death Index
+2 CONT  23. A CLUSIAU - U.S. Social Security Death Index
+2 CONT Birth: 16 Sep 1933  State Where Number was Issued: Minnesota  Death: 24 Dec 2005
+2 CONT
+2 CONT  24. Alex CLUSIAU - U.S. Social Security Death Index
+2 CONT Birth: 23 May 1882  State Where Number was Issued: Minnesota  Death: Oct 1966
+2 CONT
+2 CONT  25. Ann CLUSIAU - U.S. Social Security Death Index
+2 CONT Birth: 10 Oct 1900  State Where Number was Issued: Minnesota  Death: 22 May 1995
+2 CONT
+2 CONT  26. Arlie CLUSIAU - U.S. Social Security Death Index
+2 CONT Birth: 6 Dec 1910  State Where Number was Issued: Minnesota  Death: Jun 1969
+2 CONT
+2 CONT  27. Armin CLUSIAU - U.S. Social Security Death Index
+2 CONT Birth: 25 Jul 1906  State Where Number was Issued: Minnesota  Death: 15 Apr 1995
+2 CONT
+2 CONT  28. Arthur CLUSIAU - U.S. Social Security Death Index
+2 CONT Birth: 1 Apr 1910  State Where Number was Issued: Minnesota  Death: Apr 1986
+2 CONT
+2 CONT  29. Charles CLUSIAU - U.S. Social Security Death Index
+2 CONT Birth: 24 Apr 1877  State Where Number was Issued: Minnesota  Death: Mar 1971
+2 CONT
+2 CONT  30. Daniel CLUSIAU - U.S. Social Security Death Index
+2 CONT Birth: 25 Nov 1948  State Where Number was Issued: Minnesota  Death: 5 Sep 1998
+2 CONT
+2 CONT  31. Jack CLUSIAU - U.S. Social Security Death Index
+2 CONT Birth: 25 Dec 1930  State Where Number was Issued: Minnesota  Death: 9 Jul 2003
+2 CONT
+2 CONT  32. Josephine CLUSIAU - U.S. Social Security Death Index
+2 CONT Birth: 21 Mar 1936  State Where Number was Issued: Minnesota  Death: 17 Sep 1999
+2 CONT
+2 CONT  33. Kenneth CLUSIAU - U.S. Social Security Death Index
+2 CONT Birth: 16 Sep 1926  State Where Number was Issued: Minnesota  Death: May 1984
+2 CONT
+2 CONT  34. Lucille CLUSIAU - U.S. Social Security Death Index
+2 CONT Birth: 27 Nov 1910  State Where Number was Issued: Minnesota  Death: Jan 1990
+2 CONT
+2 CONT  35. Margaret CLUSIAU - U.S. Social Security Death Index
+2 CONT Birth: 16 Jun 1922  State Where Number was Issued: Minnesota  Death: 17 May 2006
+2 CONT
+2 CONT  36. Mary Lou CLUSIAU - U.S. Social Security Death Index
+2 CONT Birth: 13 Feb 1928  State Where Number was Issued: Minnesota  Death: 10 Dec 2002
+2 CONT
+2 CONT  37. Patrick CLUSIAU - U.S. Social Security Death Index
+2 CONT Birth: 13 Jun 1930  State Where Number was Issued: Washington  Death: 18 Jul 1995
+2 CONT
+2 CONT  Matches: U.S. Social Security Death Index - 15
+2 CONT
+0 @S10@ SOUR
+1 TITL Family Search LDS Church (excellent source)
+1 ABBR Family Search LDS Church (excellent source)
+1 AUTH http://www.familysearch.org/eng/default.asp
+1 REPO @REPO6@
+1 TEXT Home Page: http://www.familysearch.org/eng/default.asp
+2 CONT
+2 CONT Search:  http://www.familysearch.org/eng/search/frameset_search.asp?PAGE=search_all1.asp&clear_form=true
+2 CONT
+0 @R01@ REPO
+1 NAME Family History Library
+1 ADDR
+2 ADR1 35 N West Temple Street
+2 CITY Salt Lake City, Utah 84150  USA
+0 @REPO1@ REPO
+1 NAME Minnesota Genealogical Society
+1 ADDR
+2 ADR1 1185 Concord St. N. Suite 218
+2 CITY South St. Paul
+2 STAE Minnesota
+2 POST 55075-1187
+2 CTRY United States of America
+0 @REPO2@ REPO
+1 NAME Sons of Norway
+1 ADDR
+2 ADR1 1455 W. Lake Street
+2 CITY Minneapolis
+2 STAE Minnesota
+2 POST 55408-2666
+2 CTRY United States of America
+0 @REPO3@ REPO
+1 NAME St. Louis County MNGenWeb site
+1 ADDR
+2 ADR1 www.rootsweb.ancestry.com
+2 ADR2 http://www.rootsweb.ancestry.com/~mnstloui/
+1 NOTE http://www.rootsweb.ancestry.com/~mnstloui/
+0 @REPO4@ REPO
+1 NAME Minnesota Historical Society
+1 ADDR
+2 ADR1 345 W. Kellogg Blvd
+2 CITY St. Paul
+2 STAE Minnesota
+2 POST 55102-1906
+2 CTRY United States of America
+0 @REPO5@ REPO
+1 NAME Minnesota Department of Health
+1 ADDR
+2 ADR1 PO Box 64975
+2 ADR2 http://www.health.state.mn.us/index.html
+2 CITY St. Paul
+2 STAE Minnesota
+2 POST 55164-0975
+2 CTRY United States of America
+0 @REPO6@ REPO
+1 NAME www.familysearch.org
+0 @REPO7@ REPO
+1 NAME Little Shop of Memories
+1 ADDR
+2 ADR2 http://www.littleshopofmemories.com/ged/index.php?command=gedcom
+1 NOTE http://www.littleshopofmemories.com/ged/individual.php?pid=I0050&ged=Bratulich.GED
+2 CONT
 0 TRLR
