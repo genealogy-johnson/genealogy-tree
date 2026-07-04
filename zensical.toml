@@ -8,10 +8,10 @@
 
 [project]
 site_name = "Docs" # CUSTOM: Set the name that appears in the browser tab.
-site_url = "https://denisecase.github.io/genealogy-clusiau/"
-repo_url = "https://github.com/denisecase/genealogy-clusiau"
-repo_name = "genealogy-clusiau"
-site_description = "Genealogy Clusiau Documentation" # CUSTOM: Set the description.
+site_url = "https://genealogy-johnson.github.io/genealogy-builder/"
+repo_url = "https://github.com/genealogy-johnson/genealogy-builder"
+repo_name = "genealogy-builder"
+site_description = "Genealogy Documentation" # CUSTOM: Set the description.
 docs_dir = "docs" # source directory for documentation markdown files
 site_dir = "site" # output directory for generated site (ignored by Git; not in repo)
 edit_uri = "edit/main/docs/" # "Edit this page" links (GitHub)
@@ -19,7 +19,7 @@ edit_uri = "edit/main/docs/" # "Edit this page" links (GitHub)
 [project.extra]
 # WHY: Social links provide easy access to project repositories and profiles.
 social = [
-    {icon = "fontawesome/brands/github", link = "https://github.com/denisecase/genealogy-clusiau" },
+    {icon = "fontawesome/brands/github", link = "https://github.com/genealogy-johnson/genealogy-builder" },
 ]
 
 # ------------------------------------------------------------

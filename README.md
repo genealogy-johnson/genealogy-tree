@@ -1,26 +1,26 @@
-# Clusiau (Cluseau) Family Tree Viewer
+# Clusiau-Johnson Family Tree Viewer
 
-[![Public Tree](https://img.shields.io/badge/public-tree-blue?logo=github)](https://genealogy-clusiau.github.io/genealogy-tree/)
-![People](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/genealogy-clusiau/genealogy-tree/main/badges/people.json)
-![Generations](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/genealogy-clusiau/genealogy-tree/main/badges/generations.json)
+[![Public Tree](https://img.shields.io/badge/public-tree-blue?logo=github)](https://genealogy-johnson.github.io/genealogy-tree/viewer/gedcom-viewer.html)
+![People](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/genealogy-johnson/genealogy-tree/main/badges/people.json)
+![Generations](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/genealogy-johnson/genealogy-tree/main/badges/generations.json)
 
-[![Python 3.14+](https://img.shields.io/badge/python-3.14%2B-blue?logo=python)](https://github.com/genealogy-clusiau/genealogy-tree/blob/main/pyproject.toml)
-[![CI](https://github.com/genealogy-clusiau/genealogy-tree/actions/workflows/ci-python-zensical.yml/badge.svg?branch=main)](https://github.com/genealogy-clusiau/genealogy-tree/actions/workflows/ci-python-zensical.yml)
-[![Links](https://github.com/genealogy-clusiau/genealogy-tree/actions/workflows/links.yml/badge.svg?branch=main)](https://github.com/genealogy-clusiau/genealogy-tree/actions/workflows/links.yml)
-[![Dependabot](https://img.shields.io/badge/Dependabot-enabled-brightgreen.svg)](https://github.com/genealogy-clusiau/genealogy-tree/security)
+[![Python 3.14+](https://img.shields.io/badge/python-3.14%2B-blue?logo=python)](https://github.com/genealogy-johnson/genealogy-tree/blob/main/pyproject.toml)
+[![CI](https://github.com/genealogy-johnson/genealogy-tree/actions/workflows/ci-python-zensical.yml/badge.svg?branch=main)](https://github.com/genealogy-johnson/genealogy-tree/actions/workflows/ci-python-zensical.yml)
+[![Links](https://github.com/genealogy-johnson/genealogy-tree/actions/workflows/links.yml/badge.svg?branch=main)](https://github.com/genealogy-johnson/genealogy-tree/actions/workflows/links.yml)
+[![Dependabot](https://img.shields.io/badge/Dependabot-enabled-brightgreen.svg)](https://github.com/genealogy-johnson/genealogy-tree/security)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
-> Clusiau / Cluseau family tree viewer.
+> Clusiau-Johnson family tree viewer.
 
 ## Where to start
 
 - **Browse the public tree:**
   View the redacted public tree at
-  <https://genealogy-clusiau.github.io/genealogy-tree/>
+  <https://genealogy-johnson.github.io/genealogy-tree/viewer/gedcom-viewer.html>
 
 - **Documentation:**
   View the docs at
-  <https://genealogy-clusiau.github.io/genealogy-tree/>
+  <https://genealogy-johnson.github.io/genealogy-tree/>
 
 - **GEDCOM source data:**
   See the private GEDCOM files in `ged/`.
