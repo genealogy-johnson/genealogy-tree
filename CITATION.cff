@@ -13,7 +13,7 @@ type: software
 
 title: "genealogy-tree"
 version: "0.1.0"
-date-released: "2026-07-03"
+date-released: "2026-07-04"
 
 authors:
   - family-names: Case
@@ -21,8 +21,8 @@ authors:
     orcid: "https://orcid.org/0000-0001-6165-7389"
     affiliation: "Northwest Missouri State University, School of Computer Science and Information Systems, Maryville, MO, USA"
 
-repository-code: "https://github.com/genealogy-clusiau/genealogy-tree"
-url: "https://github.com/genealogy-clusiau/genealogy-tree"
+repository-code: "https://github.com/genealogy-johnson/genealogy-tree"
+url: "https://github.com/genealogy-johnson/genealogy-tree"
 license: MIT
 
 abstract: >
