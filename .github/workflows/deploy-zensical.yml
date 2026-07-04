@@ -112,10 +112,20 @@ jobs:
         # WHY: Packages the built static site for the deploy-pages action.
         # OBS: path must match the output directory verified in D2.
 
-      - name: D4) Deploy to GitHub Pages
+      - name: D4) Deploy to GitHub Pages (attempt 1)
+        id: deploy-pages-attempt-1
+        continue-on-error: true
         uses: actions/deploy-pages@v5
         with:
           artifact_name: github-pages-${{ github.run_id }}-${{ github.run_attempt }}
         # WHY: Publishes the uploaded artifact to GitHub Pages.
         # OBS: Requires pages: write and id-token: write permissions (set above).
         # OBS: The deployed URL is shown in the Actions log after this step completes.
+
+      - name: D5) Deploy to GitHub Pages (retry once)
+        if: steps.deploy-pages-attempt-1.outcome == 'failure'
+        uses: actions/deploy-pages@v5
+        with:
+          artifact_name: github-pages-${{ github.run_id }}-${{ github.run_attempt }}
+        # WHY: Pages API occasionally returns a transient deploy failure.
+        # OBS: A single retry avoids false negatives while still failing hard if it repeats.
