@@ -356,6 +356,12 @@ button.ghost:hover {
   background: #fafafa;
 }
 
+.github-icon {
+  width: 18px;
+  height: 18px;
+  vertical-align: text-bottom;
+}
+
 .site-footer a {
   color: #236b2e;
   text-decoration: none;
