@@ -63,14 +63,14 @@
     </div>
     <div class="hint">Scroll/pinch to zoom | drag to pan | click node to expand/collapse</div>
     <footer class="site-footer">
-      <span>66 people | 23 families | 7 generations</span>
+      <span id="tree-metrics" aria-live="polite">Loading tree statistics...</span>
       <span>|</span>
       <a href="https://hibbing.stlouis.mn.pontemsoftware.com/" target="_blank" rel="noopener noreferrer">Hibbing</a>
       <span>|</span>
-      <a href="https://github.com/kapsch-genealogy" target="_blank" rel="noopener noreferrer">Org</a>
+      <a href="https://github.com/genealogy-johnson" target="_blank" rel="noopener noreferrer">Org</a>
       <span>|</span>
-      <a href="https://github.com/kapsch-genealogy/genealogy-tree" target="_blank" rel="noopener noreferrer"
-        aria-label="GitHub repository" title="GitHub repository">
+      <a id="repo-link" href="https://github.com/genealogy-johnson/genealogy-tree" target="_blank"
+        rel="noopener noreferrer" aria-label="GitHub repository" title="GitHub repository">
         <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="" class="github-icon">
       </a>
     </footer>
@@ -80,9 +80,14 @@
 
   <script>
     const DEFAULT_GEDCOM_URL = "../ged/data.ged";
-    const DEFAULT_ROOT_ID = "@I1@";
+    const REPOSITORY_BRANCH = "main";
 
     // ---------- GEDCOM PARSER ----------
+
+    function findFirstIndividualId(text) {
+      const match = text.match(/^0\s+(@\S+@)\s+INDI\s*$/m);
+      return match ? match[1] : null;
+    }
 
     function parseGedcom(text) {
       const lines = text.split(/\r?\n/).filter(l => l.trim().length);
@@ -501,14 +506,15 @@
     let parsedData = null;
 
     function loadFromText(text) {
+      const firstIndividualId = findFirstIndividualId(text);
+
       parsedData = parseGedcom(text);
 
       const allPeople = Object.values(parsedData.indis);
       const rootCandidates = findRootCandidates(parsedData.indis);
 
       const defaultRoot =
-        parsedData.indis[DEFAULT_ROOT_ID] ||
-        allPeople.find((p) => p.name === "Guillaume Cluseau") ||
+        parsedData.indis[firstIndividualId] ||
         rootCandidates[0] ||
         allPeople[0];
 
@@ -529,6 +535,57 @@
         const rootData = buildHierarchy(parsedData.indis, parsedData.fams, defaultRoot.id);
         currentRootData = rootData;
         renderTree(rootData);
+      }
+    }
+
+    function getBadgeBaseUrl() {
+      const repoLink = document.getElementById("repo-link");
+      const repoUrl = new URL(repoLink.href);
+      const [owner, repository] = repoUrl.pathname.split("/").filter(Boolean);
+
+      if (!owner || !repository) {
+        throw new Error("Repository URL does not identify an owner and repository.");
+      }
+
+      return (
+        `https://raw.githubusercontent.com/${owner}/${repository}/` +
+        `${REPOSITORY_BRANCH}/badges`
+      );
+    }
+
+    async function readBadgeMessage(url) {
+      const response = await fetch(url, { cache: "no-store" });
+
+      if (!response.ok) {
+        throw new Error(`${response.status} ${response.statusText}`);
+      }
+
+      const payload = await response.json();
+
+      if (payload.message === undefined || payload.message === null) {
+        throw new Error(`Badge JSON has no message: ${url}`);
+      }
+
+      return String(payload.message);
+    }
+
+    async function loadFooterMetrics() {
+      const metricsElement = document.getElementById("tree-metrics");
+
+      try {
+        const badgeBaseUrl = getBadgeBaseUrl();
+
+        const [people, families, generations] = await Promise.all([
+          readBadgeMessage(`${badgeBaseUrl}/people.json`),
+          readBadgeMessage(`${badgeBaseUrl}/families.json`),
+          readBadgeMessage(`${badgeBaseUrl}/generations.json`)
+        ]);
+
+        metricsElement.textContent =
+          `${people} people | ${families} families | ${generations} generations`;
+      } catch (err) {
+        console.warn("Could not load footer metrics:", err);
+        metricsElement.textContent = "Tree statistics unavailable";
       }
     }
 
@@ -596,6 +653,7 @@
 
     window.addEventListener("load", () => {
       window.setTimeout(loadDefaultGedcom, 100);
+      loadFooterMetrics();
     });
 
   </script>
