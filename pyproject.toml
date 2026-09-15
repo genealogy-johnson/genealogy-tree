@@ -22,3 +22,19 @@ docs = [
     "mkdocstrings-python", # automatic API documentation from docstrings
     "zensical", # fast and minimal static site generator for documentation
 ]
+
+[project.urls]
+Homepage = "https://github.com/genealogy-johnson/genealogy-tree"
+Repository = "https://github.com/genealogy-johnson/genealogy-tree"
+Documentation = "https://genealogy-johnson.github.io/genealogy-tree/"
+Issues = "https://github.com/genealogy-johnson/genealogy-tree/issues"
+Changelog = "https://github.com/genealogy-johnson/genealogy-tree/blob/main/CHANGELOG.md"
+
+
+# === UV (PYTHON ENVIRONMENT AND DEPENDENCY MANAGEMENT) ===
+
+[tool.uv]
+# WHY: Install all dependency groups defined by this repository by default.
+# OBS: This keeps the canonical `uv sync` command identical across project types
+#      and ensures all repository features work after setup.
+default-groups = "all"
