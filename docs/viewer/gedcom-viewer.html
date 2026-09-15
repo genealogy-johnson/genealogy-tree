@@ -81,12 +81,21 @@
   <script>
     const DEFAULT_GEDCOM_URL = "../ged/data.ged";
     const REPOSITORY_BRANCH = "main";
+    const DEFAULT_INDIVIDUAL_ID = "@I14@"; // Charles "Moonlight" Johnson
+    //const DEFAULT_INDIVIDUAL_ID = "@I23@"; // Ellen "Nellie" Gonia
 
     // ---------- GEDCOM PARSER ----------
 
     function findFirstIndividualId(text) {
-      const match = text.match(/^0\s+(@\S+@)\s+INDI\s*$/m);
-      return match ? match[1] : null;
+      const individualIds = [
+        ...text.matchAll(/^0\s+(@\S+@)\s+INDI\s*$/gm),
+      ].map((match) => match[1]);
+
+      if (individualIds.includes(DEFAULT_INDIVIDUAL_ID)) {
+        return DEFAULT_INDIVIDUAL_ID;
+      }
+
+      return individualIds[0] ?? null;
     }
 
     function parseGedcom(text) {
