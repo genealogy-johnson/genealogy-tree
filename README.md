@@ -14,6 +14,8 @@
 
 ## Where to start
 
+- [**Connie poetry**](https://genealogy-johnson.github.io/genealogy-tree/docs/connie-poetry/Connie-poetry.md)
+
 - **Browse the public tree:**
   View the redacted public tree at
   <https://genealogy-johnson.github.io/genealogy-tree/viewer/gedcom-viewer.html>
@@ -34,7 +36,7 @@
 uv self update
 uv python pin 3.14
 uv lock --upgrade
-uv sync --extra docs
+uv sync
 ```
 
 ## Examples

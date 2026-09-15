@@ -16,7 +16,7 @@ requires-python = ">=3.14"
 version = "0.1.0"
 
 
-[project.optional-dependencies]
+[dependency-groups]
 docs = [
     # WHY: Only needed for building documentation, not required for running the package.
     "mkdocstrings-python", # automatic API documentation from docstrings
