@@ -1,7 +1,7 @@
 # ============================================================
 # .github/workflows/deploy-zensical.yml (ALL-PY-REPOS)
 # ============================================================
-# Updated: 2026-06-27
+# Updated: 2026-09-15
 
 # WHY: Build and deploy documentation to GitHub Pages on pushes to main.
 # REQ: Repo Settings -> Pages -> Build and deployment -> Source:
@@ -30,6 +30,7 @@ concurrency:
 env:
   PYTHONUNBUFFERED: "1"     # WHY: Real-time log output in CI.
   PYTHONIOENCODING: "utf-8" # WHY: Consistent encoding across platforms.
+  UV_FROZEN: "1"            # WHY: Deployment MUST use uv.lock without updating it.
 
 jobs:
   docs:
@@ -54,19 +55,21 @@ jobs:
         # OBS: Must run before the build step so base URL is available if needed.
 
       - name: A3) Install uv (with caching)
-        uses: astral-sh/setup-uv@v7
+        uses: astral-sh/setup-uv@v10.0.1
         with:
           enable-cache: true
           cache-dependency-glob: "uv.lock"
-          # WHY: Invalidate cache only when locked dependencies change.
+          # WHY: Invalidate dependency cache when the committed lockfile changes.
 
-      - name: A4) Install Python 3.14
-        run: uv python install 3.14
+      - name: A4) Install project Python
+        run: uv python install
+        # WHY: Ensures the Python version declared in .python-version is available.
+        # OBS: uv manages the interpreter locally in the CI environment.
 
-      - name: A5) Install all dependencies with frozen versions (in uv.lock)
-        run: uv sync --extra docs --frozen
-        # WHY: Docs extras required for Zensical build; dev extras for consistency.
-        # OBS: Deployment validates the committed lock file; it must not upgrade dependencies.
+      - name: A5) Install dependencies from committed lockfile
+        run: uv sync --frozen
+        # WHY: Install all configured dependency groups exactly from uv.lock.
+        # REQ: Deployment MUST fail rather than update a stale lockfile.
 
       - name: A6) Show tool versions
         run: |
@@ -107,25 +110,12 @@ jobs:
       - name: D3) Upload Pages artifact
         uses: actions/upload-pages-artifact@v5
         with:
-          name: github-pages-${{ github.run_id }}-${{ github.run_attempt }}
           path: site
         # WHY: Packages the built static site for the deploy-pages action.
         # OBS: path must match the output directory verified in D2.
 
-      - name: D4) Deploy to GitHub Pages (attempt 1)
-        id: deploy-pages-attempt-1
-        continue-on-error: true
+      - name: D4) Deploy to GitHub Pages
         uses: actions/deploy-pages@v5
-        with:
-          artifact_name: github-pages-${{ github.run_id }}-${{ github.run_attempt }}
         # WHY: Publishes the uploaded artifact to GitHub Pages.
         # OBS: Requires pages: write and id-token: write permissions (set above).
         # OBS: The deployed URL is shown in the Actions log after this step completes.
-
-      - name: D5) Deploy to GitHub Pages (retry once)
-        if: steps.deploy-pages-attempt-1.outcome == 'failure'
-        uses: actions/deploy-pages@v5
-        with:
-          artifact_name: github-pages-${{ github.run_id }}-${{ github.run_attempt }}
-        # WHY: Pages API occasionally returns a transient deploy failure.
-        # OBS: A single retry avoids false negatives while still failing hard if it repeats.

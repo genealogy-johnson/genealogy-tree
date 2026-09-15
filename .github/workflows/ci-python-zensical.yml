@@ -1,7 +1,7 @@
 # ============================================================
 # .github/workflows/ci-python-zensical.yml (ALL-PY-SRC-GENEALOGY-REPOS)
 # ============================================================
-# Updated: 2026-07-03
+# Updated: 2026-09-15
 
 # WHY: Continuous Integration (CI) ensures repository hygiene,
 #      Python correctness, and documentation builds.
@@ -50,21 +50,22 @@ jobs:
         # WHY: Required so all subsequent steps can access repo files.
 
       - name: A2) Install uv (with caching)
-        uses: astral-sh/setup-uv@v8.2.0
+        uses: astral-sh/setup-uv@v10.0.1
         with:
           enable-cache: true
           # WHY: Cache the uv tool itself for faster subsequent runs.
           cache-dependency-glob: "uv.lock"
           # WHY: Invalidate cache only when locked dependencies change.
 
-      - name: A3) Install Python 3.14
-        run: uv python install 3.14
-        # WHY: Ensures the pinned Python version is available in CI.
-        # OBS: Does not modify the repo; uv manages the interpreter locally.
+      - name: A3) Install project Python
+        run: uv python install
+        # WHY: Ensures the Python version declared in .python-version is available.
+        # OBS: uv manages the interpreter locally in the CI environment.
 
-      - name: A4) Install all dependencies with frozen versions (in uv.lock)
-        run: uv sync --extra docs --frozen
-        # WHY: Install dev and docs extras so all check and build tools are available.
+      - name: A4) Install dependencies from committed lockfile
+        run: uv sync --frozen
+        # WHY: Install all configured dependency groups exactly from uv.lock.
+        # REQ: CI MUST fail rather than update a stale or incompatible lockfile.
 
       - name: A5) Show tool versions
         run: |

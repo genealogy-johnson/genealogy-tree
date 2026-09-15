@@ -14,7 +14,7 @@
 
 ## Where to start
 
-- [**Connie poetry**](https://genealogy-johnson.github.io/genealogy-tree/docs/connie-poetry/Connie-poetry.md)
+- [**Connie poetry**](https://genealogy-johnson.github.io/genealogy-tree/docs/connie-poetry/)
 
 - **Browse the public tree:**
   View the redacted public tree at
